@@ -2,6 +2,8 @@
 #include "Core/ShanHeLog.h"
 #include "Core/ShanHeGameState.h"
 #include "Core/ShanHePlayerController.h"
+#include "Core/ShanHeCharacter.h"
+#include "Core/ShanHeHUD.h"
 #include "World/WorldSimulationSubsystem.h"
 #include "Audio/AudioManager.h"
 #include "Kismet/GameplayStatics.h"
@@ -11,6 +13,8 @@ AShanHeGameMode::AShanHeGameMode()
     PrimaryActorTick.bCanEverTick = true;
     PlayerControllerClass = AShanHePlayerController::StaticClass();
     GameStateClass = AShanHeGameState::StaticClass();
+    DefaultPawnClass = AShanHeCharacter::StaticClass();
+    HUDClass = AShanHeHUD::StaticClass();
 }
 
 void AShanHeGameMode::BeginPlay()
