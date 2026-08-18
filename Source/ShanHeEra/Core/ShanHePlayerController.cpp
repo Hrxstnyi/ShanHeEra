@@ -1,6 +1,9 @@
 #include "Core/ShanHePlayerController.h"
+#include "Core/ShanHeCharacter.h"
+#include "Core/ShanHeLog.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 AShanHePlayerController::AShanHePlayerController()
 {
@@ -18,6 +21,7 @@ void AShanHePlayerController::BeginPlay()
         if (DefaultMappingContext)
             Subsystem->AddMappingContext(DefaultMappingContext, 0);
     }
+    UE_LOG(LogShanHe, Log, TEXT("玩家控制器初始化完成"));
 }
 
 void AShanHePlayerController::SetupInputComponent()
@@ -33,8 +37,50 @@ void AShanHePlayerController::SetupInputComponent()
     }
 }
 
-void AShanHePlayerController::OnMove(const FInputActionValue& Value) {}
-void AShanHePlayerController::OnLook(const FInputActionValue& Value) {}
-void AShanHePlayerController::OnInteract(const FInputActionValue& Value) {}
-void AShanHePlayerController::OnOpenMenu(const FInputActionValue& Value) {}
-void AShanHePlayerController::OnTimeScale(const FInputActionValue& Value) {}
+void AShanHePlayerController::OnMove(const FInputActionValue& Value)
+{
+    FVector2D MovementVector = Value.Get<FVector2D>();
+    if (AShanHeCharacter* PlayerChar = Cast<AShanHeCharacter>(GetPawn()))
+    {
+        const FRotator Rotation = GetControlRotation();
+        const FRotator YawRotation(0, Rotation.Yaw, 0);
+        const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+        const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+        PlayerChar->AddMovementInput(ForwardDirection, MovementVector.Y);
+        PlayerChar->AddMovementInput(RightDirection, MovementVector.X);
+    }
+}
+
+void AShanHePlayerController::OnLook(const FInputActionValue& Value)
+{
+    FVector2D LookAxisVector = Value.Get<FVector2D>();
+    AddYawInput(LookAxisVector.X);
+    AddPitchInput(LookAxisVector.Y);
+}
+
+void AShanHePlayerController::OnInteract(const FInputActionValue& Value)
+{
+    UE_LOG(LogShanHe, Log, TEXT("玩家交互"));
+    // 交互逻辑：射线检测前方可交互物体
+    FHitResult HitResult;
+    FVector Start = PlayerCameraManager->GetCameraLocation();
+    FVector End = Start + PlayerCameraManager->GetCameraRotation().Vector() * 300.0f;
+    FCollisionQueryParams Params;
+    Params.AddIgnoredActor(GetPawn());
+    if (GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, Params))
+    {
+        UE_LOG(LogShanHe, Log, TEXT("交互目标: %s"), *HitResult.GetActor()->GetName());
+    }
+}
+
+void AShanHePlayerController::OnOpenMenu(const FInputActionValue& Value)
+{
+    UE_LOG(LogShanHe, Log, TEXT("打开菜单"));
+    // 菜单切换逻辑待UI完善后实现
+}
+
+void AShanHePlayerController::OnTimeScale(const FInputActionValue& Value)
+{
+    UE_LOG(LogShanHe, Log, TEXT("调整时间流速"));
+    // 时间缩放逻辑待GameState完善后实现
+}
