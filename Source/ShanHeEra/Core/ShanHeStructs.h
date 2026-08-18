@@ -66,3 +66,29 @@ struct FSubtitleEntry
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float Duration = 3.0f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) FName SpeakerID;
 };
+
+// === GameplayTags 支持 ===
+// 用于状态、事件、分类的标签系统，替代硬编码的FName比较
+USTRUCT(BlueprintType)
+struct FShanHeGameplayTags
+{
+    GENERATED_BODY()
+
+    // 状态标签
+    static FName Status_Alive() { return FName("Status.Alive"); }
+    static FName Status_Dead() { return FName("Status.Dead"); }
+    static FName Status_Combat() { return FName("Status.Combat"); }
+    static FName Status_Stealth() { return FName("Status.Stealth"); }
+
+    // 事件标签
+    static FName Event_Battle() { return FName("Event.Battle"); }
+    static FName Event_Disaster() { return FName("Event.Disaster"); }
+    static FName Event_Festival() { return FName("Event.Festival"); }
+    static FName Event_Cinematic() { return FName("Event.Cinematic"); }
+
+    // 阵营标签
+    static FName Faction_Player() { return FName("Faction.Player"); }
+    static FName Faction_Enemy() { return FName("Faction.Enemy"); }
+    static FName Faction_Neutral() { return FName("Faction.Neutral"); }
+};
+

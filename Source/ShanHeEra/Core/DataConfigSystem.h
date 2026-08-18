@@ -83,13 +83,13 @@ public:
     bool ImportConfigFromJSON(const FString& ImportPath);
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|配置")
-    UDataTable* ItemConfigTable = nullptr;
+    TObjectPtr<UDataTable> ItemConfigTable = nullptr;
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|配置")
-    UDataTable* NPCConfigTable = nullptr;
+    TObjectPtr<UDataTable> NPCConfigTable = nullptr;
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|配置")
-    UDataTable* RegionConfigTable = nullptr;
+    TObjectPtr<UDataTable> RegionConfigTable = nullptr;
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|配置")
     bool bConfigsLoaded = false;

@@ -15,18 +15,18 @@ public:
     AShanHePlayerController();
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="山河纪元|输入")
-    UInputMappingContext* DefaultMappingContext;
+    TObjectPtr<UInputMappingContext> DefaultMappingContext;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="山河纪元|输入")
-    UInputAction* MoveAction;
+    TObjectPtr<UInputAction> MoveAction;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="山河纪元|输入")
-    UInputAction* LookAction;
+    TObjectPtr<UInputAction> LookAction;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="山河纪元|输入")
-    UInputAction* InteractAction;
+    TObjectPtr<UInputAction> InteractAction;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="山河纪元|输入")
-    UInputAction* OpenMenuAction;
+    TObjectPtr<UInputAction> OpenMenuAction;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="山河纪元|输入")
-    UInputAction* TimeScaleAction;
+    TObjectPtr<UInputAction> TimeScaleAction;
 
 protected:
     virtual void SetupInputComponent() override;

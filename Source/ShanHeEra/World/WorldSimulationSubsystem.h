@@ -26,19 +26,19 @@ public:
     void InitializeWorld();
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|世界模拟")
-    URegionManager* RegionManager;
+    TObjectPtr<URegionManager> RegionManager;
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|世界模拟")
-    UCityManager* CityManager;
+    TObjectPtr<UCityManager> CityManager;
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|世界模拟")
-    UCourtSystem* CourtSystem;
+    TObjectPtr<UCourtSystem> CourtSystem;
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|世界模拟")
-    UEconomySystem* EconomySystem;
+    TObjectPtr<UEconomySystem> EconomySystem;
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|世界模拟")
-    UWarSystem* WarSystem;
+    TObjectPtr<UWarSystem> WarSystem;
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|世界模拟")
-    UHistorySystem* HistorySystem;
+    TObjectPtr<UHistorySystem> HistorySystem;
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|世界模拟")
-    USocietySystem* SocietySystem;
+    TObjectPtr<USocietySystem> SocietySystem;
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|世界模拟")
     int32 TotalSimulatedDays = 0;
