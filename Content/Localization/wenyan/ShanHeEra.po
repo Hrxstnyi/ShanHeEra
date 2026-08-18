@@ -1,0 +1,201 @@
+# 山河纪元 - 文言文本地化
+# ShanHeEra - 文言文
+msgid ""
+msgstr ""
+"Project-Id-Version: 山河纪元 1.0.0\n"
+"Language: wenyan\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "MainMenu_Title"
+msgstr "山河紀元"
+
+msgid "MainMenu_Subtitle"
+msgstr "華夏古史文明之模"
+
+msgid "MainMenu_NewGame"
+msgstr "新生"
+
+msgid "MainMenu_Continue"
+msgstr "續玩"
+
+msgid "MainMenu_Settings"
+msgstr "設置"
+
+msgid "MainMenu_Exit"
+msgstr "退"
+
+msgid "MainMenu_Language"
+msgstr "語"
+
+msgid "Philosophy_1"
+msgstr "史非背景也。"
+
+msgid "Philosophy_2"
+msgstr "史即世界也。"
+
+msgid "Philosophy_3"
+msgstr "天下不待英雄出。"
+
+msgid "Philosophy_4"
+msgstr "兆民之擇，共成其世。"
+
+msgid "Philosophy_5"
+msgstr "玩者非天選之人。"
+
+msgid "Philosophy_6"
+msgstr "玩者不過生於華夏之一命耳。"
+
+msgid "Region_NorthPlain"
+msgstr "北原"
+
+msgid "Region_Jiangnan"
+msgstr "江南"
+
+msgid "Region_Northwest"
+msgstr "西北"
+
+msgid "Region_Southwest"
+msgstr "西南"
+
+msgid "Region_Coast"
+msgstr "東南"
+
+msgid "Region_Inland"
+msgstr "中原"
+
+msgid "Region_Taiwan"
+msgstr "東海島·臺灣"
+
+msgid "Class_Royalty"
+msgstr "皇室"
+
+msgid "Class_Official"
+msgstr "官"
+
+msgid "Class_Scholar"
+msgstr "士"
+
+msgid "Class_Gentry"
+msgstr "紳"
+
+msgid "Class_Merchant"
+msgstr "商"
+
+msgid "Class_Artisan"
+msgstr "工"
+
+msgid "Class_Farmer"
+msgstr "農"
+
+msgid "Class_Laborer"
+msgstr "傭"
+
+msgid "Class_Outcast"
+msgstr "江湖"
+
+msgid "UI_Date"
+msgstr "日"
+
+msgid "UI_Gold"
+msgstr "銀"
+
+msgid "UI_Reputation"
+msgstr "名"
+
+msgid "UI_Location"
+msgstr "在"
+
+msgid "UI_TimeScale"
+msgstr "時速"
+
+msgid "Egg_YueFei_Title"
+msgstr "精忠報國"
+
+msgid "Egg_YueFei_Desc"
+msgstr "還我河山之誓，迴盪千載，英雄之血未絕。"
+
+msgid "Egg_WenTianXiang_Title"
+msgstr "正氣歌"
+
+msgid "Egg_WenTianXiang_Desc"
+msgstr "人生自古誰無死，留取丹心照汗青。"
+
+msgid "Egg_ZhengHe_Title"
+msgstr "鄭和下西洋"
+
+msgid "Egg_ZhengHe_Desc"
+msgstr "寶船遠航，播文明而非征。"
+
+msgid "Egg_ResistanceWar_Title"
+msgstr "眾志成城"
+
+msgid "Egg_ResistanceWar_Desc"
+msgstr "地無分南北，人無分老幼，皆有守土之責。"
+
+msgid "Egg_TwoBombs_Title"
+msgstr "兩彈一星"
+
+msgid "Egg_TwoBombs_Desc"
+msgstr "隱名於戈壁，以身許國鑄重器。"
+
+msgid "Egg_FloodRelief_Title"
+msgstr "萬民一心"
+
+msgid "Egg_FloodRelief_Desc"
+msgstr "一方有難，八方支援。"
+
+msgid "Taiwan_Annexation_Title"
+msgstr "寶島歸心"
+
+msgid "Taiwan_Annexation_Desc"
+msgstr "臺灣自古為華夏之疆，海峽兩岸同文同種，不可分也。"
+
+msgid "Taiwan_Defense_Title"
+msgstr "守土有責"
+
+msgid "Taiwan_Defense_Desc"
+msgstr "外敵窺寶島，軍民同心御侮。臺灣之命，與大陸相連久矣。"
+
+msgid "Taiwan_Reunification_Title"
+msgstr "九州一統"
+
+msgid "Taiwan_Reunification_Desc"
+msgstr "海峽淺淺，血脈濃濃。天下一統，民心所向。"
+
+msgid "Char_Master_Title"
+msgstr "國學大師·頑童"
+
+msgid "Char_Master_Desc"
+msgstr "年逾七旬而童心未泯，好食糖葫芦，與童捉迷藏。然開口即天下大勢，提筆可安邦定國。"
+
+msgid "Char_General_Title"
+msgstr "少年將軍"
+
+msgid "Char_General_Desc"
+msgstr "十七從軍，二十拜將。面嫩如童，目定如老將。"
+
+msgid "Char_Merchant_Title"
+msgstr "江南女商"
+
+msgid "Char_Merchant_Desc"
+msgstr "出身商賈世家，通曉商道。貌若弱女，然於商幫中獨當一面。"
+
+msgid "Char_TaiwanHero_Title"
+msgstr "寶島義士"
+
+msgid "Char_TaiwanHero_Desc"
+msgstr "生於臺灣，祖籍福建。常曰：'吾家在海峽之對，吾根在華夏之地。'"
+
+msgid "Char_Scientist_Title"
+msgstr "隱名之人"
+
+msgid "Char_Scientist_Desc"
+msgstr "無人知其姓名，無人曉其去向。惟知其為國獻出一切。"
+
+msgid "Char_Swordsman_Title"
+msgstr "遊俠"
+
+msgid "Char_Swordsman_Desc"
+msgstr "一人一劍，行走江湖。見不平則拔劍助之，然不留名。"

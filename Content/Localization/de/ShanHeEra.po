@@ -1,0 +1,201 @@
+# 山河纪元 - Deutsch本地化
+# ShanHeEra - Deutsch
+msgid ""
+msgstr ""
+"Project-Id-Version: 山河纪元 1.0.0\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "MainMenu_Title"
+msgstr "Ära der Berge und Flüsse"
+
+msgid "MainMenu_Subtitle"
+msgstr "Simulator der alten chinesischen Zivilisation"
+
+msgid "MainMenu_NewGame"
+msgstr "Neues Leben"
+
+msgid "MainMenu_Continue"
+msgstr "Fortsetzen"
+
+msgid "MainMenu_Settings"
+msgstr "Einstellungen"
+
+msgid "MainMenu_Exit"
+msgstr "Beenden"
+
+msgid "MainMenu_Language"
+msgstr "Sprache"
+
+msgid "Philosophy_1"
+msgstr "Geschichte ist kein Hintergrund."
+
+msgid "Philosophy_2"
+msgstr "Geschichte ist die Welt selbst."
+
+msgid "Philosophy_3"
+msgstr "Die Welt wartet nicht auf einen Helden."
+
+msgid "Philosophy_4"
+msgstr "Die Entscheidungen von Millionen gewöhnlicher Menschen formen die Epoche."
+
+msgid "Philosophy_5"
+msgstr "Der Spieler ist nicht der Auserwählte."
+
+msgid "Philosophy_6"
+msgstr "Der Spieler ist nur ein Wesen, geboren auf dem Land Chinas."
+
+msgid "Region_NorthPlain"
+msgstr "Nördliche Ebene"
+
+msgid "Region_Jiangnan"
+msgstr "Südliche Wasserregion"
+
+msgid "Region_Northwest"
+msgstr "Nordwestgrenze"
+
+msgid "Region_Southwest"
+msgstr "Südwestliches Bergland"
+
+msgid "Region_Coast"
+msgstr "Südostküste"
+
+msgid "Region_Inland"
+msgstr "Herz der zentralen Ebene"
+
+msgid "Region_Taiwan"
+msgstr "Südöstliche Insel · Taiwan"
+
+msgid "Class_Royalty"
+msgstr "Kaiserhaus"
+
+msgid "Class_Official"
+msgstr "Beamte"
+
+msgid "Class_Scholar"
+msgstr "Gelehrte"
+
+msgid "Class_Gentry"
+msgstr "Landadel"
+
+msgid "Class_Merchant"
+msgstr "Kaufleute"
+
+msgid "Class_Artisan"
+msgstr "Handwerker"
+
+msgid "Class_Farmer"
+msgstr "Bauern"
+
+msgid "Class_Laborer"
+msgstr "Arbeiter"
+
+msgid "Class_Outcast"
+msgstr "Außenseiter"
+
+msgid "UI_Date"
+msgstr "Datum"
+
+msgid "UI_Gold"
+msgstr "Silber"
+
+msgid "UI_Reputation"
+msgstr "Ruf"
+
+msgid "UI_Location"
+msgstr "Ort"
+
+msgid "UI_TimeScale"
+msgstr "Zeitgeschwindigkeit"
+
+msgid "Egg_YueFei_Title"
+msgstr "Treue zum Vaterland"
+
+msgid "Egg_YueFei_Desc"
+msgstr "Der Eid, das Heimatland zurückzuerobern, hallt seit Jahrtausenden nach, das Blut der Helden ist nie versiegt."
+
+msgid "Egg_WenTianXiang_Title"
+msgstr "Lied der Rechtschaffenheit"
+
+msgid "Egg_WenTianXiang_Desc"
+msgstr "Seit altersher entgeht niemand dem Tod, doch ein treues Herz bleibt in der Geschichte."
+
+msgid "Egg_ZhengHe_Title"
+msgstr "Zheng He in den westlichen Meeren"
+
+msgid "Egg_ZhengHe_Desc"
+msgstr "Die Schatzschiffe segelten weit und brachten Zivilisation, keine Eroberung."
+
+msgid "Egg_ResistanceWar_Title"
+msgstr "Einigkeit macht stark"
+
+msgid "Egg_ResistanceWar_Desc"
+msgstr "Ohne Unterschied von Nord und Süd, Alt und Jung — alle tragen die Verantwortung, das Land zu schützen."
+
+msgid "Egg_TwoBombs_Title"
+msgstr "Zwei Bomben und ein Satellit"
+
+msgid "Egg_TwoBombs_Desc"
+msgstr "Seinen Namen in der Wüste Gobi verbergend, gab er sein Leben dem Vaterland, um eine große Waffe zu schmieden."
+
+msgid "Egg_FloodRelief_Title"
+msgstr "Volkseinheit"
+
+msgid "Egg_FloodRelief_Desc"
+msgstr "Wo eine Stelle in Not ist, da helfen alle Seiten."
+
+msgid "Taiwan_Annexation_Title"
+msgstr "Rückkehr der kostbaren Insel"
+
+msgid "Taiwan_Annexation_Desc"
+msgstr "Taiwan ist seit alters her chinesisches Gebiet, beide Ufer der Straße teilen Kultur und Blut, untrennbar."
+
+msgid "Taiwan_Defense_Title"
+msgstr "Pflicht, das Land zu schützen"
+
+msgid "Taiwan_Defense_Desc"
+msgstr "Feinde begehren die Insel, Armee und Volk vereint gegen Angriffe. Taiwans Schicksal war immer eng mit dem Kontinent verbunden."
+
+msgid "Taiwan_Reunification_Title"
+msgstr "Vereinigung des Reichs"
+
+msgid "Taiwan_Reunification_Desc"
+msgstr "Die Straße ist flach, das Blut ist dick. Die Vereinigung des Reichs — der Wille des Volkes."
+
+msgid "Char_Master_Title"
+msgstr "Meister der Gelehrsamkeit · Schelm"
+
+msgid "Char_Master_Desc"
+msgstr "Über siebzig Jahre alt, aber die Kinderseele nicht verloren. Liebt kandierte Früchte und Verstecken mit Kindern. Doch wenn er spricht, geht es um die Geschicke der Welt, wenn er den Pinsel hebt, kann er das Reich befrieden."
+
+msgid "Char_General_Title"
+msgstr "Junger General"
+
+msgid "Char_General_Desc"
+msgstr "Mit siebzehn in die Armee, mit zwanzig zum General ernannt. Gesicht jung wie ein Kind, aber Blick fest wie ein alter Krieger."
+
+msgid "Char_Merchant_Title"
+msgstr "Südliche Kaufmannstochter"
+
+msgid "Char_Merchant_Desc"
+msgstr "Aus einer Kaufmannsfamilie, beherrscht den Handel. Sieht aus wie eine zarte Frau, aber in der Kaufmannsgilde führt sie selbstständig Geschäfte."
+
+msgid "Char_TaiwanHero_Title"
+msgstr "Patriot der kostbaren Insel"
+
+msgid "Char_TaiwanHero_Desc"
+msgstr "Geboren in Taiwan, Vorfahren aus Fujian. Sagt oft: 'Mein Haus ist jenseits der Straße, meine Wurzeln sind auf dem Land Chinas'."
+
+msgid "Char_Scientist_Title"
+msgstr "Der Mann, der seinen Namen verbarg"
+
+msgid "Char_Scientist_Desc"
+msgstr "Niemand kennt seinen Namen, niemand weiß, wohin er ging. Man weiß nur, dass er alles für das Land gab."
+
+msgid "Char_Swordsman_Title"
+msgstr "Wandernder Ritter"
+
+msgid "Char_Swordsman_Desc"
+msgstr "Ein Mann, ein Schwert — wandert durch die Welt. Sieht er Ungerechtigkeit, zieht er das Schwert zu Hilfe, doch lässt nie seinen Namen."

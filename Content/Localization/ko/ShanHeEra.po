@@ -1,0 +1,201 @@
+# 山河纪元 - 한국어本地化
+# ShanHeEra - 한국어
+msgid ""
+msgstr ""
+"Project-Id-Version: 山河纪元 1.0.0\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "MainMenu_Title"
+msgstr "산하시대"
+
+msgid "MainMenu_Subtitle"
+msgstr "화하 고대 역사 문명 시뮬레이터"
+
+msgid "MainMenu_NewGame"
+msgstr "새로운 인생"
+
+msgid "MainMenu_Continue"
+msgstr "계속하기"
+
+msgid "MainMenu_Settings"
+msgstr "설정"
+
+msgid "MainMenu_Exit"
+msgstr "종료"
+
+msgid "MainMenu_Language"
+msgstr "언어"
+
+msgid "Philosophy_1"
+msgstr "역사는 배경이 아닙니다."
+
+msgid "Philosophy_2"
+msgstr "역사가 곧 세계입니다."
+
+msgid "Philosophy_3"
+msgstr "천하는 영웅을 기다리지 않습니다."
+
+msgid "Philosophy_4"
+msgstr "억만 평범한 사람의 선택이 시대를 이룹니다."
+
+msgid "Philosophy_5"
+msgstr "플레이어는 선택받은 사람이 아닙니다."
+
+msgid "Philosophy_6"
+msgstr "플레이어는 화하 대지에 태어난 한 생명일 뿐입니다."
+
+msgid "Region_NorthPlain"
+msgstr "북방 평원"
+
+msgid "Region_Jiangnan"
+msgstr "강남 수향"
+
+msgid "Region_Northwest"
+msgstr "서북 변경"
+
+msgid "Region_Southwest"
+msgstr "서남 산지"
+
+msgid "Region_Coast"
+msgstr "동남 연해"
+
+msgid "Region_Inland"
+msgstr "중원 복지"
+
+msgid "Region_Taiwan"
+msgstr "동남해도·대만"
+
+msgid "Class_Royalty"
+msgstr "황실"
+
+msgid "Class_Official"
+msgstr "관원"
+
+msgid "Class_Scholar"
+msgstr "사인"
+
+msgid "Class_Gentry"
+msgstr "향신"
+
+msgid "Class_Merchant"
+msgstr "상인"
+
+msgid "Class_Artisan"
+msgstr "공장"
+
+msgid "Class_Farmer"
+msgstr "농민"
+
+msgid "Class_Laborer"
+msgstr "고공"
+
+msgid "Class_Outcast"
+msgstr "강호인"
+
+msgid "UI_Date"
+msgstr "날짜"
+
+msgid "UI_Gold"
+msgstr "은량"
+
+msgid "UI_Reputation"
+msgstr "성망"
+
+msgid "UI_Location"
+msgstr "소재지"
+
+msgid "UI_TimeScale"
+msgstr "시간 속도"
+
+msgid "Egg_YueFei_Title"
+msgstr "정충보국"
+
+msgid "Egg_YueFei_Desc"
+msgstr "하산을 돌려달라는 맹세가 천년을 울려퍼지며, 영웅의 혈통은 끊어진 적이 없습니다."
+
+msgid "Egg_WenTianXiang_Title"
+msgstr "정기가"
+
+msgid "Egg_WenTianXiang_Desc"
+msgstr "인생은 예로부터 누구나 죽기 마련, 붉은 심장만이 역사에 남나니."
+
+msgid "Egg_ZhengHe_Title"
+msgstr "정화 하서양"
+
+msgid "Egg_ZhengHe_Desc"
+msgstr "보선이 원양을 항해하며 정복이 아닌 문명을 전파했습니다."
+
+msgid "Egg_ResistanceWar_Title"
+msgstr "중지지성"
+
+msgid "Egg_ResistanceWar_Desc"
+msgstr "남북을 가리지 않고, 노유를 가리지 않고, 모두 땅을 지킬 책임이 있다."
+
+msgid "Egg_TwoBombs_Title"
+msgstr "이탄일성"
+
+msgid "Egg_TwoBombs_Desc"
+msgstr "사막에 이름을 숨기고, 몸을 바쳐 나라를 위해 중기를 만들었습니다."
+
+msgid "Egg_FloodRelief_Title"
+msgstr "인민단결"
+
+msgid "Egg_FloodRelief_Desc"
+msgstr "한 곳에 어려움이 생기면, 팔방에서 지원한다."
+
+msgid "Taiwan_Annexation_Title"
+msgstr "보도귀심"
+
+msgid "Taiwan_Annexation_Desc"
+msgstr "대만은 예로부터 화하의 영토이며, 해협 양안은 같은 문화와 핏줄로 나눌 수 없습니다."
+
+msgid "Taiwan_Defense_Title"
+msgstr "수토유책"
+
+msgid "Taiwan_Defense_Desc"
+msgstr "외적이 보도를 탐내며, 군민이 한마음으로 침략을 막는다. 대만의 운명은 늘 대륙과 긴밀히 연결되어 있다."
+
+msgid "Taiwan_Reunification_Title"
+msgstr "구주일통"
+
+msgid "Taiwan_Reunification_Desc"
+msgstr "해협은 얕으나, 핏줄은 짙다. 천하 통일은 민심이 향하는 바다."
+
+msgid "Char_Master_Title"
+msgstr "국학대사·왕동선생"
+
+msgid "Char_Master_Desc"
+msgstr "칠순을 넘겼으나 동심이 남아있으며, 탕후루를 좋아하고 아이들과 숨바꼭질을 한다. 하지만 입을 열면 천하 대세를 논하고, 붓을 들면 나라를 안정시킨다."
+
+msgid "Char_General_Title"
+msgstr "소년장군"
+
+msgid "Char_General_Desc"
+msgstr "열일곱에 군대에 들어가, 스무에 장군이 되었다. 얼굴은 소년처럼 어리나, 눈빛은 노장처럼 굳었다."
+
+msgid "Char_Merchant_Title"
+msgstr "강남 여상"
+
+msgid "Char_Merchant_Desc"
+msgstr "상인 가문 출신으로 상도에 정통하다. 약해 보이는 여자 같으나, 상방에서 홀로 한 면을 당당히 해낸다."
+
+msgid "Char_TaiwanHero_Title"
+msgstr "보도의사"
+
+msgid "Char_TaiwanHero_Desc"
+msgstr "대만에서 태어나, 본적은 푸젠이다. 늘 '내 집은 해협 건너편에 있고, 내 뿌리는 화하 대지에 있다'고 말한다."
+
+msgid "Char_Scientist_Title"
+msgstr "익명의 사람"
+
+msgid "Char_Scientist_Desc"
+msgstr "아무도 그의 이름을 모르고, 아무도 그의 행방을 모른다. 다만 그가 나라를 위해 모든 것을 바쳤을 뿐이다."
+
+msgid "Char_Swordsman_Title"
+msgstr "유협"
+
+msgid "Char_Swordsman_Desc"
+msgstr "한 사람 한 자루 칼로 강호를 떠돈다. 불의를 보면 칼을 빼어 돕지만, 늘 이름을 남기지 않는다."

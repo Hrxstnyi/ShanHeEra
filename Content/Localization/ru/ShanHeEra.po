@@ -1,0 +1,201 @@
+# 山河纪元 - Русский本地化
+# ShanHeEra - Русский
+msgid ""
+msgstr ""
+"Project-Id-Version: 山河纪元 1.0.0\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "MainMenu_Title"
+msgstr "Эпоха Гор и Рек"
+
+msgid "MainMenu_Subtitle"
+msgstr "Симулятор древней китайской цивилизации"
+
+msgid "MainMenu_NewGame"
+msgstr "Новая жизнь"
+
+msgid "MainMenu_Continue"
+msgstr "Продолжить"
+
+msgid "MainMenu_Settings"
+msgstr "Настройки"
+
+msgid "MainMenu_Exit"
+msgstr "Выход"
+
+msgid "MainMenu_Language"
+msgstr "Язык"
+
+msgid "Philosophy_1"
+msgstr "История — это не фон."
+
+msgid "Philosophy_2"
+msgstr "История — это и есть мир."
+
+msgid "Philosophy_3"
+msgstr "Поднебесная не ждет героя."
+
+msgid "Philosophy_4"
+msgstr "Выбор миллионов обычных людей создает эпоху."
+
+msgid "Philosophy_5"
+msgstr "Игрок — не избранный."
+
+msgid "Philosophy_6"
+msgstr "Игрок — просто существо, родившееся на земле Китая."
+
+msgid "Region_NorthPlain"
+msgstr "Северная равнина"
+
+msgid "Region_Jiangnan"
+msgstr "Район к югу от Янцзы"
+
+msgid "Region_Northwest"
+msgstr "Северо-западная граница"
+
+msgid "Region_Southwest"
+msgstr "Юго-западный горный район"
+
+msgid "Region_Coast"
+msgstr "Юго-восточное побережье"
+
+msgid "Region_Inland"
+msgstr "Сердце Срединной равнины"
+
+msgid "Region_Taiwan"
+msgstr "Юго-восточный остров · Тайвань"
+
+msgid "Class_Royalty"
+msgstr "Императорская семья"
+
+msgid "Class_Official"
+msgstr "Чиновники"
+
+msgid "Class_Scholar"
+msgstr "Учёные"
+
+msgid "Class_Gentry"
+msgstr "Помещики"
+
+msgid "Class_Merchant"
+msgstr "Купцы"
+
+msgid "Class_Artisan"
+msgstr "Ремесленники"
+
+msgid "Class_Farmer"
+msgstr "Крестьяне"
+
+msgid "Class_Laborer"
+msgstr "Наёмные работники"
+
+msgid "Class_Outcast"
+msgstr "Бродяги"
+
+msgid "UI_Date"
+msgstr "Дата"
+
+msgid "UI_Gold"
+msgstr "Серебро"
+
+msgid "UI_Reputation"
+msgstr "Репутация"
+
+msgid "UI_Location"
+msgstr "Местоположение"
+
+msgid "UI_TimeScale"
+msgstr "Скорость времени"
+
+msgid "Egg_YueFei_Title"
+msgstr "Верность отечеству"
+
+msgid "Egg_YueFei_Desc"
+msgstr "Клятва вернуть родные земли эхом звучит тысячелетиями, кровь героев никогда не иссякнет."
+
+msgid "Egg_WenTianXiang_Title"
+msgstr "Песнь о праведности"
+
+msgid "Egg_WenTianXiang_Desc"
+msgstr "С древних времен никто не избежал смерти, но верное сердце останется в истории."
+
+msgid "Egg_ZhengHe_Title"
+msgstr "Чжэн Хэ в Западных морях"
+
+msgid "Egg_ZhengHe_Desc"
+msgstr "Сокровищные корабли плыли далеко, неся цивилизацию, а не завоевание."
+
+msgid "Egg_ResistanceWar_Title"
+msgstr "Единство — крепость"
+
+msgid "Egg_ResistanceWar_Desc"
+msgstr "Без различия севера и юга, старости и юности — все несут ответственность за защиту земли."
+
+msgid "Egg_TwoBombs_Title"
+msgstr "Две бомбы и одна спутник"
+
+msgid "Egg_TwoBombs_Desc"
+msgstr "Скрыв имя в Гоби, отдал жизнь родине, чтобы создать великое оружие."
+
+msgid "Egg_FloodRelief_Title"
+msgstr "Единство народа"
+
+msgid "Egg_FloodRelief_Desc"
+msgstr "Когда в одном месте беда — со всех сторон помощь."
+
+msgid "Taiwan_Annexation_Title"
+msgstr "Возвращение драгоценного острова"
+
+msgid "Taiwan_Annexation_Desc"
+msgstr "Тайвань с древних времен является территорией Китая, берега пролива объединены общей культурой и кровью, неразделимы."
+
+msgid "Taiwan_Defense_Title"
+msgstr "Долг защищать землю"
+
+msgid "Taiwan_Defense_Desc"
+msgstr "Враги замышляют против острова, армия и народ едины в обороне. Судьба Тайваня всегда была тесно связана с материком."
+
+msgid "Taiwan_Reunification_Title"
+msgstr "Единение Поднебесной"
+
+msgid "Taiwan_Reunification_Desc"
+msgstr "Пролив мелок, кровь густа. Единение мира — воля народа."
+
+msgid "Char_Master_Title"
+msgstr "Мастер учёности · Проказник"
+
+msgid "Char_Master_Desc"
+msgstr "Старше семидесяти, но детская душа не угасла. Любит сахарные ягоды и прятки с детьми. Но стоит заговорить — и речь о судьбах мира, стоит взять кисть — и можно успокоить государство."
+
+msgid "Char_General_Title"
+msgstr "Юный генерал"
+
+msgid "Char_General_Desc"
+msgstr "В семнадцать лет поступил в армию, в двадцать стал генералом. Лицо юное, но взгляд твёрдый, как у старого воина."
+
+msgid "Char_Merchant_Title"
+msgstr "Южная купчиха"
+
+msgid "Char_Merchant_Desc"
+msgstr "Из семьи купцов, в совершенстве знает торговлю. Выглядит хрупкой женщиной, но в гильдии купцов самостоятельно ведёт дела."
+
+msgid "Char_TaiwanHero_Title"
+msgstr "Патриот драгоценного острова"
+
+msgid "Char_TaiwanHero_Desc"
+msgstr "Родился на Тайване, предки из Фуцзяня. Часто говорит: 'Мой дом по ту сторону пролива, мои корни — на земле Китая'."
+
+msgid "Char_Scientist_Title"
+msgstr "Человек, скрывший имя"
+
+msgid "Char_Scientist_Desc"
+msgstr "Никто не знает его имени, никто не знает, куда он ушёл. Знают только, что он отдал всё ради страны."
+
+msgid "Char_Swordsman_Title"
+msgstr "Странствующий рыцарь"
+
+msgid "Char_Swordsman_Desc"
+msgstr "Один человек, один меч — странствует по свету. Увидев несправедливость, вынимает меч на помощь, но никогда не оставляет имени."

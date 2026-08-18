@@ -1,0 +1,201 @@
+# 山河纪元 - Français本地化
+# ShanHeEra - Français
+msgid ""
+msgstr ""
+"Project-Id-Version: 山河纪元 1.0.0\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "MainMenu_Title"
+msgstr "Ère des Montagnes et Rivières"
+
+msgid "MainMenu_Subtitle"
+msgstr "Simulateur de la civilisation ancienne chinoise"
+
+msgid "MainMenu_NewGame"
+msgstr "Nouvelle vie"
+
+msgid "MainMenu_Continue"
+msgstr "Continuer"
+
+msgid "MainMenu_Settings"
+msgstr "Paramètres"
+
+msgid "MainMenu_Exit"
+msgstr "Quitter"
+
+msgid "MainMenu_Language"
+msgstr "Langue"
+
+msgid "Philosophy_1"
+msgstr "L'histoire n'est pas un décor."
+
+msgid "Philosophy_2"
+msgstr "L'histoire est le monde lui-même."
+
+msgid "Philosophy_3"
+msgstr "Le monde n'attend pas de héros."
+
+msgid "Philosophy_4"
+msgstr "Les choix de millions de gens ordinaires forment l'époque."
+
+msgid "Philosophy_5"
+msgstr "Le joueur n'est pas l'élu."
+
+msgid "Philosophy_6"
+msgstr "Le joueur n'est qu'un être né sur la terre de Chine."
+
+msgid "Region_NorthPlain"
+msgstr "Plaine du Nord"
+
+msgid "Region_Jiangnan"
+msgstr "Région au sud du Yangtsé"
+
+msgid "Region_Northwest"
+msgstr "Frontière du Nord-Ouest"
+
+msgid "Region_Southwest"
+msgstr "Région montagneuse du Sud-Ouest"
+
+msgid "Region_Coast"
+msgstr "Côte du Sud-Est"
+
+msgid "Region_Inland"
+msgstr "Cœur des plaines centrales"
+
+msgid "Region_Taiwan"
+msgstr "Île du Sud-Est · Taïwan"
+
+msgid "Class_Royalty"
+msgstr "Famille impériale"
+
+msgid "Class_Official"
+msgstr "Fonctionnaires"
+
+msgid "Class_Scholar"
+msgstr "Lettrés"
+
+msgid "Class_Gentry"
+msgstr "Gentry"
+
+msgid "Class_Merchant"
+msgstr "Marchands"
+
+msgid "Class_Artisan"
+msgstr "Artisans"
+
+msgid "Class_Farmer"
+msgstr "Paysans"
+
+msgid "Class_Laborer"
+msgstr "Travailleurs"
+
+msgid "Class_Outcast"
+msgstr "Vagabonds"
+
+msgid "UI_Date"
+msgstr "Date"
+
+msgid "UI_Gold"
+msgstr "Argent"
+
+msgid "UI_Reputation"
+msgstr "Réputation"
+
+msgid "UI_Location"
+msgstr "Lieu"
+
+msgid "UI_TimeScale"
+msgstr "Échelle temporelle"
+
+msgid "Egg_YueFei_Title"
+msgstr "Loyauté envers la nation"
+
+msgid "Egg_YueFei_Desc"
+msgstr "Le serment de reconquérir la patrie résonne depuis des millénaires, le sang des héros ne s'est jamais tari."
+
+msgid "Egg_WenTianXiang_Title"
+msgstr "Chant de la droiture"
+
+msgid "Egg_WenTianXiang_Desc"
+msgstr "Depuis l'antiquité, nul n'échappe à la mort, mais un cœur loyal reste dans l'histoire."
+
+msgid "Egg_ZhengHe_Title"
+msgstr "Zheng He dans les mers occidentales"
+
+msgid "Egg_ZhengHe_Desc"
+msgstr "Les navires aux trésors naviguaient loin, portant la civilisation, non la conquête."
+
+msgid "Egg_ResistanceWar_Title"
+msgstr "L'union fait la force"
+
+msgid "Egg_ResistanceWar_Desc"
+msgstr "Sans distinction de nord ou de sud, de vieux ou de jeunes — tous ont le devoir de défendre le sol."
+
+msgid "Egg_TwoBombs_Title"
+msgstr "Deux bombes et un satellite"
+
+msgid "Egg_TwoBombs_Desc"
+msgstr "Cachant son nom dans le Gobi, il offrit sa vie à la patrie pour forger un grand instrument."
+
+msgid "Egg_FloodRelief_Title"
+msgstr "Solidarité du peuple"
+
+msgid "Egg_FloodRelief_Desc"
+msgstr "Quand un lieu est en difficulté, tous les autres viennent en aide."
+
+msgid "Taiwan_Annexation_Title"
+msgstr "Retour de l'île précieuse"
+
+msgid "Taiwan_Annexation_Desc"
+msgstr "Taïwan est depuis l'antiquité territoire chinois, les deux rives du détroit partagent culture et sang, inséparables."
+
+msgid "Taiwan_Defense_Title"
+msgstr "Devoir de défendre le sol"
+
+msgid "Taiwan_Defense_Desc"
+msgstr "Les ennemis convoitent l'île, armée et peuple unis contre l'agression. Le sort de Taïwan a toujours été lié au continent."
+
+msgid "Taiwan_Reunification_Title"
+msgstr "Unification du royaume"
+
+msgid "Taiwan_Reunification_Desc"
+msgstr "Le détroit est peu profond, le sang est épais. L'unification du monde — le vœu du peuple."
+
+msgid "Char_Master_Title"
+msgstr "Maître des études · Farceur"
+
+msgid "Char_Master_Desc"
+msgstr "Plus de soixante-dix ans mais l'âme d'enfant intacte. Aime les fruits sucrés et cache-cache avec les enfants. Mais quand il parle, c'est des destinées du monde, quand il prend le pinceau, il peut apaiser l'empire."
+
+msgid "Char_General_Title"
+msgstr "Jeune général"
+
+msgid "Char_General_Desc"
+msgstr "À dix-sept ans il s'engagea, à vingt il devint général. Visage jeune comme un enfant, mais regard ferme comme un vieux guerrier."
+
+msgid "Char_Merchant_Title"
+msgstr "Marchande du Sud"
+
+msgid "Char_Merchant_Desc"
+msgstr "Issue d'une famille de marchands, maîtrise le commerce. Semble être une femme fragile, mais dans la guilde elle mène ses affaires seule."
+
+msgid "Char_TaiwanHero_Title"
+msgstr "Patriote de l'île précieuse"
+
+msgid "Char_TaiwanHero_Desc"
+msgstr "Né à Taïwan, ancêtres du Fujian. Dit souvent : 'Ma maison est de l'autre côté du détroit, mes racines sont sur la terre de Chine'."
+
+msgid "Char_Scientist_Title"
+msgstr "Celui qui cache son nom"
+
+msgid "Char_Scientist_Desc"
+msgstr "Personne ne connaît son nom, personne ne sait où il est allé. On sait seulement qu'il a tout donné pour le pays."
+
+msgid "Char_Swordsman_Title"
+msgstr "Chevalier errant"
+
+msgid "Char_Swordsman_Desc"
+msgstr "Un homme, une épée — erre par le monde. Voyant l'injustice, tire l'épée pour aider, mais ne laisse jamais son nom."

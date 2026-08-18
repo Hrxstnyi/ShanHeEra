@@ -25,9 +25,15 @@ UENUM(BlueprintType)
 enum class EGameLanguage : uint8
 {
     ChineseSimplified  UMETA(DisplayName="简体中文"),
-    ChineseTraditional UMETA(DisplayName="繁体中文"),
+    ChineseTraditional UMETA(DisplayName="繁體中文"),
+    ClassicalChinese   UMETA(DisplayName="文言文"),
     English            UMETA(DisplayName="English"),
-    Japanese           UMETA(DisplayName="日本語")
+    Japanese           UMETA(DisplayName="日本語"),
+    Korean             UMETA(DisplayName="한국어"),
+    Russian            UMETA(DisplayName="Русский"),
+    French             UMETA(DisplayName="Français"),
+    German             UMETA(DisplayName="Deutsch"),
+    Spanish            UMETA(DisplayName="Español")
 };
 
 USTRUCT(BlueprintType)
