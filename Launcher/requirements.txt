@@ -1,0 +1,5 @@
+# 山河纪元启动器依赖
+# 无需额外依赖，使用Python标准库 tkinter
+# 打包为exe时使用:
+# pip install pyinstaller
+# pyinstaller --onefile --windowed --name "山河纪元启动器" launcher.py

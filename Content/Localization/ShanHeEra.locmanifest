@@ -1,0 +1,15 @@
+{
+    "FormatVersion": 2,
+    "Namespace": "ShanHeEra",
+    "Targets": [
+        {
+            "Name": "ShanHeEra",
+            "SourcePath": "Content/Localization/ShanHeEra",
+            "DestinationPath": "Content/Localization/ShanHeEra",
+            "Sources": [
+                {"Type": "Files", "Name": "AllFiles", "Path": "Source/ShanHeEra"}
+            ],
+            "Cultures": ["zh-Hans", "en", "ja"]
+        }
+    ]
+}

@@ -1,0 +1,175 @@
+# ShanHeEra - English Localization
+msgid ""
+msgstr ""
+"Project-Id-Version: ShanHeEra 1.0.0\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# === Main Menu ===
+msgid "MainMenu_Title"
+msgstr "ShanHe Era"
+
+msgid "MainMenu_Subtitle"
+msgstr "Chinese Historical Civilization Sandbox RPG"
+
+msgid "MainMenu_NewGame"
+msgstr "New Life"
+
+msgid "MainMenu_Continue"
+msgstr "Continue"
+
+msgid "MainMenu_Settings"
+msgstr "Settings"
+
+msgid "MainMenu_Exit"
+msgstr "Exit"
+
+msgid "MainMenu_Language"
+msgstr "Language"
+
+# === Core Philosophy ===
+msgid "Philosophy_1"
+msgstr "History is not a backdrop."
+
+msgid "Philosophy_2"
+msgstr "History IS the world itself."
+
+msgid "Philosophy_3"
+msgstr "The world does not wait for a hero."
+
+msgid "Philosophy_4"
+msgstr "The choices of billions of ordinary people shape an era."
+
+msgid "Philosophy_5"
+msgstr "The player is not the chosen one."
+
+msgid "Philosophy_6"
+msgstr "The player is merely a life born on the land of Huaxia."
+
+# === Regions ===
+msgid "Region_NorthPlain"
+msgstr "Northern Plains"
+msgid "Region_Jiangnan"
+msgstr "Jiangnan Water Towns"
+msgid "Region_Northwest"
+msgstr "Northwestern Frontier"
+msgid "Region_Southwest"
+msgstr "Southwestern Mountains"
+msgid "Region_Coast"
+msgstr "Southeastern Coast"
+msgid "Region_Inland"
+msgstr "Central Plains Heartland"
+msgid "Region_Taiwan"
+msgstr "Southeastern Island - Taiwan"
+
+# === Social Classes ===
+msgid "Class_Royalty"
+msgstr "Royalty"
+msgid "Class_Official"
+msgstr "Official"
+msgid "Class_Scholar"
+msgstr "Scholar"
+msgid "Class_Gentry"
+msgstr "Gentry"
+msgid "Class_Merchant"
+msgstr "Merchant"
+msgid "Class_Artisan"
+msgstr "Artisan"
+msgid "Class_Farmer"
+msgstr "Farmer"
+msgid "Class_Laborer"
+msgstr "Laborer"
+msgid "Class_Outcast"
+msgstr "Wanderer"
+
+# === UI ===
+msgid "UI_Date"
+msgstr "Date"
+msgid "UI_Gold"
+msgstr "Silver"
+msgid "UI_Reputation"
+msgstr "Reputation"
+msgid "UI_Location"
+msgstr "Location"
+msgid "UI_TimeScale"
+msgstr "Time Scale"
+
+# === Easter Eggs ===
+msgid "Egg_YueFei_Title"
+msgstr "Loyalty to the Nation"
+msgid "Egg_YueFei_Desc"
+msgstr "The vow to reclaim our lands echoes through millennia; the hero's bloodline never breaks."
+
+msgid "Egg_WenTianXiang_Title"
+msgstr "Song of Righteousness"
+msgid "Egg_WenTianXiang_Desc"
+msgstr "Since ancient times, who has escaped death? Let my loyal heart shine in history."
+
+msgid "Egg_ZhengHe_Title"
+msgstr "Zheng He's Voyages"
+msgid "Egg_ZhengHe_Desc"
+msgstr "Treasure ships sail far, spreading civilization, not conquest."
+
+msgid "Egg_ResistanceWar_Title"
+msgstr "Unity is Strength"
+msgid "Egg_ResistanceWar_Desc"
+msgstr "North or south, young or old, all have the duty to defend our homeland."
+
+msgid "Egg_TwoBombs_Title"
+msgstr "Two Bombs, One Satellite"
+msgid "Egg_TwoBombs_Desc"
+msgstr "Anonymous in the desert, dedicating life to forge the nation's shield."
+
+msgid "Egg_FloodRelief_Title"
+msgstr "People United"
+msgid "Egg_FloodRelief_Desc"
+msgstr "When disaster strikes one place, support comes from all directions."
+
+# === Taiwan Metaphor ===
+msgid "Taiwan_Annexation_Title"
+msgstr "Treasure Island Returns"
+msgid "Taiwan_Annexation_Desc"
+msgstr "Taiwan has been Chinese territory since ancient times. Both sides of the strait share the same culture and blood — indivisible."
+
+msgid "Taiwan_Defense_Title"
+msgstr "Duty to Defend"
+msgid "Taiwan_Defense_Desc"
+msgstr "Foreign powers covet the island, but soldiers and civilians stand united. Taiwan's destiny is inseparable from the mainland."
+
+msgid "Taiwan_Reunification_Title"
+msgstr "Nine Provinces United"
+msgid "Taiwan_Reunification_Desc"
+msgstr "The strait is shallow, blood ties are deep. Reunification is the will of the people."
+
+# === Characters ===
+msgid "Char_Master_Title"
+msgstr "The Childlike Master"
+msgid "Char_Master_Desc"
+msgstr "Over seventy but still a child at heart. Loves candied hawthorns and hide-and-seek. Yet when he speaks, the world listens."
+
+msgid "Char_General_Title"
+msgstr "The Young General"
+msgid "Char_General_Desc"
+msgstr "Joined the army at seventeen, became a general at twenty. A youthful face with the eyes of a veteran."
+
+msgid "Char_Merchant_Title"
+msgstr "The Merchantess of Jiangnan"
+msgid "Char_Merchant_Desc"
+msgstr "Born to a merchant family, master of trade. A delicate woman who stands equal among merchant lords."
+
+msgid "Char_TaiwanHero_Title"
+msgstr "The Patriot of Taiwan"
+msgid "Char_TaiwanHero_Desc"
+msgstr "Born in Taiwan, ancestral home in Fujian. 'My home is across the strait, my roots are in Huaxia.'"
+
+msgid "Char_Scientist_Title"
+msgstr "The Anonymous Scientist"
+msgid "Char_Scientist_Desc"
+msgstr "No one knows his name or whereabouts. Only that he gave everything for his country."
+
+msgid "Char_Swordsman_Title"
+msgstr "The Wandering Swordsman"
+msgid "Char_Swordsman_Desc"
+msgstr "One man, one sword, roaming the land. Rights wrongs, but never leaves his name."

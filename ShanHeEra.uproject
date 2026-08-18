@@ -1,0 +1,35 @@
+{
+    "FileVersion": 3,
+    "EngineAssociation": "5.3",
+    "Category": "",
+    "Description": "山河纪元 - 华夏古代历史文明沙盘 RPG",
+    "Modules": [
+        {
+            "Name": "ShanHeEra",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        }
+    ],
+    "Plugins": [
+        {
+            "Name": "EnhancedInput",
+            "Enabled": true
+        },
+        {
+            "Name": "PCG",
+            "Enabled": true
+        },
+        {
+            "Name": "Niagara",
+            "Enabled": true
+        },
+        {
+            "Name": "MetaSounds",
+            "Enabled": true
+        },
+        {
+            "Name": "MediaAssets",
+            "Enabled": true
+        }
+    ]
+}

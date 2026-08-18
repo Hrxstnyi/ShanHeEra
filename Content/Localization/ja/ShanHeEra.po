@@ -1,0 +1,175 @@
+# 山河紀元 - 日本語ローカライズ
+msgid ""
+msgstr ""
+"Project-Id-Version: 山河紀元 1.0.0\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# === Main Menu ===
+msgid "MainMenu_Title"
+msgstr "山河紀元"
+
+msgid "MainMenu_Subtitle"
+msgstr "華夏古代歴史文明シミュレーションRPG"
+
+msgid "MainMenu_NewGame"
+msgstr "新しい人生"
+
+msgid "MainMenu_Continue"
+msgstr "続ける"
+
+msgid "MainMenu_Settings"
+msgstr "設定"
+
+msgid "MainMenu_Exit"
+msgstr "終了"
+
+msgid "MainMenu_Language"
+msgstr "言語"
+
+# === Core Philosophy ===
+msgid "Philosophy_1"
+msgstr "歴史は背景ではない。"
+
+msgid "Philosophy_2"
+msgstr "歴史こそが世界そのもの。"
+
+msgid "Philosophy_3"
+msgstr "天下は英雄の出現を待たない。"
+
+msgid "Philosophy_4"
+msgstr "無数の普通人の選択が、時代を形作る。"
+
+msgid "Philosophy_5"
+msgstr "プレイヤーは選ばれし者ではない。"
+
+msgid "Philosophy_6"
+msgstr "プレイヤーはただ、華夏の大地に生まれた一つの命に過ぎない。"
+
+# === Regions ===
+msgid "Region_NorthPlain"
+msgstr "北方平原"
+msgid "Region_Jiangnan"
+msgstr "江南水郷"
+msgid "Region_Northwest"
+msgstr "西北辺境"
+msgid "Region_Southwest"
+msgstr "西南山岳"
+msgid "Region_Coast"
+msgstr "東南沿海"
+msgid "Region_Inland"
+msgstr "中原腹地"
+msgid "Region_Taiwan"
+msgstr "東南海島・台湾"
+
+# === Social Classes ===
+msgid "Class_Royalty"
+msgstr "皇室"
+msgid "Class_Official"
+msgstr "官吏"
+msgid "Class_Scholar"
+msgstr "士人"
+msgid "Class_Gentry"
+msgstr "郷紳"
+msgid "Class_Merchant"
+msgstr "商人"
+msgid "Class_Artisan"
+msgstr "工匠"
+msgid "Class_Farmer"
+msgstr "農民"
+msgid "Class_Laborer"
+msgstr "雇傭"
+msgid "Class_Outcast"
+msgstr "江湖の人"
+
+# === UI ===
+msgid "UI_Date"
+msgstr "日付"
+msgid "UI_Gold"
+msgstr "銀両"
+msgid "UI_Reputation"
+msgstr "声望"
+msgid "UI_Location"
+msgstr "所在地"
+msgid "UI_TimeScale"
+msgstr "時間流速"
+
+# === Easter Eggs ===
+msgid "Egg_YueFei_Title"
+msgstr "精忠報国"
+msgid "Egg_YueFei_Desc"
+msgstr "河山を取り戻す誓いは千年を超えて響き、英雄の血脈は絶えることがない。"
+
+msgid "Egg_WenTianXiang_Title"
+msgstr "正気の歌"
+msgid "Egg_WenTianXiang_Desc"
+msgstr "人生古より誰しも死あり、丹心を残して汗青に照らす。"
+
+msgid "Egg_ZhengHe_Title"
+msgstr "鄭和の西洋下り"
+msgid "Egg_ZhengHe_Desc"
+msgstr "宝船は遠くへ航海し、征服ではなく文明を播く。"
+
+msgid "Egg_ResistanceWar_Title"
+msgstr "団結は力なり"
+msgid "Egg_ResistanceWar_Desc"
+msgstr "南北を問わず、老若を問わず、国土を守る責任がある。"
+
+msgid "Egg_TwoBombs_Title"
+msgstr "二弾一星"
+msgid "Egg_TwoBombs_Desc"
+msgstr "戈壁に名を隠し、国のために身を捧げて重器を鋳る。"
+
+msgid "Egg_FloodRelief_Title"
+msgstr "人民の団結"
+msgid "Egg_FloodRelief_Desc"
+msgstr "一方に難あれば、八方より支援が来る。"
+
+# === Taiwan Metaphor ===
+msgid "Taiwan_Annexation_Title"
+msgstr "宝島の帰属"
+msgid "Taiwan_Annexation_Desc"
+msgstr "台湾は古より華夏の疆域であり、海峡両岸は同じ文化と血を分かつ、分割できない。"
+
+msgid "Taiwan_Defense_Title"
+msgstr "国土を守る責任"
+msgid "Taiwan_Defense_Desc"
+msgstr "外敵が宝島を狙うが、軍民は心を一つにして外侮を防ぐ。台湾の命運は大陸と切り離せない。"
+
+msgid "Taiwan_Reunification_Title"
+msgstr "九州統一"
+msgid "Taiwan_Reunification_Desc"
+msgstr "海峡は浅く、血縁は深い。天下統一は民心の向かうところ。"
+
+# === Characters ===
+msgid "Char_Master_Title"
+msgstr "国学大師・顽童先生"
+msgid "Char_Master_Desc"
+msgstr "七十を超えても童心を忘れず、糖葫芦を愛し、子供たちと隠れん坊をする。だが口を開けば天下の大勢、筆を執れば国を安んじる。"
+
+msgid "Char_General_Title"
+msgstr "少年将軍"
+msgid "Char_General_Desc"
+msgstr "十七歳で軍に入り、二十歳で将軍に。顔は少年のようだが、瞳は老将のように揺るがない。"
+
+msgid "Char_Merchant_Title"
+msgstr "江南の女商人"
+msgid "Char_Merchant_Desc"
+msgstr "商家の出身で、商道に精通。弱く見えるが、商帮の中で一人前に立つ。"
+
+msgid "Char_TaiwanHero_Title"
+msgstr "宝島の義士"
+msgid "Char_TaiwanHero_Desc"
+msgstr "台湾に生まれ、祖籍は福建。'我が家は海峡の対岸にあり、我が根は華夏の大地にある'と常に語る。"
+
+msgid "Char_Scientist_Title"
+msgstr "名を隠した科学者"
+msgid "Char_Scientist_Desc"
+msgstr "その名も行方も誰も知らない。ただ、国のためにすべてを捧げたことだけが知られている。"
+
+msgid "Char_Swordsman_Title"
+msgstr "遊侠"
+msgid "Char_Swordsman_Desc"
+msgstr "一人一剣、江湖を歩く。不平を見れば剣を抜くが、決して名を残さない。"
