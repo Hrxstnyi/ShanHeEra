@@ -15,6 +15,15 @@ enum class EEraType : uint8
 };
 
 UENUM(BlueprintType)
+enum class ESeason : uint8
+{
+    Spring      UMETA(DisplayName="春"),
+    Summer      UMETA(DisplayName="夏"),
+    Autumn      UMETA(DisplayName="秋"),
+    Winter      UMETA(DisplayName="冬")
+};
+
+UENUM(BlueprintType)
 enum class ESocialClass : uint8
 {
     Royalty     UMETA(DisplayName="皇室"),
