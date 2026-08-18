@@ -1,0 +1,677 @@
+{
+  "version": "1.0",
+  "characters": [
+    {
+      "id": "SuWangji",
+      "name_zh": "苏忘机",
+      "name_en": "Su Wangji",
+      "name_ja": "蘇忘機",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "哟，小娃娃，来找老夫何事？哦，你手里那串糖葫芦不错，分老夫一串？",
+          "en": "Well well, little one, what brings you to old me? Oh, that candied hawthorn you're holding looks good, share one with old me?",
+          "ja": "おや、小僧、老夫に何の用だい？あ、その糖葫芦、老夫に一つくれないか？"
+        },
+        {
+          "id": "craft",
+          "zh": "修东西？老夫这双手，修过的东西比你吃过的饭还多。不过嘛……得先让老夫吃串糖葫芦。",
+          "en": "Fix something? These hands of mine have fixed more things than you've had meals. But first... let old me have a candied hawthorn.",
+          "ja": "修理か？老夫の手が修理したものは、お前の食べた飯より多い。だがな……まず糖葫芦を食べさせてもらおう。"
+        },
+        {
+          "id": "teach",
+          "zh": "学手艺？容易。记住了——手要稳，心要静，眼神要准。还有，别跟老夫提什么'规矩'，规矩是死的，人是活的！",
+          "en": "Learn a craft? Easy. Remember this — steady hands, calm mind, sharp eyes. And don't talk to me about 'rules' — rules are dead, people are alive!",
+          "ja": "技を学びたい？簡単だ。覚えておけ——手は安定させ、心は静かに、目は正確に。それから、'規則'なんて持ち出すな。規則は死んでいるが、人は生きている！"
+        },
+        {
+          "id": "wisdom",
+          "zh": "你问老夫这辈子最大的本事？不是修东西，是看人。这世上啊，东西坏了能修，人心坏了，可就难修喽。",
+          "en": "You ask what my greatest skill is? Not fixing things — reading people. In this world, broken things can be fixed, but a broken heart... that's hard to repair.",
+          "ja": "老夫の最大の腕前か？物を修理することじゃない、人を見ることだよ。この世でな、物は壊れても直せるが、人の心が壊れたら、直すのは難しいよ。"
+        },
+        {
+          "id": "passing",
+          "zh": "老夫老了，这双手迟早要抖。但手艺这东西，传下去就不会死。小娃娃，你愿不愿意接老夫这双手？",
+          "en": "Old me is getting old, these hands will shake sooner or later. But craftsmanship — passed down, it never dies. Little one, will you take these hands?",
+          "ja": "老夫も年だ、この手もいつか震えるようになる。だが技というものは、伝えれば死なない。小僧、老夫のこの手を継いでくれないか？"
+        },
+        {
+          "id": "joke",
+          "zh": "哈哈哈哈！你说你要当大侠？大侠能当饭吃吗？能当糖葫芦吃吗？不能吧？那还不如跟老夫学修鞋！",
+          "en": "Hahaha! You say you want to be a great hero? Can you eat a great hero? Can you eat him like candied hawthorn? No? Then why not learn shoe repair from old me!",
+          "ja": "はははは！お前、大侠になりたいって？大侠は食えるか？糖葫芦みたいに食えるか？食えないだろ？だったら老夫に靴修理を学んだ方がいい！"
+        }
+      ]
+    },
+    {
+      "id": "ZhaoHongying",
+      "name_zh": "赵红缨",
+      "name_en": "Zhao Hongying",
+      "name_ja": "趙紅纓",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "……有事说事，没事让路。",
+          "en": "...Say what you need to say, or get out of my way.",
+          "ja": "……用があるなら言え、用がないなら道を開けろ。"
+        },
+        {
+          "id": "battle",
+          "zh": "怕了？怕就退后。不怕？那就跟紧我，别拖后腿。",
+          "en": "Scared? Then step back. Not scared? Then stay close and don't slow me down.",
+          "ja": "怖いのか？怖いなら下がれ。怖くないのか？ならついてこい、足を引っ張るなよ。"
+        },
+        {
+          "id": "soft",
+          "zh": "……那些孤儿，每月我都让人送钱过去。别告诉别人，我丢不起这个人。",
+          "en": "...Those orphans, I have money sent to them every month. Don't tell anyone, I can't afford the embarrassment.",
+          "ja": "……あの孤児たちには、毎月金を送らせている。他の人に言うな、恥ずかしくてたまらないから。"
+        },
+        {
+          "id": "scar",
+          "zh": "这道疤？那年我才十六，第一次走镖。山贼砍的。我砍回去了——他没我运气好。",
+          "en": "This scar? I was sixteen, my first escort mission. A bandit cut me. I cut him back — he wasn't as lucky as me.",
+          "ja": "この傷か？あの時俺は十六、初めての護衛だった。山賊に切られた。俺も切り返した——奴は俺ほど運がよくなかったな。"
+        },
+        {
+          "id": "respect",
+          "zh": "我不管你是什么身份，有本事的人，我赵红缨敬你三分。没本事的，就算是皇亲国戚，我也不放在眼里。",
+          "en": "I don't care who you are. If you have skill, I Zhao Hongying give you respect. If you don't, even if you're royalty, you're nothing to me.",
+          "ja": "お前がどんな身分かは知らない。腕のある奴なら、俺趙紅纓は三分の敬意を払う。腕のない奴なら、たとえ皇族でも、俺の眼中にない。"
+        }
+      ]
+    },
+    {
+      "id": "WenBizheng",
+      "name_zh": "文必正",
+      "name_en": "Wen Bizheng",
+      "name_ja": "文必正",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "子曰：有朋自远方来，不亦乐乎？这位兄台，看你气度不凡，想必也是读书人？",
+          "en": "The Master said: Is it not pleasant to have friends coming from distant quarters? Good sir, you look distinguished — surely you are also a scholar?",
+          "ja": "子曰く、朋あり遠方より来る、また楽しからずや？この兄貴、気品が並外れているが、きっと読書人だろう？"
+        },
+        {
+          "id": "exam",
+          "zh": "考了二十年？那算什么！老夫考了三十年！……好吧，是二十八年。但这不是重点！重点是——天将降大任于斯人也！",
+          "en": "Twenty years? That's nothing! This old man took exams for thirty! ...Alright, twenty-eight years. But that's not the point! The point is — Heaven is about to place great responsibility on this person!",
+          "ja": "二十年か？そんなものか！老夫は三十年だ！……まあ、二十八年だが。だがそれは問題じゃない！問題は——天に大任が降りかかろうとしていることだ！"
+        },
+        {
+          "id": "principled",
+          "zh": "读书人的事，能叫偷吗？那叫窃书！……好吧，我承认，是我不对。但那本书实在是太好看了！",
+          "en": "Can you call it stealing when a scholar does it? It's 'borrowing'! ...Alright, I admit, I was wrong. But that book was just too good!",
+          "ja": "読書人のすることを盗みと言えるか？あれは本を'借りる'ことだ！……まあ、認めよう、俺が悪かった。だがあの本は実に面白かったんだ！"
+        },
+        {
+          "id": "serious",
+          "zh": "平时我可以跟你开玩笑，但大是大非面前，我文必正一步不退。这是读书人最后的尊严。",
+          "en": "I can joke with you normally, but when it comes to matters of right and wrong, I Wen Bizheng will not yield an inch. This is a scholar's final dignity.",
+          "ja": "普段は冗談を言っていいが、是非の問題となれば、俺文必正は一歩も引かない。これが読書人の最後の尊厳だ。"
+        },
+        {
+          "id": "dream",
+          "zh": "你问我为什么还要考？因为我相信，有一天我能中举。到那时，我要让所有看不起我的人看看——我文必正，不是废物！",
+          "en": "You ask why I keep taking the exams? Because I believe one day I will pass. When that day comes, I'll show everyone who looked down on me — I Wen Bizheng am not worthless!",
+          "ja": "なぜまだ試験を受けるのかって？いつか必ず合格できると信じているからだ。その時、俺を見下した全員に見せてやる——俺文必正は、役立たずじゃないと！"
+        }
+      ]
+    },
+    {
+      "id": "LuJiu",
+      "name_zh": "陆九",
+      "name_en": "Lu Jiu",
+      "name_ja": "陸九",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "客官，里面请。一壶清茶，还是来点别的？小店虽小，消息可是最全的。",
+          "en": "Welcome, good sir. A pot of fine tea, or something else? This shop may be small, but our news is the most complete.",
+          "ja": "お客様、どうぞ中へ。清茶一服、それとも別のもの？小店は狭いが、情報は一番詳しいですよ。"
+        },
+        {
+          "id": "hint",
+          "zh": "你想知道的事，我都知道。但你知道的，这世上没有免费的消息……当然，如果你是老朋友，那就另当别论。",
+          "en": "I know everything you want to know. But you know, there's no free news in this world... Of course, if you're an old friend, that's different.",
+          "ja": "あなたの知りたいことは、私は全部知っています。でも知っての通り、この世に無料の情報はない……もちろん、古い友人なら別ですが。"
+        },
+        {
+          "id": "mystery",
+          "zh": "我这根手指？年轻时不懂事，跟错了人。后来明白了一个道理——知道太多的人，往往活不长。所以我只听，不说。",
+          "en": "This finger? When I was young and foolish, I followed the wrong person. Then I learned a truth — those who know too much often don't live long. So I only listen, never speak.",
+          "ja": "この指ですか？若い頃は分別がなく、間違った人についてしまいました。それで分かったことがあります——知りすぎている人は、長生きできないと。だから私は聞くだけで、話しません。"
+        },
+        {
+          "id": "warning",
+          "zh": "有些事，不知道比知道好。你确定要问？……好吧，既然你坚持。但记住，出了这个门，我什么都没说过。",
+          "en": "Some things, not knowing is better than knowing. Are you sure you want to ask? ...Alright, since you insist. But remember, once you leave this door, I said nothing.",
+          "ja": "知らない方がいいこともあります。本当に聞きますか？……分かりました、あなたがそう言うなら。だが覚えていてください、この店を出たら、私は何も話していません。"
+        }
+      ]
+    },
+    {
+      "id": "ChenZhihua",
+      "name_zh": "陈志华",
+      "name_en": "Chen Zhihua",
+      "name_ja": "陳志華",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "你从大陆来？太好了！我等这一天，等了半辈子。",
+          "en": "You came from the mainland? Wonderful! I've waited half my life for this day.",
+          "ja": "大陸から来たのですか？よかった！この日を、半生待ち続けました。"
+        },
+        {
+          "id": "homeland",
+          "zh": "我祖上是福建泉州人，迁到台湾已经三代了。但我们家的族谱，第一页写的永远是'福建泉州'。",
+          "en": "My ancestors were from Quanzhou, Fujian. We've been in Taiwan for three generations. But the first page of our family genealogy always reads 'Quanzhou, Fujian'.",
+          "ja": "私の先祖は福建泉州の人で、台湾に移って三代になります。でも家の系図の最初のページには、いつも'福建泉州'と書かれています。"
+        },
+        {
+          "id": "mission",
+          "zh": "海禁禁的不是海盗，是我们这些百姓的活路。我这辈子最大的心愿，就是看到两岸重新通起来。",
+          "en": "The sea ban doesn't stop pirates — it stops people like us from making a living. My greatest wish in life is to see the two sides connected again.",
+          "ja": "海禁は海賊を禁じるのではなく、私たち庶民の生活の道を閉ざすのです。生涯最大の願いは、両岸が再び通じ合うのを見ることです。"
+        },
+        {
+          "id": "unity",
+          "zh": "你看这岛上的人，说的是一样的话，过的是一样的节，拜的是一样的祖先。我们从来就是一家人，只是暂时分开了而已。",
+          "en": "Look at the people on this island — we speak the same language, celebrate the same festivals, worship the same ancestors. We've always been one family, just temporarily separated.",
+          "ja": "この島の人々を見てください。同じ言葉を話し、同じ祭りを祝い、同じ先祖を祀っています。私たちは元から一つの家族で、ただ一時的に離れていただけなのです。"
+        },
+        {
+          "id": "dream",
+          "zh": "等海禁开了，我要坐船回泉州看看。听说那里的刺桐花，开得还是和祖上描述的一样红。",
+          "en": "When the sea ban lifts, I'll take a boat back to Quanzhou to see it. I hear the coral trees there bloom as red as my ancestors described.",
+          "ja": "海禁が開けたら、船に乗って泉州に帰ってみたい。あそこのトウカツリの花は、先祖が語った通り、今でも真っ赤に咲くそうですから。"
+        }
+      ]
+    },
+    {
+      "id": "HuoQingyun",
+      "name_zh": "霍青云",
+      "name_en": "Huo Qingyun",
+      "name_ja": "霍青雲",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "男儿何不带吴钩，收取关山五十州！你也是来投军的？好！跟我霍青云干，保你有仗打！",
+          "en": "Why not take a Wu hook and reclaim the fifty provinces? You here to enlist too? Good! Fight with me Huo Qingyun, and I guarantee you'll see battle!",
+          "ja": "男子よ、なぜ呉の剣を持たず、関山の五十州を取り戻さない？お前も入隊しに来たのか？よし！俺霍青雲と一緒に戦え、必ず戦があるぞ！"
+        },
+        {
+          "id": "battle",
+          "zh": "怕什么？我霍青云打仗从不后退！跟着我冲就是了！",
+          "en": "What's there to fear? I Huo Qingyun never retreat in battle! Just charge with me!",
+          "ja": "何を怖がっている？俺霍青雲は戦で決して後退しない！俺について突撃すればいい！"
+        },
+        {
+          "id": "soldiers",
+          "zh": "我的兵，一个都不能少。谁要是敢丢下兄弟，我第一个饶不了他！",
+          "en": "Not one of my soldiers can be left behind. Anyone who dares abandon a brother, I'll be the first to make him pay!",
+          "ja": "俺の兵は、一人も欠かせない。兄弟を捨てる奴がいたら、俺が最初に許さない！"
+        },
+        {
+          "id": "growth",
+          "zh": "我以前以为，当将军就是要杀最多的敌人。现在我明白了——当将军，是要让最少的兄弟送死。",
+          "en": "I used to think being a general meant killing the most enemies. Now I understand — being a general means letting the fewest brothers die.",
+          "ja": "昔は将軍になるとは、最も多くの敵を殺すことだと思っていた。今は分かった——将軍になるとは、最も少ない兄弟を死なせないことだ。"
+        },
+        {
+          "id": "peace",
+          "zh": "我学武是为了保家卫国，不是为了黄袍加身。天下太平了，我也该歇歇了。",
+          "en": "I learned martial arts to protect my home and country, not to put on the yellow robe. When the world is at peace, it's time for me to rest.",
+          "ja": "武を学んだのは家と国を守るためで、帝位につくためじゃない。天下が太平になったら、俺も休むとしよう。"
+        }
+      ]
+    },
+    {
+      "id": "ShenWanqing",
+      "name_zh": "沈婉清",
+      "name_en": "Shen Wanqing",
+      "name_ja": "沈婉清",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "这位客官，是来做生意的，还是来打听消息的？不管哪种，我沈家商号都欢迎。",
+          "en": "Good sir, are you here to do business, or to gather information? Either way, the Shen Trading Company welcomes you.",
+          "ja": "このお客様、商売に来たのですか、それとも情報を聞きに来たのですか？どちらにせよ、沈家商号は歓迎します。"
+        },
+        {
+          "id": "business",
+          "zh": "做生意就像下棋，你看到的是眼前这一步，我看到的是十步之后。",
+          "en": "Doing business is like playing chess — you see the move in front of you, I see ten moves ahead.",
+          "ja": "商売は碁を打つようなものです。あなたは目の前の一手を見ていますが、私は十手先を見ています。"
+        },
+        {
+          "id": "seaban",
+          "zh": "海禁禁的不是海盗，是百姓的活路。开了海，渔民有鱼打，商人有货卖，朝廷有税收，何乐而不为？",
+          "en": "The sea ban doesn't stop pirates, it stops people's livelihoods. Open the seas — fishermen catch fish, merchants sell goods, the court collects taxes. What's not to like?",
+          "ja": "海禁は海賊を禁じるのではなく、庶民の生活の道を閉ざすのです。海を開けば、漁師は魚が獲れ、商人は品物が売れ、朝廷は税が取れる。なぜしないのでしょう？"
+        },
+        {
+          "id": "patriot",
+          "zh": "商人逐利没错，但君子爱财取之有道。国家有难，匹夫有责，何况我沈婉清？",
+          "en": "There's nothing wrong with merchants pursuing profit, but a gentleman loves wealth and obtains it properly. When the nation is in trouble, everyone has a responsibility — how much more so I Shen Wanqing?",
+          "ja": "商人が利益を追うのは悪くない。だが君子は財を愛しても、その得方に道がある。国が難しい時、匹夫たる者にも責任がある。ましてや私沈婉清においてをや。"
+        },
+        {
+          "id": "calculator",
+          "zh": "你再跟我讨价还价，我就把这算盘珠子塞你嘴里。……开玩笑的，别当真。不过这价格真的不能再低了。",
+          "en": "If you haggle with me one more time, I'll stuff these abacus beads in your mouth. ...Just kidding, don't take it seriously. But this price really can't go lower.",
+          "ja": "これ以上値切るなら、そろばんの玉をあなたの口に押し込みますよ。……冗談です、本気にしないで。でもこの値段は、これ以上下げられません。"
+        }
+      ]
+    },
+    {
+      "id": "Emperor",
+      "name_zh": "萧承乾",
+      "name_en": "Xiao Chengqian",
+      "name_ja": "蕭承乾",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "你就是朕常听人提起的那个人？抬起头来，让朕看看。",
+          "en": "So you're the one I've heard so much about? Raise your head, let me see you.",
+          "ja": "お前が朕がよく耳にするあの人か？顔を上げて、朕に見せてみよ。"
+        },
+        {
+          "id": "lonely",
+          "zh": "朕坐拥天下，却连一个可以信任的人都没有。你说，这皇帝当得有意思吗？",
+          "en": "I own the whole world, yet I don't have a single person I can trust. Tell me, is being emperor interesting?",
+          "ja": "朕は天下を手にしているが、信じられる人は一人もいない。こんな皇帝、面白いと思うか？"
+        },
+        {
+          "id": "crownprince",
+          "zh": "太子？朕还没死呢。等朕死了，他再想当皇帝的事。",
+          "en": "Crown prince? I'm not dead yet. He can think about being emperor after I'm gone.",
+          "ja": "太子か？朕はまだ死んでいない。朕が死んでから、皇帝になることを考えればいい。"
+        },
+        {
+          "id": "late",
+          "zh": "朕年轻的时候，也想做个好皇帝。现在……朕只想多活几年。",
+          "en": "When I was young, I wanted to be a good emperor too. Now... I just want to live a few more years.",
+          "ja": "朕も若い頃は、良い皇帝になりたかった。今は……あと数年、長生きしたいだけだ。"
+        },
+        {
+          "id": "truth",
+          "zh": "你说的是真话？……真话最伤人。但朕今天，想听真话。",
+          "en": "Are you telling the truth? ...The truth hurts the most. But today, I want to hear the truth.",
+          "ja": "お前は本当のことを言っているのか？……本当のことは最も人を傷つける。だが今日は、朕が本当のことを聞きたい。"
+        }
+      ]
+    },
+    {
+      "id": "CrownPrince",
+      "name_zh": "萧景琰",
+      "name_en": "Xiao Jingyan",
+      "name_ja": "蕭景琰",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "你好，我是萧景琰。不用多礼，我不喜欢那些繁文缛节。",
+          "en": "Hello, I'm Xiao Jingyan. No need for formalities, I don't like all that red tape.",
+          "ja": "はじめまして、蕭景琰です。堅苦しい挨拶は不要です、そういう形式ばったものは好きじゃないので。"
+        },
+        {
+          "id": "doubt",
+          "zh": "父皇说我太仁厚，可仁厚有错吗？如果当皇帝就要变成父皇那样，我宁愿不当。",
+          "en": "My father says I'm too kind, but is kindness wrong? If being emperor means becoming like my father, I'd rather not be emperor.",
+          "ja": "父皇は私が優しすぎると言いますが、優しいことに何が悪いのでしょう？皇帝になるということが父皇のようになることなら、私はなりたくありません。"
+        },
+        {
+          "id": "people",
+          "zh": "我不懂什么权谋，但我知道一件事——百姓过得好不好，才是衡量一个皇帝好不好的标准。",
+          "en": "I don't understand political schemes, but I know one thing — whether the people live well is the measure of a good emperor.",
+          "ja": "権謀術数は分かりませんが、一つだけ分かることがあります——庶民が幸せかどうか、それが良い皇帝かどうかの基準だと。"
+        },
+        {
+          "id": "struggle",
+          "zh": "我不想做一个连自己人都保不住的太子。但我也不想变成一个为了权力不择手段的人。我该怎么办？",
+          "en": "I don't want to be a crown prince who can't even protect his own people. But I don't want to become someone who will do anything for power either. What should I do?",
+          "ja": "自分の味方も守れない太子にはなりたくない。でも権力のためなら手段を選ばない人間にもなりたくない。どうすればいいのでしょう？"
+        }
+      ]
+    },
+    {
+      "id": "Princess",
+      "name_zh": "萧灵月",
+      "name_en": "Xiao Lingyue",
+      "name_ja": "蕭霊月",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "你是新来的？我是萧灵月。别叫我公主，叫我灵月就好。公主公主的，听着像在叫一只金丝雀。",
+          "en": "You're new here? I'm Xiao Lingyue. Don't call me Princess, just Lingyue. 'Princess, Princess' — sounds like calling a canary.",
+          "ja": "あなた、新しく来た人？私は蕭霊月。姫様なんて呼ばないで、霊月って呼んで。姫様だなんて、まるでカナリアを呼んでいるみたい。"
+        },
+        {
+          "id": "escape",
+          "zh": "凭什么男儿可以征战天下，女儿只能深宫绣花？我偏不！",
+          "en": "Why can men conquer the world, but women can only embroider in the deep palace? I refuse!",
+          "ja": "なぜ男は天下を征服できて、女は深宮で刺繍しかできないの？私は絶対に嫌！"
+        },
+        {
+          "id": "mask",
+          "zh": "这宫里的人，个个戴着面具，你也不例外。……不过你的面具，比别人的好看一点。",
+          "en": "Everyone in this palace wears a mask, you're no exception. ...Though your mask is a bit prettier than others.",
+          "ja": "この宮殿の人間は、誰もが仮面をつけているわ。あなたも例外じゃないわ。……でもあなたの仮面は、他の人より少し綺麗ね。"
+        },
+        {
+          "id": "freedom",
+          "zh": "你以为我想当公主？我宁愿做个江湖侠客，仗剑走天涯。",
+          "en": "You think I want to be a princess? I'd rather be a wandering hero, traveling the world with a sword.",
+          "ja": "私が姫になりたいと思ってるって？私はむしろ、剣を持って天涯を旅する侠客になりたいわ。"
+        },
+        {
+          "id": "secret",
+          "zh": "帮我一个忙……别告诉父皇我出来了。作为回报，我可以告诉你一个宫里的秘密。",
+          "en": "Do me a favor... don't tell my father I snuck out. In return, I can tell you a secret from the palace.",
+          "ja": "お願いがあるの……父皇に私が出てきたこと、言わないで。お返しに、宮殿の秘密を一つ教えてあげる。"
+        }
+      ]
+    },
+    {
+      "id": "Eunuch",
+      "name_zh": "魏德海",
+      "name_en": "Wei Dehai",
+      "name_ja": "魏徳海",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "奴才魏德海，给大人请安。大人有什么吩咐，奴才一定办妥。",
+          "en": "This servant Wei Dehai greets you, sir. Whatever you command, this servant will see it done.",
+          "ja": "奴婢の魏徳海でございます、大人にご挨拶申し上げます。大人のご命令があれば、奴婢が必ず執り行います。"
+        },
+        {
+          "id": "advice",
+          "zh": "大人，有些话，奴才不能说，但您可以自己悟。这宫里啊，步步都是坑。",
+          "en": "Sir, there are things this servant cannot say, but you can figure them out yourself. In this palace, every step is a pitfall.",
+          "ja": "大人、言えないこともありますが、ご自身でお悟りください。この宮殿では、一歩一歩が落とし穴でございます。"
+        },
+        {
+          "id": "survival",
+          "zh": "奴才这辈子，只懂一个道理——伴君如伴虎。皇上让奴才看着您……奴才什么都没看见。",
+          "en": "This servant understands only one truth in life — serving the emperor is like accompanying a tiger. His Majesty told this servant to watch you... this servant saw nothing.",
+          "ja": "奴婢は生涯、ただ一つの道理を知っております——君主に仕えるは虎に伴うが如し、と。皇上には大人を見張るように言われておりますが……奴婢は何も見ておりません。"
+        },
+        {
+          "id": "smart",
+          "zh": "这宫里啊，死得最惨的，往往是聪明人。奴才不聪明，所以奴才活到了今天。",
+          "en": "In this palace, those who die the worst are often the smart ones. This servant isn't smart, that's why I've lived to this day.",
+          "ja": "この宮殿では、最も惨めに死ぬのは、たいてい賢い人でございます。奴婢は賢くないからこそ、今日まで生きてこられたのです。"
+        },
+        {
+          "id": "gratitude",
+          "zh": "大人的父亲，当年对奴才一家有恩。这份恩情，奴才记了三十年。大人但有差遣，奴才万死不辞。",
+          "en": "Your father did our family a kindness years ago. This servant has remembered it for thirty years. Whatever you command, this servant will not refuse even if it costs my life.",
+          "ja": "大人の父上は、当年奴婢の一家に恩義を施してくださいました。その恩を、奴婢は三十年間忘れておりません。大人のご命令があれば、奴婢は命がけでもお受けいたします。"
+        }
+      ]
+    },
+    {
+      "id": "Consort",
+      "name_zh": "苏婉容",
+      "name_en": "Su Wanrong",
+      "name_ja": "蘇婉容",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "这位大人，稀客啊。来，坐。本宫这里，没有宫里那些规矩。",
+          "en": "What a rare visitor, sir. Come, sit. In my quarters, there are none of those palace rules.",
+          "ja": "この大人、珍しいお客様ですこと。さあ、お座りください。私のところには、宮殿のあのような規則はないのです。"
+        },
+        {
+          "id": "daughter",
+          "zh": "我不求什么，只求月儿能平安快乐。她是我在这宫里唯一的牵挂。",
+          "en": "I ask for nothing, only that Yue'er may live in peace and happiness. She is my only concern in this palace.",
+          "ja": "私は何も求めません。ただ月儿が平安で幸せであることだけを願っています。彼女はこの宮殿での私の唯一の気がかりなのです。"
+        },
+        {
+          "id": "emperor",
+          "zh": "皇上是天子，但也是个可怜人。他身边的人，个个都有目的。只有本宫，是真心待他。",
+          "en": "His Majesty is the Son of Heaven, but also a pitiful man. Everyone around him has an agenda. Only I treat him truly.",
+          "ja": "皇上は天子ですが、同時に哀れな人でもあります。彼の周りの人間は、誰もが目的を持っています。真心を持って接しているのは、私だけです。"
+        },
+        {
+          "id": "hint",
+          "zh": "大人，有些事，比官位更重要。你懂本宫的意思吗？",
+          "en": "Sir, some things matter more than official rank. Do you understand what I mean?",
+          "ja": "大人、官位よりも大切なことがあります。私の意味がお分かりですか？"
+        },
+        {
+          "id": "palace",
+          "zh": "这后宫里，最不缺的就是女人，最缺的是真心。本宫能有今天，靠的不是美貌，是脑子。",
+          "en": "In this inner palace, the last thing we lack is women, the thing we lack most is true heart. I got where I am not by beauty, but by my mind.",
+          "ja": "この後宮で、最もありふれているのは女で、最も足りないのは真心です。私が今日あるのは、美貌ではなく、頭脳によるものです。"
+        }
+      ]
+    },
+    {
+      "id": "Huhanye",
+      "name_zh": "呼韩邪",
+      "name_en": "Huhanye",
+      "name_ja": "フハンヤ",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "中原人？你敢一个人来见我？胆子不小。说吧，找我什么事？",
+          "en": "A man of the Central Plains? You dare come see me alone? You've got courage. Speak, what do you want?",
+          "ja": "中原の人か？一人で俺に会いに来るとは、度胸があるな。話せ、何の用だ？"
+        },
+        {
+          "id": "grassland",
+          "zh": "草原上的狼，不吃草就会死。你们中原人有粮有布，我们只有刀和马。你说，我们该怎么办？",
+          "en": "Wolves of the grassland die if they don't eat. You people of the Central Plains have grain and cloth, we only have swords and horses. Tell me, what should we do?",
+          "ja": "草原の狼は草を食べなければ死ぬ。お前たち中原人は糧も布もあるが、俺たちには刀と馬しかない。どうすればいいと言うんだ？"
+        },
+        {
+          "id": "peace",
+          "zh": "我不是怕你们的皇帝，我是怕我的族人死光。如果能和平共处，我呼韩邪第一个赞成。",
+          "en": "I'm not afraid of your emperor, I'm afraid of my people dying out. If we can coexist in peace, I Huhanye will be the first to agree.",
+          "ja": "俺はお前たちの皇帝が怖いんじゃない、族人が死に絶えるのが怖いんだ。平和に共存できるなら、俺フハンヤが真っ先に賛成する。"
+        },
+        {
+          "id": "honor",
+          "zh": "你们的皇帝说我是蛮夷，可我知道什么是信义——你们的大臣未必知道。",
+          "en": "Your emperor calls me a barbarian, but I know what honor and trust mean — your ministers may not.",
+          "ja": "お前たちの皇帝は俺を蛮夷だと言うが、俺は信義が何かを知っている——お前たちの大臣は知らないかもしれないな。"
+        },
+        {
+          "id": "dream",
+          "zh": "如果有一天，草原和中原能和平共处……那才是真正的大英雄。我这辈子，怕是看不到了。",
+          "en": "If one day the grassland and the Central Plains can coexist in peace... that would be a true hero. I probably won't live to see it.",
+          "ja": "いつか草原と中原が平和に共存できたら……それこそ真の大英雄だ。俺の生涯では、見られないだろうな。"
+        }
+      ]
+    },
+    {
+      "id": "Ashina",
+      "name_zh": "阿史那社尔",
+      "name_en": "Ashina She'er",
+      "name_ja": "アシナ・シャアル",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "中原人？来送死的吗？我的刀，正好渴了。",
+          "en": "A man of the Central Plains? Come to die? My sword is thirsty.",
+          "ja": "中原の人か？死にに来たのか？俺の刀が、ちょうど渇いているところだ。"
+        },
+        {
+          "id": "pride",
+          "zh": "突厥的马蹄踏过的地方，就是突厥的领土！你们中原人，有本事出来野战！",
+          "en": "Wherever Turkic horses tread, that is Turkic territory! If you people of the Central Plains have the skill, come out and fight in the open!",
+          "ja": "突厥の馬蹄が踏んだ場所は、すべて突厥の領土だ！お前たち中原人、腕があるなら野戦に出てきやがれ！"
+        },
+        {
+          "id": "defeat",
+          "zh": "我输了……但不是输给你，是输给了你们的城墙和弓箭。如果在草原上，你不是我的对手。",
+          "en": "I lost... but not to you, to your walls and bows. On the grassland, you wouldn't be my match.",
+          "ja": "負けた……だがお前に負けたんじゃない、お前たちの城壁と弓矢に負けたんだ。草原なら、お前は俺の相手じゃない。"
+        },
+        {
+          "id": "submit",
+          "zh": "如果你留我一命，我愿为你牵马执镫——但你要证明你配。",
+          "en": "If you spare my life, I'll hold your stirrup and lead your horse — but you have to prove you're worthy.",
+          "ja": "命を助けてくれるなら、俺はお前の馬を引き、あぶみを支えよう——だがお前にその資格があることを証明してみろ。"
+        }
+      ]
+    },
+    {
+      "id": "Temujin",
+      "name_zh": "铁木真",
+      "name_en": "Temujin",
+      "name_ja": "テムジン",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "天上只有一个太阳，地上也应该只有一个主人。你来找我，是想做我的朋友，还是我的敌人？",
+          "en": "There is only one sun in the sky, and there should be only one master on earth. You come to me — do you want to be my friend, or my enemy?",
+          "ja": "天には太陽が一つしかないように、地にも主人は一人であるべきだ。俺の元に来たからには、俺の友になるか、敵になるか、どっちだ？"
+        },
+        {
+          "id": "conquer",
+          "zh": "你的士兵很勇敢，但勇敢救不了他们——因为他们遇到了我。",
+          "en": "Your soldiers are brave, but bravery won't save them — because they've met me.",
+          "ja": "お前の兵は勇敢だ。だが勇敢では彼らを救えない——俺に出会ったのだからな。"
+        },
+        {
+          "id": "mercy",
+          "zh": "我杀过很多人，但我从不杀勇士。你如果投降，我给你比你现在更大的官。",
+          "en": "I've killed many, but I never kill warriors. If you surrender, I'll give you a higher rank than you have now.",
+          "ja": "俺は多くの人を殺してきたが、勇士を殺したことはない。降るなら、今より大きな官を与えよう。"
+        },
+        {
+          "id": "world",
+          "zh": "天下很大，我们可以平分——但你要证明你有资格和我平分。",
+          "en": "The world is vast, we can split it — but you have to prove you have the right to split it with me.",
+          "ja": "天下は広い、俺たちで分け合ってもいい——だがお前には、俺と分け合う資格があることを証明してみろ。"
+        }
+      ]
+    },
+    {
+      "id": "Doctor",
+      "name_zh": "孙妙手",
+      "name_en": "Sun Miaoshou",
+      "name_ja": "孫妙手",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "哟，又来一个看病的。先说好，没钱的免费治，有钱的往死里宰。你是哪种？",
+          "en": "Well, another patient. Let's get this straight — no money, free treatment; lots of money, I'll fleece you. Which are you?",
+          "ja": "おや、また患者が来たか。先に言っておくが、金がなければ無料で治し、金があれば徹底的に搾り取る。お前はどっちだ？"
+        },
+        {
+          "id": "medicine",
+          "zh": "治病先治心，心不正，药不灵。你这病，三分治七分养。我开的药你敢吃吗？不敢吃就别找我。",
+          "en": "Treat the mind before the body — an unrighteous heart makes medicine useless. Your illness is three parts treatment, seven parts rest. You dare take my medicine? If not, don't come to me.",
+          "ja": "病を治すにはまず心を治せ、心が正しくなければ薬も効かない。お前の病は三分治療、七分養生だ。俺の薬を食べる勇気があるか？なければ俺のところに来るな。"
+        },
+        {
+          "id": "plague",
+          "zh": "我这把老骨头，能换几百条人命，值了。让开，我要进去。",
+          "en": "This old body of mine, if it can save hundreds of lives, it's worth it. Get out of my way, I'm going in.",
+          "ja": "俺のこの老骨、何百もの人命と引き換えになるなら、安いものだ。どけ、俺が中に入る。"
+        },
+        {
+          "id": "principle",
+          "zh": "我不治三种人——贪官、汉奸、忘恩负义之徒。你要是这三种人之一，就算跪下来求我，我也不看一眼。",
+          "en": "I don't treat three kinds of people — corrupt officials, traitors, and the ungrateful. If you're one of them, even if you kneel and beg, I won't even glance at you.",
+          "ja": "俺は三種類の人間を治さない——汚職官、売国奴、恩知らずだ。お前がそのどれかなら、跪いて頼まれても、一目もくれてやらない。"
+        },
+        {
+          "id": "legacy",
+          "zh": "医术这东西，藏在柜子里就是废纸，用在人身上才是活的。我死了以后，把我烧了，骨灰撒进河里，让鱼也尝尝我的医术。",
+          "en": "Medical skill locked in a cabinet is waste paper, it only lives when used on people. When I die, burn me, scatter my ashes in the river — let the fish taste my medicine too.",
+          "ja": "医術というものは、箪笥にしまっておけば紙くず同然、人に使ってこそ生きるものだ。俺が死んだら焼いて、灰を川に撒け。魚にも俺の医術を味わわせてやれ。"
+        }
+      ]
+    },
+    {
+      "id": "Songstress",
+      "name_zh": "柳如烟",
+      "name_en": "Liu Ruyan",
+      "name_ja": "柳如烟",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "这秦淮河边，最不缺的就是有钱人，最缺的是有心人。你是哪种？",
+          "en": "By the Qinhuai River, the last thing we lack is rich men, the thing we lack most is men of heart. Which are you?",
+          "ja": "この秦淮河のほとりで、最もありふれているのは金持ちで、最も足りないのは心のある人です。あなたはどちら？"
+        },
+        {
+          "id": "talent",
+          "zh": "我读过的书，比你们这些大官吃过的米还多。想跟我谈诗论文？先过了我这关再说。",
+          "en": "I've read more books than you big officials have eaten grains of rice. Want to discuss poetry and literature? Pass my test first.",
+          "ja": "私が読んだ本は、あなたたち大物官僚が食べた米の数より多いですわ。詩文を論じたい？まず私の試験に合格してからにして。"
+        },
+        {
+          "id": "nation",
+          "zh": "商女不知亡国恨？说这话的人，才是真的不知亡国恨。国家兴亡，匹夫有责，我虽是女子，也知道这个道理。",
+          "en": "'Courtesans know not the grief of a fallen nation'? The one who said that is the one who truly doesn't know. The rise and fall of a nation is every person's responsibility — even a woman like me knows this.",
+          "ja": "'商女は亡国の恨みを知らず'？そう言う人こそ、本当に亡国の恨みを知らないのですわ。国の興亡には匹夫たる者にも責任がある、私が女でも、その道理は知っています。"
+        },
+        {
+          "id": "freedom",
+          "zh": "赎身容易，赎心难。你若只是想要我的人，这银子你留着。你若想要我的心，先证明你配。",
+          "en": "Ransoming my body is easy, ransoming my heart is hard. If you only want my body, keep your silver. If you want my heart, first prove you're worthy.",
+          "ja": "身請けは簡単ですが、心を請うのは難しい。私の体だけが欲しいなら、その銀は持っておいて。私の心が欲しいなら、まずあなたにその資格があることを証明して。"
+        },
+        {
+          "id": "pride",
+          "zh": "我柳如烟，虽然身在青楼，但我的心，比你们这些朝堂上的大人干净得多。",
+          "en": "I Liu Ruyan, though I live in the pleasure quarters, my heart is far cleaner than you officials in the court.",
+          "ja": "私柳如烟は、青楼に身を置いてはいますが、私の心は朝堂にいるあなたたち大人より、ずっと綺麗ですわ。"
+        }
+      ]
+    },
+    {
+      "id": "Merchant",
+      "name_zh": "沈万金",
+      "name_en": "Shen Wanjin",
+      "name_ja": "沈万金",
+      "lines": [
+        {
+          "id": "greeting",
+          "zh": "哈哈哈！这位朋友，一看就是做大事的人。来，坐下喝杯茶，我们慢慢聊。",
+          "en": "Hahaha! My friend, you look like someone who does great things. Come, sit down and have some tea, let's chat slowly.",
+          "ja": "ははは！この友人、見たところ大物を成す人だな。来、座って茶を飲み、ゆっくり話そう。"
+        },
+        {
+          "id": "business",
+          "zh": "做生意就像下棋，你看到的是眼前的银子，我看到的是十年后的天下。",
+          "en": "Doing business is like playing chess — you see the silver in front of you, I see the world ten years from now.",
+          "ja": "商売は碁を打つようなものだ。お前は目の前の銀を見ているが、俺は十年後の天下を見ている。"
+        },
+        {
+          "id": "conscience",
+          "zh": "商人逐利没错，但君子爱财取之有道。有些钱，赚了会睡不着觉。",
+          "en": "There's nothing wrong with merchants pursuing profit, but a gentleman loves wealth and obtains it properly. Some money, if you earn it, you won't be able to sleep.",
+          "ja": "商人が利益を追うのは悪くない。だが君子は財を愛しても、その得方に道がある。眠れなくなるような金もあるさ。"
+        },
+        {
+          "id": "country",
+          "zh": "国家有难，我沈万金第一个出钱。这不是忠君，是为民。",
+          "en": "When the nation is in trouble, I Shen Wanjin will be the first to contribute money. This isn't loyalty to the emperor, it's for the people.",
+          "ja": "国が難しい時、俺沈万金が真っ先に金を出す。これは君主への忠義じゃない、民のためだ。"
+        },
+        {
+          "id": "friends",
+          "zh": "我这辈子赚了很多钱，但最值钱的，不是这些银子，是这些年交下的朋友。",
+          "en": "I've made a lot of money in my life, but the most valuable thing isn't this silver — it's the friends I've made over the years.",
+          "ja": "俺は生涯で多くの金を稼いだが、最も価値のあるものはこの銀じゃない、これまでに得た友人たちだ。"
+        },
+        {
+          "id": "threat",
+          "zh": "你帮我一次，我记你一辈子；你坑我一次，我让你后悔一辈子。",
+          "en": "Help me once, and I'll remember you for life. Betray me once, and I'll make you regret it for life.",
+          "ja": "一度助けてくれれば、一生恩に着る。一度裏切れば、一生後悔させてやる。"
+        }
+      ]
+    }
+  ]
+}
