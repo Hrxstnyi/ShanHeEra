@@ -28,11 +28,12 @@ LANGS = {
         "volume": "音量",
         "fullscreen": "全屏模式",
         "save": "保存设置",
-        "version": "版本 1.0.0",
+        "version": "版本 2.5.3",
         "update_check": "正在检查更新...",
         "update_latest": "已是最新版本！",
         "update_available": "发现新版本！",
         "game_not_found": "未找到游戏可执行文件，请先编译项目。",
+        "dev_mode": "未找到独立游戏exe，将以开发模式通过UE编辑器启动。是否继续？",
         "launching": "正在启动山河纪元...",
         "credits": "山河纪元工作室 出品",
     },
@@ -49,11 +50,12 @@ LANGS = {
         "volume": "Volume",
         "fullscreen": "Fullscreen",
         "save": "Save Settings",
-        "version": "Version 1.0.0",
+        "version": "Version 2.5.3",
         "update_check": "Checking for updates...",
         "update_latest": "You are on the latest version!",
         "update_available": "New version available!",
         "game_not_found": "Game executable not found. Please build the project first.",
+        "dev_mode": "Standalone exe not found. Launch via UE Editor in dev mode?",
         "launching": "Launching ShanHe Era...",
         "credits": "Produced by ShanHe Studio",
     },
@@ -325,7 +327,25 @@ class LauncherApp:
             subprocess.Popen([exe_path])
             self.root.quit()
         else:
-            messagebox.showwarning(self.t["title"], self.t["game_not_found"])
+            # 开发模式：通过UE编辑器启动
+            uproject_path = os.path.join(game_dir, "ShanHeEra.uproject")
+            editor_paths = [
+                r"C:\Epic Games\虚幻引擎5\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe",
+                r"C:\Program Files\Epic Games\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe",
+            ]
+            editor_path = None
+            for ep in editor_paths:
+                if os.path.exists(ep):
+                    editor_path = ep
+                    break
+
+            if editor_path and os.path.exists(uproject_path):
+                dev_msg = self.t.get("dev_mode", "未找到独立游戏exe，将以开发模式通过UE编辑器启动。")
+                if messagebox.askyesno(self.t["title"], dev_msg):
+                    subprocess.Popen([editor_path, uproject_path])
+                    self.root.quit()
+            else:
+                messagebox.showwarning(self.t["title"], self.t["game_not_found"])
 
     def open_settings(self):
         settings_win = tk.Toplevel(self.root)
