@@ -20,7 +20,7 @@ FGuid UFamilyTree::AddMember(const FPersonName& Name, int32 Generation, FGuid Fa
             M.ChildrenIDs.Add(Member.MemberID);
     }
 
-    UE_LOG(LogShanHe, Log, TEXT("家族新成员: %s，第%d代"), *Name.Surname.Append(Name.GivenName), Generation);
+    UE_LOG(LogShanHe, Log, TEXT("家族新成员: %s，第%d代"), *(Name.Surname + Name.GivenName), Generation);
     return Member.MemberID;
 }
 

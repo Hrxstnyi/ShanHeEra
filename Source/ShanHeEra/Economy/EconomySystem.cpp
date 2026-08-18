@@ -8,7 +8,7 @@ void UEconomySystem::InitializeEconomy()
     SilkRoad.RouteID = TEXT("SilkRoad");
     SilkRoad.FromCity = TEXT("Chang'an");
     SilkRoad.ToCity = TEXT("Quanzhou");
-    SilkRoad.Goods = NSLOCTEXT("Trade","Silk","丝绸、茶叶、瓷器");
+    SilkRoad.Goods = FText::FromString(TEXT("丝绸、茶叶、瓷器"));
     SilkRoad.TradeVolume = 5000;
     SilkRoad.Safety = 70.0f;
     TradeRoutes.Add(SilkRoad);
@@ -17,7 +17,7 @@ void UEconomySystem::InitializeEconomy()
     TaiwanTrade.RouteID = TEXT("TaiwanTrade");
     TaiwanTrade.FromCity = TEXT("Quanzhou");
     TaiwanTrade.ToCity = TEXT("TaiwanFu");
-    TaiwanTrade.Goods = NSLOCTEXT("Trade","Taiwan","粮食、布匹、海盐、蔗糖");
+    TaiwanTrade.Goods = FText::FromString(TEXT("粮食、布匹、海盐、蔗糖"));
     TaiwanTrade.TradeVolume = 2000;
     TaiwanTrade.Safety = 85.0f;
     TaiwanTrade.bIsSeaRoute = true;

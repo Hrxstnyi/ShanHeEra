@@ -6,15 +6,15 @@ void UMapSystem::InitializeMap()
     // 初始化主要地点标记
     struct FMarkerDef { FName ID; EMapIconType Type; const TCHAR* Label; float X; float Y; FName Region; };
     FMarkerDef Markers[] = {
-        {TEXT("Beijing"), EMapIconType::City, NSLOCTEXT("Map","Beijing","京城"), 0, 0, TEXT("NorthPlain")},
-        {TEXT("Nanjing"), EMapIconType::City, NSLOCTEXT("Map","Nanjing","金陵"), 500, -200, TEXT("Jiangnan")},
-        {TEXT("Hangzhou"), EMapIconType::City, NSLOCTEXT("Map","Hangzhou","杭州"), 600, -300, TEXT("Jiangnan")},
-        {TEXT("Quanzhou"), EMapIconType::City, NSLOCTEXT("Map","Quanzhou","泉州"), 550, -500, TEXT("Coast")},
-        {TEXT("TaiwanFu"), EMapIconType::City, NSLOCTEXT("Map","Taiwan","台湾府"), 700, -600, TEXT("Taiwan")},
-        {TEXT("Xian"), EMapIconType::City, NSLOCTEXT("Map","Xian","长安"), -300, -100, TEXT("Northwest")},
-        {TEXT("Chengdu"), EMapIconType::City, NSLOCTEXT("Map","Chengdu","成都"), -400, -300, TEXT("Southwest")},
-        {TEXT("Shaolin"), EMapIconType::Temple, NSLOCTEXT("Map","Shaolin","少林寺"), -100, 50, TEXT("NorthPlain")},
-        {TEXT("Wudang"), EMapIconType::Temple, NSLOCTEXT("Map","Wudang","武当山"), -200, -150, TEXT("Inland")},
+        {TEXT("Beijing"), EMapIconType::City, TEXT("京城"), 0, 0, TEXT("NorthPlain")},
+        {TEXT("Nanjing"), EMapIconType::City, TEXT("金陵"), 500, -200, TEXT("Jiangnan")},
+        {TEXT("Hangzhou"), EMapIconType::City, TEXT("杭州"), 600, -300, TEXT("Jiangnan")},
+        {TEXT("Quanzhou"), EMapIconType::City, TEXT("泉州"), 550, -500, TEXT("Coast")},
+        {TEXT("TaiwanFu"), EMapIconType::City, TEXT("台湾府"), 700, -600, TEXT("Taiwan")},
+        {TEXT("Xian"), EMapIconType::City, TEXT("长安"), -300, -100, TEXT("Northwest")},
+        {TEXT("Chengdu"), EMapIconType::City, TEXT("成都"), -400, -300, TEXT("Southwest")},
+        {TEXT("Shaolin"), EMapIconType::Temple, TEXT("少林寺"), -100, 50, TEXT("NorthPlain")},
+        {TEXT("Wudang"), EMapIconType::Temple, TEXT("武当山"), -200, -150, TEXT("Inland")},
     };
 
     for (const auto& M : Markers)
@@ -22,7 +22,7 @@ void UMapSystem::InitializeMap()
         FMapMarker Marker;
         Marker.MarkerID = M.ID;
         Marker.IconType = M.Type;
-        Marker.Label = M.Label;
+        Marker.Label = FText::FromString(M.Label);
         Marker.WorldPosition = FVector2D(M.X, M.Y);
         Marker.RegionID = M.Region;
         Marker.bIsDiscovered = true; // 主要城市默认已发现
@@ -70,9 +70,9 @@ void UMapSystem::DiscoverLocation(FName LocationID)
     }
 }
 
-FNavigationPath UMapSystem::CalculatePath(FVector2D From, FVector2D To)
+FShanHeMapPath UMapSystem::CalculatePath(FVector2D From, FVector2D To)
 {
-    FNavigationPath Path;
+    FShanHeMapPath Path;
     Path.PathID = FName(*FString::Printf(TEXT("Path_%d"), FDateTime::Now().GetTicks()));
     Path.Waypoints = {From, To};
     Path.TotalDistance = (int32)FVector2D::Distance(From, To);
@@ -100,7 +100,7 @@ void UMapSystem::ClearNavigation()
 {
     for (FMapMarker& M : AllMarkers)
         M.bIsNavTarget = false;
-    CurrentPath = FNavigationPath();
+    CurrentPath = FShanHeMapPath();
     UE_LOG(LogShanHe, Log, TEXT("清除导航"));
 }
 

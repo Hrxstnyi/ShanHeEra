@@ -36,7 +36,7 @@ struct FScenarioData
  * 三国群雄/盛唐气象/弱宋偏安/明末风云
  */
 UCLASS()
-class SHANHeERA_API UScenarioSystem : public UObject
+class SHANHEERA_API UScenarioSystem : public UObject
 {
     GENERATED_BODY()
 public:

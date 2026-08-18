@@ -30,7 +30,7 @@ void UNPCManager::SimulateDailyLife(FNPData& NPC, int32 Days)
 void UNPCManager::SimulateCareer(FNPData& NPC, int32 Days)
 {
     // 根据职业和性格模拟人生发展
-    if (NPC.HasTrait(ECharacterTrait::Ambitious))
+    if (NPC.Traits.Contains(ECharacterTrait::Ambitious))
         NPC.Gold += FMath::RandRange(0, 5) * Days;
 }
 

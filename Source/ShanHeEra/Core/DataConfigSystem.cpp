@@ -69,7 +69,12 @@ TArray<FItemConfigRow> UDataConfigSystem::GetAllItems() const
     if (ItemConfigTable)
     {
         static const FString Context = TEXT("AllItems");
-        ItemConfigTable->GetAllRows(Context, Result);
+        TArray<FItemConfigRow*> Rows;
+        ItemConfigTable->GetAllRows<FItemConfigRow>(Context, Rows);
+        for (FItemConfigRow* Row : Rows)
+        {
+            Result.Add(*Row);
+        }
     }
     return Result;
 }

@@ -1,5 +1,19 @@
 #include "UI/CodexWidget.h"
 #include "Core/ShanHeLog.h"
+#include "Components/SizeBox.h"
+#include "Components/Overlay.h"
+#include "Components/Border.h"
+#include "Components/Slider.h"
+#include "Components/ComboBoxString.h"
+#include "Components/ScrollBox.h"
+#include "Components/HorizontalBox.h"
+#include "Components/VerticalBox.h"
+#include "Components/CanvasPanel.h"
+#include "Components/Image.h"
+#include "Components/Button.h"
+#include "Components/GridPanel.h"
+#include "Components/ProgressBar.h"
+#include "Components/TextBlock.h"
 
 void UCodexWidget::NativeConstruct()
 {

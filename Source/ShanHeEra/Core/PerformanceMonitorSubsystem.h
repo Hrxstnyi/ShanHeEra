@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
+#include "Tickable.h"
 #include "PerformanceMonitorSubsystem.generated.h"
 
 /**
@@ -9,7 +10,7 @@
  * 支持性能基准测试和热点分析
  */
 UCLASS()
-class SHANHEERA_API UPerformanceMonitorSubsystem : public UWorldSubsystem
+class SHANHEERA_API UPerformanceMonitorSubsystem : public UWorldSubsystem, public FTickableGameObject
 {
     GENERATED_BODY()
 
@@ -18,6 +19,9 @@ public:
     virtual void OnWorldBeginPlay(UWorld& InWorld) override;
     virtual void Tick(float DeltaTime) override;
     virtual bool DoesSupportWorldType(const EWorldType::Type WorldType) const override;
+    virtual TStatId GetStatId() const override { RETURN_QUICK_DECLARE_CYCLE_STAT(UPerformanceMonitorSubsystem, STATGROUP_Tickables); }
+    virtual bool IsTickable() const override { return !IsTemplate(); }
+    virtual UWorld* GetTickableGameObjectWorld() const override { return GetWorld(); }
 
     // === 性能指标 ===
 

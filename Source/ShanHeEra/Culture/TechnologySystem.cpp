@@ -8,43 +8,43 @@ void UTechnologySystem::InitializeTechTree()
     struct FTechDef { FName ID; const TCHAR* Name; ETechCategory Cat; int32 Tier; int32 Cost; bool Breakthrough; };
     FTechDef Defs[] = {
         // 农业
-        {TEXT("Irrigation"), NSLOCTEXT("Tech","Irrigation","水利灌溉"), ETechCategory::Agriculture, 1, 100, false},
-        {TEXT("CropRotation"), NSLOCTEXT("Tech","CropRotation","轮作制度"), ETechCategory::Agriculture, 2, 200, false},
-        {TEXT("ImprovedPlow"), NSLOCTEXT("Tech","Plow","曲辕犁"), ETechCategory::Agriculture, 2, 200, false},
-        {TEXT("HighYieldCrops"), NSLOCTEXT("Tech","HighYield","高产作物"), ETechCategory::Agriculture, 4, 500, false},
+        {TEXT("Irrigation"), TEXT("水利灌溉"), ETechCategory::Agriculture, 1, 100, false},
+        {TEXT("CropRotation"), TEXT("轮作制度"), ETechCategory::Agriculture, 2, 200, false},
+        {TEXT("ImprovedPlow"), TEXT("曲辕犁"), ETechCategory::Agriculture, 2, 200, false},
+        {TEXT("HighYieldCrops"), TEXT("高产作物"), ETechCategory::Agriculture, 4, 500, false},
         // 冶金
-        {TEXT("BlastFurnace"), NSLOCTEXT("Tech","BlastFurnace","高炉冶铁"), ETechCategory::Metallurgy, 2, 250, false},
-        {TEXT("SteelMaking"), NSLOCText("Tech","Steel","炼钢术"), ETechCategory::Metallurgy, 3, 400, false},
+        {TEXT("BlastFurnace"), TEXT("高炉冶铁"), ETechCategory::Metallurgy, 2, 250, false},
+        {TEXT("SteelMaking"), TEXT("炼钢术"), ETechCategory::Metallurgy, 3, 400, false},
         // 造船
-        {TEXT("JunkShip"), NSLOCTEXT("Tech","Junk","福船"), ETechCategory::Shipbuilding, 2, 300, false},
-        {TEXT("TreasureShip"), NSLOCTEXT("Tech","TreasureShip","宝船"), ETechCategory::Shipbuilding, 4, 800, true}, // 郑和彩蛋
+        {TEXT("JunkShip"), TEXT("福船"), ETechCategory::Shipbuilding, 2, 300, false},
+        {TEXT("TreasureShip"), TEXT("宝船"), ETechCategory::Shipbuilding, 4, 800, true}, // 郑和彩蛋
         // 建筑
-        {TEXT("ArchBridge"), NSLOCTEXT("Tech","ArchBridge","拱桥技术"), ETechCategory::Construction, 2, 200, false},
-        {TEXT("GreatWall"), NSLOCTEXT("Tech","GreatWall","城防体系"), ETechCategory::Construction, 3, 500, false},
+        {TEXT("ArchBridge"), TEXT("拱桥技术"), ETechCategory::Construction, 2, 200, false},
+        {TEXT("GreatWall"), TEXT("城防体系"), ETechCategory::Construction, 3, 500, false},
         // 医学
-        {TEXT("HerbalMedicine"), NSLOCTEXT("Tech","Herbal","本草学"), ETechCategory::Medicine, 1, 100, false},
-        {TEXT("Acupuncture"), NSLOCTEXT("Tech","Acupuncture","针灸"), ETechCategory::Medicine, 2, 250, false},
-        {TEXT("Vaccination"), NSLOCTEXT("Tech","Vaccine","人痘接种"), ETechCategory::Medicine, 4, 600, true}, // 医学突破
+        {TEXT("HerbalMedicine"), TEXT("本草学"), ETechCategory::Medicine, 1, 100, false},
+        {TEXT("Acupuncture"), TEXT("针灸"), ETechCategory::Medicine, 2, 250, false},
+        {TEXT("Vaccination"), TEXT("人痘接种"), ETechCategory::Medicine, 4, 600, true}, // 医学突破
         // 印刷
-        {TEXT("WoodblockPrint"), NSLOCTEXT("Tech","Woodblock","雕版印刷"), ETechCategory::Printing, 1, 150, false},
-        {TEXT("MovableType"), NSLOCTEXT("Tech","MovableType","活字印刷"), ETechCategory::Printing, 3, 400, true}, // 毕昇彩蛋
+        {TEXT("WoodblockPrint"), TEXT("雕版印刷"), ETechCategory::Printing, 1, 150, false},
+        {TEXT("MovableType"), TEXT("活字印刷"), ETechCategory::Printing, 3, 400, true}, // 毕昇彩蛋
         // 兵器
-        {TEXT("Crossbow"), NSLOCTEXT("Tech","Crossbow","强弩"), ETechCategory::Weaponry, 2, 250, false},
-        {TEXT("Gunpowder"), NSLOCTEXT("Tech","Gunpowder","火药"), ETechCategory::Weaponry, 3, 500, true}, // 四大发明
-        {TEXT("Cannon"), NSLOCTEXT("Tech","Cannon","火炮"), ETechCategory::Weaponry, 4, 700, false},
+        {TEXT("Crossbow"), TEXT("强弩"), ETechCategory::Weaponry, 2, 250, false},
+        {TEXT("Gunpowder"), TEXT("火药"), ETechCategory::Weaponry, 3, 500, true}, // 四大发明
+        {TEXT("Cannon"), TEXT("火炮"), ETechCategory::Weaponry, 4, 700, false},
         // 纺织
-        {TEXT("Loom"), NSLOCTEXT("Tech","Loom","织机"), ETechCategory::Textile, 1, 100, false},
-        {TEXT("SilkReeling"), NSLOCTEXT("Tech","Silk","缫丝术"), ETechCategory::Textile, 2, 200, false},
+        {TEXT("Loom"), TEXT("织机"), ETechCategory::Textile, 1, 100, false},
+        {TEXT("SilkReeling"), TEXT("缫丝术"), ETechCategory::Textile, 2, 200, false},
         // 航海
-        {TEXT("Compass"), NSLOCTEXT("Tech","Compass","指南针"), ETechCategory::Navigation, 2, 300, true}, // 四大发明
-        {TEXT("Astrolabe"), NSLOCTEXT("Tech","Astrolabe","星盘航海"), ETechCategory::Navigation, 3, 500, false},
+        {TEXT("Compass"), TEXT("指南针"), ETechCategory::Navigation, 2, 300, true}, // 四大发明
+        {TEXT("Astrolabe"), TEXT("星盘航海"), ETechCategory::Navigation, 3, 500, false},
     };
 
     for (const auto& D : Defs)
     {
         FTechnology T;
         T.TechID = D.ID;
-        T.TechName = D.Name;
+        T.TechName = FText::FromString(D.Name);
         T.Category = D.Cat;
         T.Tier = D.Tier;
         T.ResearchCost = D.Cost;

@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
+#include "Core/ShanHeLog.h"
 #include "DebugValidationSubsystem.generated.h"
 
 class UWorld;
@@ -9,9 +10,6 @@ class UWorld;
  * 调试验证子系统 - 基于 ue5-debug-validation 方法论
  * 提供结构化日志、运行时验证、资产检查、性能标记
  */
-
-// 自定义日志类别
-DECLARE_LOG_CATEGORY_EXTERN(LogShanHe, Log, All);
 
 UENUM(BlueprintType)
 enum class EValidationLevel : uint8

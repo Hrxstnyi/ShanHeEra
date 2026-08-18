@@ -41,7 +41,7 @@ void UAudioManager::InitializeAudio()
     };
     for(const auto& S : Stingers)
     {
-        FStinger St; St.Type=S.Type; St.SoundPath=S.Path; St.Volume=S.Vol;
+        FStinger St; St.Type = S.Type; St.SoundPath=S.Path; St.Volume=S.Vol;
         StingerLibrary.Add(S.Type, St);
     }
 }

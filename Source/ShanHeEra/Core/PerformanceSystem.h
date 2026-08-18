@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
+#include "Tickable.h"
 #include "PerformanceSystem.generated.h"
 
 UENUM(BlueprintType)
@@ -37,12 +38,15 @@ struct FObjectPool
  * 性能优化系统 - 对象池、LOD、流式加载、帧率优化
  */
 UCLASS()
-class SHANHEERA_API UPerformanceSystem : public UWorldSubsystem
+class SHANHEERA_API UPerformanceSystem : public UWorldSubsystem, public FTickableGameObject
 {
     GENERATED_BODY()
 public:
     virtual void Initialize(FSubsystemCollectionBase& Collection) override;
     virtual void Tick(float DeltaTime) override;
+    virtual TStatId GetStatId() const override { RETURN_QUICK_DECLARE_CYCLE_STAT(UPerformanceSystem, STATGROUP_Tickables); }
+    virtual bool IsTickable() const override { return !IsTemplate(); }
+    virtual UWorld* GetTickableGameObjectWorld() const override { return GetWorld(); }
 
     // 对象池
     UFUNCTION(BlueprintCallable, Category="山河纪元|性能|对象池")

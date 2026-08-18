@@ -1,4 +1,5 @@
 #include "Core/InformationSystem.h"
+#include "Core/ShanHeEnums.h"
 #include "Core/ShanHeLog.h"
 
 void UInformationSystem::Initialize(FSubsystemCollectionBase& Collection)

@@ -5,7 +5,7 @@ void UWarSystem::InitializeMilitary()
 {
     FArmyData ImperialGuard;
     ImperialGuard.ArmyID = TEXT("ImperialGuard");
-    ImperialGuard.ArmyName = NSLOCTEXT("Army","ImperialGuard","禁军");
+    ImperialGuard.ArmyName = FText::FromString(TEXT("禁军"));
     ImperialGuard.Infantry = 50000;
     ImperialGuard.Cavalry = 10000;
     ImperialGuard.Archers = 20000;
@@ -16,7 +16,7 @@ void UWarSystem::InitializeMilitary()
 
     FArmyData Navy;
     Navy.ArmyID = TEXT("ImperialNavy");
-    Navy.ArmyName = NSLOCTEXT("Army","Navy","水师");
+    Navy.ArmyName = FText::FromString(TEXT("水师"));
     Navy.Navy = 30000;
     Navy.Infantry = 10000;
     Navy.StationedCity = TEXT("Quanzhou");

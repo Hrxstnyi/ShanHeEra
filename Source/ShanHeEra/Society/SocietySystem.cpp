@@ -5,8 +5,8 @@ void USocietySystem::InitializeSociety()
 {
     FOrganizationData HuiZhou;
     HuiZhou.OrgID = TEXT("HuiZhouMerchants");
-    HuiZhou.OrgName = NSLOCTEXT("Org","HuiZhou","徽州商帮");
-    HuiZhou.Type = NSLOCTEXT("Org","Merchant","商帮");
+    HuiZhou.OrgName = FText::FromString(TEXT("徽州商帮"));
+    HuiZhou.Type = FText::FromString(TEXT("商帮"));
     HuiZhou.BaseCity = TEXT("Hangzhou");
     HuiZhou.Influence = 60;
     HuiZhou.Members = 5000;
@@ -15,8 +15,8 @@ void USocietySystem::InitializeSociety()
 
     FOrganizationData Donglin;
     Donglin.OrgID = TEXT("DonglinAcademy");
-    Donglin.OrgName = NSLOCTEXT("Org","Donglin","东林书院");
-    Donglin.Type = NSLOCTEXT("Org","Academy","书院");
+    Donglin.OrgName = FText::FromString(TEXT("东林书院"));
+    Donglin.Type = FText::FromString(TEXT("书院"));
     Donglin.BaseCity = TEXT("Yingtian");
     Donglin.Influence = 45;
     Donglin.Members = 2000;
@@ -24,8 +24,8 @@ void USocietySystem::InitializeSociety()
 
     FOrganizationData BiaoJu;
     BiaoJu.OrgID = TEXT("TianXiaBiaoJu");
-    BiaoJu.OrgName = NSLOCTEXT("Org","BiaoJu","天下镖局");
-    BiaoJu.Type = NSLOCTEXT("Org","BiaoJu","镖局");
+    BiaoJu.OrgName = FText::FromString(TEXT("天下镖局"));
+    BiaoJu.Type = FText::FromString(TEXT("镖局"));
     BiaoJu.BaseCity = TEXT("Beijing");
     BiaoJu.Influence = 30;
     BiaoJu.Members = 800;

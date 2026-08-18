@@ -1,11 +1,10 @@
 #include "Core/DebugValidationSubsystem.h"
+#include "Core/ShanHeLog.h"
 #include "Core/ShanHeSaveGame.h"
 #include "Engine/Engine.h"
 #include "Engine/World.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
-
-DEFINE_LOG_CATEGORY(LogShanHe);
 
 void UDebugValidationSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {

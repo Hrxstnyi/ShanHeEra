@@ -1,12 +1,26 @@
 #include "UI/SectWidget.h"
+#include "Components/SizeBox.h"
+#include "Components/Overlay.h"
+#include "Components/Border.h"
+#include "Components/Slider.h"
+#include "Components/ComboBoxString.h"
+#include "Components/ScrollBox.h"
+#include "Components/HorizontalBox.h"
+#include "Components/VerticalBox.h"
+#include "Components/CanvasPanel.h"
+#include "Components/GridPanel.h"
+#include "Components/ProgressBar.h"
+#include "Components/Image.h"
+#include "Components/TextBlock.h"
+#include "Components/Button.h"
 #include "Core/ShanHeLog.h"
 
 void USectWidget::NativeConstruct()
 {
     Super::NativeConstruct();
     if (AcceptMissionButton) AcceptMissionButton->OnClicked.AddDynamic(this, &USectWidget::AcceptMission);
-    if (DeclareWarButton) DeclareWarButton->OnClicked.AddDynamic(this, &USectWidget::DeclareWar, NAME_None);
-    if (ProposeAllyButton) ProposeAllyButton->OnClicked.AddDynamic(this, &USectWidget::ProposeAlliance, NAME_None);
+    if (DeclareWarButton) DeclareWarButton->OnClicked.AddDynamic(this, &USectWidget::DeclareWar);
+    if (ProposeAllyButton) ProposeAllyButton->OnClicked.AddDynamic(this, &USectWidget::ProposeAlliance);
     RefreshSect();
 }
 
@@ -37,22 +51,16 @@ void USectWidget::AcceptMission()
     }
 }
 
-void USectWidget::DeclareWar(FName EnemySectID)
+void USectWidget::DeclareWar()
 {
-    if (!EnemySectID.IsNone())
-    {
-        UE_LOG(LogShanHe, Log, TEXT("向 %s 宣战"), *EnemySectID.ToString());
-        RefreshSect();
-    }
+    UE_LOG(LogShanHe, Log, TEXT("宣战"));
+    RefreshSect();
 }
 
-void USectWidget::ProposeAlliance(FName AllySectID)
+void USectWidget::ProposeAlliance()
 {
-    if (!AllySectID.IsNone())
-    {
-        UE_LOG(LogShanHe, Log, TEXT("向 %s 提议结盟"), *AllySectID.ToString());
-        RefreshSect();
-    }
+    UE_LOG(LogShanHe, Log, TEXT("提议结盟"));
+    RefreshSect();
 }
 
 void USectWidget::SwitchTab(int32 TabIndex)

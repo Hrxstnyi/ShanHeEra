@@ -134,6 +134,9 @@ UUserWidget* UObjectPoolSubsystem::AcquireWidget(TSubclassOf<UUserWidget> Widget
 {
     if (!WidgetClass) return nullptr;
 
+    UWorld* World = GEngine ? GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::ReturnNull) : nullptr;
+    if (!World) return nullptr;
+
     UClass* Key = WidgetClass.Get();
     TArray<UUserWidget*>& Pool = WidgetPool.FindOrAdd(Key);
 
@@ -151,7 +154,7 @@ UUserWidget* UObjectPoolSubsystem::AcquireWidget(TSubclassOf<UUserWidget> Widget
 
     if (!Acquired)
     {
-        Acquired = CreateWidget<UUserWidget>(WorldContextObject, WidgetClass);
+        Acquired = CreateWidget<UUserWidget>(World, WidgetClass);
         TotalCreated++;
     }
 
@@ -192,12 +195,15 @@ void UObjectPoolSubsystem::PreWarmWidgetPool(TSubclassOf<UUserWidget> WidgetClas
 {
     if (!WidgetClass || Count <= 0) return;
 
+    UWorld* World = GEngine ? GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::ReturnNull) : nullptr;
+    if (!World) return;
+
     UClass* Key = WidgetClass.Get();
     TArray<UUserWidget*>& Pool = WidgetPool.FindOrAdd(Key);
 
     for (int32 i = 0; i < Count && Pool.Num() < MaxPoolSize; i++)
     {
-        UUserWidget* NewWidget = CreateWidget<UUserWidget>(WorldContextObject, WidgetClass);
+        UUserWidget* NewWidget = CreateWidget<UUserWidget>(World, WidgetClass);
         if (NewWidget)
         {
             NewWidget->SetVisibility(ESlateVisibility::Collapsed);

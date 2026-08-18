@@ -1,5 +1,6 @@
 #include "Audio/CGManager.h"
 #include "Core/CinematicDirector.h"
+#include "Core/ShanHeLog.h"
 
 UCGManager::UCGManager() {}
 
@@ -82,5 +83,14 @@ void UCGManager::UpdateSubtitles(float DeltaTime)
         }
         if(bSubtitleVisible) { HideSubtitle(); CurrentSubtitleIndex = -1; }
         if(PlaybackTime >= CG->Duration) { StopCG(); }
+    }
+}
+
+void UCGManager::SkipCG()
+{
+    if (bIsPlaying)
+    {
+        UE_LOG(LogShanHe, Log, TEXT("跳过CG: %s"), *CurrentCGID.ToString());
+        StopCG();
     }
 }

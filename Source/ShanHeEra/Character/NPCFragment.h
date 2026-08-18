@@ -1,101 +1,102 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "MassEntityTypes.h"
 #include "Core/ShanHeEnums.h"
 #include "Core/ShanHeStructs.h"
 #include "NPCFragment.generated.h"
 
 /**
- * MassEntity 片段 - 用于数千NPC同存的纯数据结构
+ * NPC 数据片段 - 用于数千NPC同存的纯数据结构
  * 不继承UObject，不Spawn Actor，仅在玩家附近时才生成可视Actor
  */
-USTRUCT()
-struct SHANHEERA_API FNPCIdentityFragment : public FMassFragment
+USTRUCT(BlueprintType)
+struct SHANHEERA_API FNPCIdentityFragment
 {
     GENERATED_BODY()
-    FGuid NPCID;
-    FPersonName Name;
-    int32 Age = 30;
-    ESocialClass SocialClass = ESocialClass::Farmer;
-    bool bIsAlive = true;
+    UPROPERTY(BlueprintReadOnly) FGuid NPCID;
+    UPROPERTY(BlueprintReadOnly) FPersonName Name;
+    UPROPERTY(BlueprintReadOnly) int32 Age = 30;
+    UPROPERTY(BlueprintReadOnly) ESocialClass SocialClass = ESocialClass::Farmer;
+    UPROPERTY(BlueprintReadOnly) bool bIsAlive = true;
 };
 
-USTRUCT()
-struct SHANHEERA_API FNPCStatsFragment : public FMassFragment
+USTRUCT(BlueprintType)
+struct SHANHEERA_API FNPCStatsFragment
 {
     GENERATED_BODY()
-    FCharacterStats Stats;
-    TArray<ECharacterTrait> Traits;
-    int32 CurrentHealth = 100;
-    int32 Energy = 100;
+    UPROPERTY(BlueprintReadOnly) FCharacterStats Stats;
+    UPROPERTY(BlueprintReadOnly) TArray<ECharacterTrait> Traits;
+    UPROPERTY(BlueprintReadOnly) int32 CurrentHealth = 100;
+    UPROPERTY(BlueprintReadOnly) int32 Energy = 100;
 };
 
-USTRUCT()
-struct SHANHEERA_API FNPCLocationFragment : public FMassFragment
+USTRUCT(BlueprintType)
+struct SHANHEERA_API FNPCLocationFragment
 {
     GENERATED_BODY()
-    FName CurrentCity;
-    FVector WorldPosition = FVector::ZeroVector;
-    FName TargetLocation;
-    float MoveSpeed = 100.0f;
+    UPROPERTY(BlueprintReadOnly) FName CurrentCity;
+    UPROPERTY(BlueprintReadOnly) FVector WorldPosition = FVector::ZeroVector;
+    UPROPERTY(BlueprintReadOnly) FName TargetLocation;
+    UPROPERTY(BlueprintReadOnly) float MoveSpeed = 100.0f;
 };
 
-USTRUCT()
-struct SHANHEERA_API FNPCOccupationFragment : public FMassFragment
+USTRUCT(BlueprintType)
+struct SHANHEERA_API FNPCOccupationFragment
 {
     GENERATED_BODY()
-    FName Occupation;       // farmer/merchant/scholar/soldier/doctor...
-    FName Workplace;
-    int32 SkillLevel = 1;
-    int32 DailyIncome = 0;
+    UPROPERTY(BlueprintReadOnly) FName Occupation;
+    UPROPERTY(BlueprintReadOnly) FName Workplace;
+    UPROPERTY(BlueprintReadOnly) int32 SkillLevel = 1;
+    UPROPERTY(BlueprintReadOnly) int32 DailyIncome = 0;
 };
 
-USTRUCT()
-struct SHANHEERA_API FNPCScheduleFragment : public FMassFragment
+USTRUCT(BlueprintType)
+struct SHANHEERA_API FNPCScheduleFragment
 {
     GENERATED_BODY()
-    // 每日日程：0-23小时的行为安排
-    TArray<FName> HourlySchedule; // 24个元素，每个小时的行为
-    FName CurrentActivity;
-    int32 ScheduleDay = 0;
+    UPROPERTY(BlueprintReadOnly) TArray<FName> HourlySchedule;
+    UPROPERTY(BlueprintReadOnly) FName CurrentActivity;
+    UPROPERTY(BlueprintReadOnly) int32 ScheduleDay = 0;
 };
 
-USTRUCT()
-struct SHANHEERA_API FNPCRelationFragment : public FMassFragment
+USTRUCT(BlueprintType)
+struct SHANHEERA_API FNPCRelationFragment
 {
     GENERATED_BODY()
-    TMap<FGuid, int32> Relations; // -100 ~ 100
-    FGuid FamilyID;
-    FGuid SpouseID;
-    TArray<FGuid> ChildrenIDs;
-    TArray<FGuid> FriendIDs;
-    TArray<FGuid> EnemyIDs;
+    UPROPERTY(BlueprintReadOnly) TMap<FGuid, int32> Relations;
+    UPROPERTY(BlueprintReadOnly) FGuid FamilyID;
+    UPROPERTY(BlueprintReadOnly) FGuid SpouseID;
+    UPROPERTY(BlueprintReadOnly) TArray<FGuid> ChildrenIDs;
+    UPROPERTY(BlueprintReadOnly) TArray<FGuid> FriendIDs;
+    UPROPERTY(BlueprintReadOnly) TArray<FGuid> EnemyIDs;
 };
 
-USTRUCT()
-struct SHANHEERA_API FNPCNeedFragment : public FMassFragment
+USTRUCT(BlueprintType)
+struct SHANHEERA_API FNPCNeedFragment
 {
     GENERATED_BODY()
-    float Hunger = 100.0f;     // 饱腹度
-    float Thirst = 100.0f;     // 口渴度
-    float Comfort = 80.0f;     // 舒适度
-    float Happiness = 60.0f;   // 幸福度
-    float Health = 100.0f;     // 健康度
+    UPROPERTY(BlueprintReadOnly) float Hunger = 100.0f;
+    UPROPERTY(BlueprintReadOnly) float Thirst = 100.0f;
+    UPROPERTY(BlueprintReadOnly) float Comfort = 80.0f;
+    UPROPERTY(BlueprintReadOnly) float Happiness = 60.0f;
+    UPROPERTY(BlueprintReadOnly) float Health = 100.0f;
 };
 
 /**
- * NPC处理器 - MassEntity的Processor，批量处理所有NPC的逻辑
+ * NPC 处理器 - 批量处理所有NPC的逻辑
  * 每帧处理数千个NPC的需求衰减、日程执行、关系变化
  */
-UCLASS()
+UCLASS(BlueprintType)
 class SHANHEERA_API UNPCMassProcessor : public UObject
 {
     GENERATED_BODY()
 public:
+    UFUNCTION(BlueprintCallable, Category="山河纪元|NPC")
     void ProcessNeeds(float DeltaTime, TArray<FNPCNeedFragment>& Needs);
 
+    UFUNCTION(BlueprintCallable, Category="山河纪元|NPC")
     void ProcessSchedule(int32 CurrentHour, TArray<FNPCScheduleFragment>& Schedules,
                          TArray<FNPCLocationFragment>& Locations);
 
+    UFUNCTION(BlueprintCallable, Category="山河纪元|NPC")
     void ProcessRelations(TArray<FNPCRelationFragment>& Relations);
 };

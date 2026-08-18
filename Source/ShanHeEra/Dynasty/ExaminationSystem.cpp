@@ -11,7 +11,7 @@ void UExaminationSystem::InitializeExams()
     County.RequiredLearning = 10;
     County.RequiredReputation = 0;
     County.RegistrationFee = 100; // 铜钱
-    County.Location = TEXT("LocalCounty");
+    County.Location = FName(TEXT("LocalCounty"));
     County.HeldEveryYears = 1;
     ExamRequirements.Add(EExamLevel::County, County);
 
@@ -21,7 +21,7 @@ void UExaminationSystem::InitializeExams()
     Prefecture.RequiredLearning = 25;
     Prefecture.RequiredReputation = 5;
     Prefecture.RegistrationFee = 300;
-    Prefecture.Location = TEXT("PrefectureCity");
+    Prefecture.Location = FName(TEXT("PrefectureCity"));
     Prefecture.HeldEveryYears = 1;
     ExamRequirements.Add(EExamLevel::Prefecture, Prefecture);
 
@@ -31,7 +31,7 @@ void UExaminationSystem::InitializeExams()
     College.RequiredLearning = 50;
     College.RequiredReputation = 15;
     College.RegistrationFee = 500;
-    College.Location = TEXT("PrefectureCity");
+    College.Location = FName(TEXT("PrefectureCity"));
     College.HeldEveryYears = 1;
     ExamRequirements.Add(EExamLevel::College, College);
 
@@ -41,7 +41,7 @@ void UExaminationSystem::InitializeExams()
     Provincial.RequiredLearning = 80;
     Provincial.RequiredReputation = 30;
     Provincial.RegistrationFee = 1000;
-    Provincial.Location = TEXT("ProvincialCapital");
+    Provincial.Location = FName(TEXT("ProvincialCapital"));
     Provincial.HeldEveryYears = 3;
     ExamRequirements.Add(EExamLevel::Provincial, Provincial);
 
@@ -51,7 +51,7 @@ void UExaminationSystem::InitializeExams()
     Metropolitan.RequiredLearning = 95;
     Metropolitan.RequiredReputation = 50;
     Metropolitan.RegistrationFee = 2000;
-    Metropolitan.Location = TEXT("Capital");
+    Metropolitan.Location = FName(TEXT("Capital"));
     Metropolitan.HeldEveryYears = 3;
     ExamRequirements.Add(EExamLevel::Metropolitan, Metropolitan);
 
@@ -61,7 +61,7 @@ void UExaminationSystem::InitializeExams()
     Palace.RequiredLearning = 100;
     Palace.RequiredReputation = 80;
     Palace.RegistrationFee = 0; // 殿试免费
-    Palace.Location = TEXT("ImperialPalace");
+    Palace.Location = FName(TEXT("ImperialPalace"));
     Palace.HeldEveryYears = 3;
     ExamRequirements.Add(EExamLevel::Palace, Palace);
 
@@ -132,34 +132,34 @@ FText UExaminationSystem::GetExamTitle(EExamLevel Level) const
 {
     switch (Level)
     {
-        case EExamLevel::County: return NSLOCTEXT("Exam","County","县试");
-        case EExamLevel::Prefecture: return NSLOCTEXT("Exam","Prefecture","府试");
-        case EExamLevel::College: return NSLOCTEXT("Exam","College","院试");
-        case EExamLevel::Provincial: return NSLOCTEXT("Exam","Provincial","乡试");
-        case EExamLevel::Metropolitan: return NSLOCTEXT("Exam","Metropolitan","会试");
-        case EExamLevel::Palace: return NSLOCTEXT("Exam","Palace","殿试");
+        case EExamLevel::County: return FText::FromString(TEXT("县试"));
+        case EExamLevel::Prefecture: return FText::FromString(TEXT("府试"));
+        case EExamLevel::College: return FText::FromString(TEXT("院试"));
+        case EExamLevel::Provincial: return FText::FromString(TEXT("乡试"));
+        case EExamLevel::Metropolitan: return FText::FromString(TEXT("会试"));
+        case EExamLevel::Palace: return FText::FromString(TEXT("殿试"));
         default: return FText::GetEmpty();
     }
 }
 
 FText UExaminationSystem::GetRankTitle(EExamRank Rank, EExamLevel Level) const
 {
-    if (Rank == EExamRank::Failed) return NSLOCTEXT("Exam","Failed","落第");
+    if (Rank == EExamRank::Failed) return FText::FromString(TEXT("落第"));
     if (Rank == EExamRank::TopScorer)
     {
         switch (Level)
         {
             case EExamLevel::County:
             case EExamLevel::Prefecture:
-            case EExamLevel::College: return NSLOCTEXT("Exam","AnShou","案首");
-            case EExamLevel::Provincial: return NSLOCTEXT("Exam","JieYuan","解元");
-            case EExamLevel::Metropolitan: return NSLOCTEXT("Exam","HuiYuan","会元");
-            case EExamLevel::Palace: return NSLOCTEXT("Exam","ZhuangYuan","状元");
+            case EExamLevel::College: return FText::FromString(TEXT("案首"));
+            case EExamLevel::Provincial: return FText::FromString(TEXT("解元"));
+            case EExamLevel::Metropolitan: return FText::FromString(TEXT("会元"));
+            case EExamLevel::Palace: return FText::FromString(TEXT("状元"));
             default: break;
         }
     }
-    if (Rank == EExamRank::Excellent) return NSLOCTEXT("Exam","Excellent","优等");
-    return NSLOCTEXT("Exam","Passed","通过");
+    if (Rank == EExamRank::Excellent) return FText::FromString(TEXT("优等"));
+    return FText::FromString(TEXT("通过"));
 }
 
 FText UExaminationSystem::GenerateFeedback(EExamRank Rank, EExamLevel Level) const
@@ -167,21 +167,21 @@ FText UExaminationSystem::GenerateFeedback(EExamRank Rank, EExamLevel Level) con
     switch (Rank)
     {
         case EExamRank::TopScorer:
-            return NSLOCTEXT("Exam","FBTop","文章惊艳，主考官拍案叫绝！此子前途不可限量！");
+            return FText::FromString(TEXT("文章惊艳，主考官拍案叫绝！此子前途不可限量！"));
         case EExamRank::Excellent:
-            return NSLOCTEXT("Exam","FBExcellent","文笔俱佳，策论有据，优等通过。");
+            return FText::FromString(TEXT("文笔俱佳，策论有据，优等通过。"));
         case EExamRank::Passed:
-            return NSLOCTEXT("Exam","FBPassed","中规中矩，勉强通过。继续努力。");
+            return FText::FromString(TEXT("中规中矩，勉强通过。继续努力。"));
         case EExamRank::Failed:
         default:
             // 落第也有不同的反馈，给玩家希望
             int32 R = FMath::RandRange(0, 3);
             switch (R)
             {
-                case 0: return NSLOCTEXT("Exam","FBFail1","文章尚可，但立意不新。下次当有所突破。");
-                case 1: return NSLOCTEXT("Exam","FBFail2","策论偏颇，未中主考官之意。科举之路，漫漫其修远。");
-                case 2: return NSLOCTEXT("Exam","FBFail3","时运不济。落第非终点，许多名臣也曾屡试不第。");
-                default: return NSLOCTEXT("Exam","FBFail4","学识尚浅，还需苦读。三年后再来。");
+                case 0: return FText::FromString(TEXT("文章尚可，但立意不新。下次当有所突破。"));
+                case 1: return FText::FromString(TEXT("策论偏颇，未中主考官之意。科举之路，漫漫其修远。"));
+                case 2: return FText::FromString(TEXT("时运不济。落第非终点，许多名臣也曾屡试不第。"));
+                default: return FText::FromString(TEXT("学识尚浅，还需苦读。三年后再来。"));
             }
     }
 }

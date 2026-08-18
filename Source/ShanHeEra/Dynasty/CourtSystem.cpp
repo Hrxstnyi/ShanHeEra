@@ -16,15 +16,15 @@ void UCourtSystem::InitializeCourt()
     // 初始化派系
     FFactionData Reformers;
     Reformers.FactionID = TEXT("Reformers");
-    Reformers.FactionName = NSLOCTEXT("Faction","Reformers","改革派");
-    Reformers.Ideology = NSLOCTEXT("Faction","ReformersIdeo","推行新法，富国强兵");
+    Reformers.FactionName = FText::FromString(TEXT("改革派"));
+    Reformers.Ideology = FText::FromString(TEXT("推行新法，富国强兵"));
     Reformers.Influence = 30;
     Factions.Add(Reformers);
 
     FFactionData Conservatives;
     Conservatives.FactionID = TEXT("Conservatives");
-    Conservatives.FactionName = NSLOCTEXT("Faction","Conservatives","保守派");
-    Conservatives.Ideology = NSLOCTEXT("Faction","ConservativesIdeo","恪守祖制，稳定为先");
+    Conservatives.FactionName = FText::FromString(TEXT("保守派"));
+    Conservatives.Ideology = FText::FromString(TEXT("恪守祖制，稳定为先"));
     Conservatives.Influence = 35;
     Factions.Add(Conservatives);
 

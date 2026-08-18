@@ -1,4 +1,5 @@
 #include "Core/ShanHeGameMode.h"
+#include "Core/ShanHeLog.h"
 #include "Core/ShanHeGameState.h"
 #include "Core/ShanHePlayerController.h"
 #include "World/WorldSimulationSubsystem.h"
@@ -19,7 +20,7 @@ void AShanHeGameMode::BeginPlay()
 
     if (UAudioManager* AM = GetGameInstance()->GetSubsystem<UAudioManager>())
     {
-        AM->PlayBackgroundMusic(TEXT("MainTheme"));
+        AM->PlayMusic(FName(TEXT("MainTheme")));
     }
 }
 

@@ -6,46 +6,46 @@ void UJianghuSystem::InitializeJianghu()
     // 初始化江湖势力
     FJianghuFaction Shaolin;
     Shaolin.FactionID = TEXT("Shaolin");
-    Shaolin.FactionName = NSLOCTEXT("Jianghu","Shaolin","少林寺");
+    Shaolin.FactionName = FText::FromString(TEXT("少林寺"));
     Shaolin.Type = EJianghuFactionType::Temple;
     Shaolin.BaseCity = TEXT("Luoyang");
     Shaolin.Members = 500;
     Shaolin.Influence = 80;
     Shaolin.Reputation = 90;
-    Shaolin.Description = NSLOCTEXT("Jianghu","ShaolinDesc","天下武功出少林，佛门圣地，正道领袖");
+    Shaolin.Description = FText::FromString(TEXT("天下武功出少林，佛门圣地，正道领袖"));
     Factions.Add(Shaolin);
 
     FJianghuFaction Wudang;
     Wudang.FactionID = TEXT("Wudang");
-    Wudang.FactionName = NSLOCTEXT("Jianghu","Wudang","武当派");
+    Wudang.FactionName = FText::FromString(TEXT("武当派"));
     Wudang.Type = EJianghuFactionType::Sect;
     Wudang.BaseCity = TEXT("Xiangyang");
     Wudang.Members = 300;
     Wudang.Influence = 75;
     Wudang.Reputation = 85;
-    Wudang.Description = NSLOCTEXT("Jianghu","WudangDesc","以柔克刚，道法自然，内家拳发源地");
+    Wudang.Description = FText::FromString(TEXT("以柔克刚，道法自然，内家拳发源地"));
     Factions.Add(Wudang);
 
     FJianghuFaction BiaoJu;
     BiaoJu.FactionID = TEXT("TianXiaBiaoJu");
-    BiaoJu.FactionName = NSLOCTEXT("Jianghu","BiaoJu","天下镖局");
+    BiaoJu.FactionName = FText::FromString(TEXT("天下镖局"));
     BiaoJu.Type = EJianghuFactionType::Escort;
     BiaoJu.BaseCity = TEXT("Beijing");
     BiaoJu.Members = 800;
     BiaoJu.Influence = 60;
     BiaoJu.Reputation = 70;
-    BiaoJu.Description = NSLOCTEXT("Jianghu","BiaoJuDesc","北方最大镖局，信誉卓著，走南闯北");
+    BiaoJu.Description = FText::FromString(TEXT("北方最大镖局，信誉卓著，走南闯北"));
     Factions.Add(BiaoJu);
 
     FJianghuFaction GreenGang;
     GreenGang.FactionID = TEXT("QingBang");
-    GreenGang.FactionName = NSLOCTEXT("Jianghu","GreenGang","青帮");
+    GreenGang.FactionName = FText::FromString(TEXT("青帮"));
     GreenGang.Type = EJianghuFactionType::Gang;
     GreenGang.BaseCity = TEXT("Hangzhou");
     GreenGang.Members = 2000;
     GreenGang.Influence = 70;
     GreenGang.Reputation = 30;
-    GreenGang.Description = NSLOCTEXT("Jianghu","GreenGangDesc","漕运起家，势力遍布运河两岸，亦正亦邪");
+    GreenGang.Description = FText::FromString(TEXT("漕运起家，势力遍布运河两岸，亦正亦邪"));
     Factions.Add(GreenGang);
 
     UE_LOG(LogShanHe, Log, TEXT("江湖系统初始化 - %d 股势力，江湖不是幻想世界，是官方之外的人际网络"), Factions.Num());

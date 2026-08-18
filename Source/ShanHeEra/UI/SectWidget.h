@@ -63,10 +63,10 @@ public:
     void AcceptMission();
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|UI")
-    void DeclareWar(FName EnemySectID);
+    void DeclareWar();
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|UI")
-    void ProposeAlliance(FName AllySectID);
+    void ProposeAlliance();
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|UI")
     void SwitchTab(int32 TabIndex); // 0=概览 1=成员 2=任务 3=战争

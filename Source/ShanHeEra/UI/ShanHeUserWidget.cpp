@@ -44,7 +44,7 @@ void UShanHeUserWidget::Show(int32 ZOrder)
             }
             else
             {
-                UWidgetBlueprintLibrary::SetInputMode_GameAndUIEx(PC, this, bShowMouseCursor, false);
+                UWidgetBlueprintLibrary::SetInputMode_GameAndUIEx(PC, this, EMouseLockMode::DoNotLock, false);
             }
             PC->bShowMouseCursor = bShowMouseCursor;
         }

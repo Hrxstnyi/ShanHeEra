@@ -43,7 +43,7 @@ void UCameraSystem::DollyPullBack(float Distance, float Duration, EEndingProfile
 void UCameraSystem::LateralTrack(float Distance, float Duration, bool bRight)
 {
     bIsAnimating=true; AnimateStartLocation=GetCurrentCameraLocation();
-    FVector Right=GetCurrentCameraRotation().RotateVector(FVector::RightVector());
+    FVector Right=GetCurrentCameraRotation().RotateVector(FVector::RightVector);
     AnimateEndLocation=AnimateStartLocation+Right*(bRight?Distance:-Distance);
     AnimateStartRotation=GetCurrentCameraRotation(); AnimateEndRotation=AnimateStartRotation;
     AnimateTime=0.f; AnimateDuration=Duration;

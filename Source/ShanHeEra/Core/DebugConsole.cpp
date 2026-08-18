@@ -5,21 +5,21 @@ void UDebugConsole::InitializeConsole()
 {
     struct FCmdDef { FName Cmd; const TCHAR* Desc; bool Cheat; };
     FCmdDef CmdDefs[] = {
-        {TEXT("help"), NSLOCTEXT("Cmd","help","显示所有命令"), false},
-        {TEXT("status"), NSLOCTEXT("Cmd","status","显示世界状态"), false},
-        {TEXT("tp"), NSLOCTEXT("Cmd","tp","传送到城市"), true},
-        {TEXT("money"), NSLOCTEXT("Cmd","money","增加银两"), true},
-        {TEXT("god"), NSLOCTEXT("Cmd","god","切换无敌模式"), true},
-        {TEXT("time"), NSLOCTEXT("Cmd","time","设置时间流速"), true},
-        {TEXT("kill"), NSLOCTEXT("Cmd","kill","杀死目标"), true},
-        {TEXT("heal"), NSLOCTEXT("Cmd","heal","恢复满血"), true},
-        {TEXT("weather"), NSLOCTEXT("Cmd","weather","设置天气"), true},
-        {TEXT("event"), NSLOCTEXT("Cmd","event","触发事件"), true},
+        {TEXT("help"), TEXT("显示所有命令"), false},
+        {TEXT("status"), TEXT("显示世界状态"), false},
+        {TEXT("tp"), TEXT("传送到城市"), true},
+        {TEXT("money"), TEXT("增加银两"), true},
+        {TEXT("god"), TEXT("切换无敌模式"), true},
+        {TEXT("time"), TEXT("设置时间流速"), true},
+        {TEXT("kill"), TEXT("杀死目标"), true},
+        {TEXT("heal"), TEXT("恢复满血"), true},
+        {TEXT("weather"), TEXT("设置天气"), true},
+        {TEXT("event"), TEXT("触发事件"), true},
     };
     for (const auto& C : CmdDefs)
     {
         FDebugCommand Cmd;
-        Cmd.Command = C.Cmd; Cmd.Description = C.Desc; Cmd.bCheat = C.Cheat;
+        Cmd.Command = C.Cmd; Cmd.Description = FText::FromString(C.Desc); Cmd.bCheat = C.Cheat;
         Commands.Add(Cmd);
     }
     UE_LOG(LogShanHe, Log, TEXT("调试控制台初始化 - %d 条命令"), Commands.Num());

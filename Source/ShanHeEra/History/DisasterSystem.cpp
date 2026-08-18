@@ -61,32 +61,32 @@ void UDisasterSystem::TriggerDisaster(EDisasterType Type, FName RegionID, int32 
     switch (Type)
     {
         case EDisasterType::Flood:
-            Disaster.Title = NSLOCTEXT("Disaster","Flood","洪水泛滥");
-            Disaster.Description = NSLOCTEXT("Disaster","FloodDesc","连月暴雨，江河决堤，良田被淹。");
+            Disaster.Title = FText::FromString(TEXT("洪水泛滥"));
+            Disaster.Description = FText::FromString(TEXT("连月暴雨，江河决堤，良田被淹。"));
             Disaster.DurationDays = 30 + Severity * 15;
             Disaster.GrainPriceMultiplier = 1.2f + Severity * 0.2f;
             Disaster.StabilityImpact = -5.0f * Severity;
             Disaster.bHasCG = Severity >= 4;
             break;
         case EDisasterType::Drought:
-            Disaster.Title = NSLOCTEXT("Disaster","Drought","大旱连年");
-            Disaster.Description = NSLOCTEXT("Disaster","DroughtDesc","滴雨未降，赤地千里，禾苗枯槁。");
+            Disaster.Title = FText::FromString(TEXT("大旱连年"));
+            Disaster.Description = FText::FromString(TEXT("滴雨未降，赤地千里，禾苗枯槁。"));
             Disaster.DurationDays = 90 + Severity * 30;
             Disaster.GrainPriceMultiplier = 1.5f + Severity * 0.3f;
             Disaster.StabilityImpact = -8.0f * Severity;
             Disaster.bHasCG = Severity >= 4;
             break;
         case EDisasterType::Locust:
-            Disaster.Title = NSLOCTEXT("Disaster","Locust","蝗灾遮天");
-            Disaster.Description = NSLOCTEXT("Disaster","LocustDesc","蝗虫遮天蔽日，所过之处寸草不生。");
+            Disaster.Title = FText::FromString(TEXT("蝗灾遮天"));
+            Disaster.Description = FText::FromString(TEXT("蝗虫遮天蔽日，所过之处寸草不生。"));
             Disaster.DurationDays = 15 + Severity * 5;
             Disaster.GrainPriceMultiplier = 2.0f + Severity * 0.5f;
             Disaster.StabilityImpact = -10.0f * Severity;
             Disaster.bHasCG = true;
             break;
         case EDisasterType::Earthquake:
-            Disaster.Title = NSLOCTEXT("Disaster","Earthquake","大地震");
-            Disaster.Description = NSLOCTEXT("Disaster","EarthquakeDesc","山崩地裂，屋舍倒塌，生灵涂炭。");
+            Disaster.Title = FText::FromString(TEXT("大地震"));
+            Disaster.Description = FText::FromString(TEXT("山崩地裂，屋舍倒塌，生灵涂炭。"));
             Disaster.DurationDays = 7 + Severity * 3;
             Disaster.GrainPriceMultiplier = 1.3f;
             Disaster.StabilityImpact = -15.0f * Severity;
@@ -94,8 +94,8 @@ void UDisasterSystem::TriggerDisaster(EDisasterType Type, FName RegionID, int32 
             Disaster.bHasCG = Severity >= 3;
             break;
         case EDisasterType::Plague:
-            Disaster.Title = NSLOCTEXT("Disaster","Plague","瘟疫流行");
-            Disaster.Description = NSLOCTEXT("Disaster","PlagueDesc","疫病蔓延，人心惶惶，十室九空。");
+            Disaster.Title = FText::FromString(TEXT("瘟疫流行"));
+            Disaster.Description = FText::FromString(TEXT("疫病蔓延，人心惶惶，十室九空。"));
             Disaster.DurationDays = 60 + Severity * 20;
             Disaster.GrainPriceMultiplier = 1.1f;
             Disaster.StabilityImpact = -12.0f * Severity;
@@ -109,15 +109,15 @@ void UDisasterSystem::TriggerDisaster(EDisasterType Type, FName RegionID, int32 
             ActivePlague.Infected = 100 * Severity;
             break;
         case EDisasterType::Cold:
-            Disaster.Title = NSLOCTEXT("Disaster","Cold","大寒奇寒");
-            Disaster.Description = NSLOCTEXT("Disaster","ColdDesc","暴雪封路，滴水成冰，人畜冻死。");
+            Disaster.Title = FText::FromString(TEXT("大寒奇寒"));
+            Disaster.Description = FText::FromString(TEXT("暴雪封路，滴水成冰，人畜冻死。"));
             Disaster.DurationDays = 30 + Severity * 10;
             Disaster.GrainPriceMultiplier = 1.3f;
             Disaster.StabilityImpact = -3.0f * Severity;
             break;
         case EDisasterType::Famine:
-            Disaster.Title = NSLOCTEXT("Disaster","Famine","大饥荒");
-            Disaster.Description = NSLOCTEXT("Disaster","FamineDesc","粮食绝收，饿殍遍野，民不聊生。");
+            Disaster.Title = FText::FromString(TEXT("大饥荒"));
+            Disaster.Description = FText::FromString(TEXT("粮食绝收，饿殍遍野，民不聊生。"));
             Disaster.DurationDays = 180 + Severity * 30;
             Disaster.GrainPriceMultiplier = 3.0f + Severity * 0.5f;
             Disaster.StabilityImpact = -20.0f * Severity;

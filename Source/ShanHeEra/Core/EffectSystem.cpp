@@ -27,7 +27,7 @@ void UEffectSystem::InitializeEffects()
     };
     for (const auto& E : Effects)
     {
-        FEffectData Data; Data.EffectID=E.ID; Data.Type=E.Type; Data.NiagaraSystemPath=E.Path;
+        FEffectData Data; Data.EffectID=E.ID; Data.Type = E.Type; Data.NiagaraSystemPath=E.Path;
         Data.Duration=E.Dur; Data.bIsLooping=E.Loop; EffectDatabase.Add(E.ID, Data);
     }
 }

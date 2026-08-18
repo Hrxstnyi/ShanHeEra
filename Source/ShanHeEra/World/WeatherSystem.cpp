@@ -55,10 +55,10 @@ FText UWeatherSystem::GetTermDescription(ESolarTerm Term) const
 {
     switch (Term)
     {
-        case ESolarTerm::Lichun: return NSLOCTEXT("Term","Lichun","立春 - 万物复苏，春耕开始");
-        case ESolarTerm::Qingming: return NSLOCTEXT("Term","Qingming","清明 - 祭祖扫墓，踏青插柳");
-        case ESolarTerm::Dongzhi: return NSLOCTEXT("Term","Dongzhi","冬至 - 昼最短夜最长，吃饺子");
-        case ESolarTerm::Dashu: return NSLOCTEXT("Term","Dashu","大暑 - 一年最热，注意防暑");
+        case ESolarTerm::Lichun: return FText::FromString(TEXT("立春 - 万物复苏，春耕开始"));
+        case ESolarTerm::Qingming: return FText::FromString(TEXT("清明 - 祭祖扫墓，踏青插柳"));
+        case ESolarTerm::Dongzhi: return FText::FromString(TEXT("冬至 - 昼最短夜最长，吃饺子"));
+        case ESolarTerm::Dashu: return FText::FromString(TEXT("大暑 - 一年最热，注意防暑"));
         default: return FText::GetEmpty();
     }
 }

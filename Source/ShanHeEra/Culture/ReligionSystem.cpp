@@ -5,24 +5,24 @@ void UReligionSystem::InitializeReligions()
 {
     FReligionData Buddhist;
     Buddhist.Type = EReligionType::Buddhism;
-    Buddhist.Name = NSLOCTEXT("Rel","Buddhism","佛教");
-    Buddhist.Description = NSLOCTEXT("Rel","BuddhismDesc","慈悲为怀，普度众生");
+    Buddhist.Name = FText::FromString(TEXT("佛教"));
+    Buddhist.Description = FText::FromString(TEXT("慈悲为怀，普度众生"));
     Buddhist.Followers = 100000;
     Buddhist.Influence = 30.0f;
     Religions.Add(EReligionType::Buddhism, Buddhist);
 
     FReligionData Taoist;
     Taoist.Type = EReligionType::Taoism;
-    Taoist.Name = NSLOCTEXT("Rel","Taoism","道教");
-    Taoist.Description = NSLOCTEXT("Rel","TaoismDesc","道法自然，无为而治");
+    Taoist.Name = FText::FromString(TEXT("道教"));
+    Taoist.Description = FText::FromString(TEXT("道法自然，无为而治"));
     Taoist.Followers = 50000;
     Taoist.Influence = 20.0f;
     Religions.Add(EReligionType::Taoism, Taoist);
 
     FReligionData Confucian;
     Confucian.Type = EReligionType::Confucianism;
-    Confucian.Name = NSLOCTEXT("Rel","Confucian","儒教");
-    Confucian.Description = NSLOCTEXT("Rel","ConfucianDesc","仁义礼智信，修身齐家治国平天下");
+    Confucian.Name = FText::FromString(TEXT("儒教"));
+    Confucian.Description = FText::FromString(TEXT("仁义礼智信，修身齐家治国平天下"));
     Confucian.Followers = 200000;
     Confucian.Influence = 50.0f;
     Religions.Add(EReligionType::Confucianism, Confucian);
@@ -30,7 +30,7 @@ void UReligionSystem::InitializeReligions()
     // 初始化寺庙
     FTempleData Shaolin;
     Shaolin.TempleID = TEXT("Shaolin");
-    Shaolin.TempleName = NSLOCTEXT("Temple","Shaolin","少林寺");
+    Shaolin.TempleName = FText::FromString(TEXT("少林寺"));
     Shaolin.Religion = EReligionType::Buddhism;
     Shaolin.CityID = TEXT("Dengfeng");
     Shaolin.Incense = 10000;
@@ -38,7 +38,7 @@ void UReligionSystem::InitializeReligions()
 
     FTempleData Wudang;
     Wudang.TempleID = TEXT("Wudang");
-    Wudang.TempleName = NSLOCTEXT("Temple","Wudang","武当山");
+    Wudang.TempleName = FText::FromString(TEXT("武当山"));
     Wudang.Religion = EReligionType::Taoism;
     Wudang.CityID = TEXT("Wudang");
     Wudang.Incense = 8000;

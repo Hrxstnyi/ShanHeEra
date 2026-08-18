@@ -10,7 +10,7 @@ void UConstructionSystem::StartConstruction(FName BuildingType, FName CityID, in
 
     if (BuildingType == TEXT("Wall"))
     {
-        Project.Building.BuildingName = NSLOCTEXT("Build","Wall","城墙");
+        Project.Building.BuildingName = FText::FromString(TEXT("城墙"));
         Project.Building.Type = EBuildingType::Wall;
         Project.Building.ConstructionDays = 365;
         Project.Building.SilverCost = 50000;
@@ -19,7 +19,7 @@ void UConstructionSystem::StartConstruction(FName BuildingType, FName CityID, in
     }
     else if (BuildingType == TEXT("Canal"))
     {
-        Project.Building.BuildingName = NSLOCTEXT("Build","Canal","运河");
+        Project.Building.BuildingName = FText::FromString(TEXT("运河"));
         Project.Building.Type = EBuildingType::Canal;
         Project.Building.ConstructionDays = 730;
         Project.Building.SilverCost = 200000;
@@ -28,7 +28,7 @@ void UConstructionSystem::StartConstruction(FName BuildingType, FName CityID, in
     }
     else if (BuildingType == TEXT("Granary"))
     {
-        Project.Building.BuildingName = NSLOCTEXT("Build","Granary","粮仓");
+        Project.Building.BuildingName = FText::FromString(TEXT("粮仓"));
         Project.Building.Type = EBuildingType::Granary;
         Project.Building.ConstructionDays = 60;
         Project.Building.SilverCost = 5000;
@@ -37,7 +37,7 @@ void UConstructionSystem::StartConstruction(FName BuildingType, FName CityID, in
     }
     else
     {
-        Project.Building.BuildingName = NSLOCTEXT("Build","House","民居");
+        Project.Building.BuildingName = FText::FromString(TEXT("民居"));
         Project.Building.Type = EBuildingType::House;
         Project.Building.ConstructionDays = 15;
         Project.Building.SilverCost = 200;

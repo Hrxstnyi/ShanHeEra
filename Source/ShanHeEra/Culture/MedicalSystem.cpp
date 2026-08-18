@@ -6,19 +6,19 @@ void UMedicalSystem::InitializeMedicine()
     // 初始化药材库
     struct FHerbDef { FName ID; const TCHAR* Name; EIllnessType Treat; int32 Price; int32 Rarity; };
     FHerbDef Herbs[] = {
-        {TEXT("Ginseng"), NSLOCTEXT("Herb","Ginseng","人参"), EIllnessType::Chronic, 5000, 5},
-        {TEXT("Licorice"), NSLOCTEXT("Herb","Licorice","甘草"), EIllnessType::Cold, 100, 1},
-        {TEXT("Ginger"), NSLOCTEXT("Herb","Ginger","生姜"), EIllnessType::Cold, 20, 1},
-        {TEXT("Astragalus"), NSLOCTEXT("Herb","Astragalus","黄芪"), EIllnessType::Chronic, 300, 3},
-        {TEXT("Angelica"), NSLOCTEXT("Herb","Angelica","当归"), EIllnessType::Injury, 200, 2},
-        {TEXT("Coptis"), NSLOCTEXT("Herb","Coptis","黄连"), EIllnessType::Fever, 150, 2},
-        {TEXT("Musk"), NSLOCTEXT("Herb","Musk","麝香"), EIllnessType::Poison, 3000, 5},
-        {TEXT("Isatis"), NSLOCTEXT("Herb","Isatis","板蓝根"), EIllnessType::Plague, 200, 2},
+        {TEXT("Ginseng"), TEXT("人参"), EIllnessType::Chronic, 5000, 5},
+        {TEXT("Licorice"), TEXT("甘草"), EIllnessType::Cold, 100, 1},
+        {TEXT("Ginger"), TEXT("生姜"), EIllnessType::Cold, 20, 1},
+        {TEXT("Astragalus"), TEXT("黄芪"), EIllnessType::Chronic, 300, 3},
+        {TEXT("Angelica"), TEXT("当归"), EIllnessType::Injury, 200, 2},
+        {TEXT("Coptis"), TEXT("黄连"), EIllnessType::Fever, 150, 2},
+        {TEXT("Musk"), TEXT("麝香"), EIllnessType::Poison, 3000, 5},
+        {TEXT("Isatis"), TEXT("板蓝根"), EIllnessType::Plague, 200, 2},
     };
     for (const auto& H : Herbs)
     {
         FHerbData D;
-        D.HerbID = H.ID; D.HerbName = H.Name; D.Treats.Add(H.Treat);
+        D.HerbID = H.ID; D.HerbName = FText::FromString(H.Name); D.Treats.Add(H.Treat);
         D.Price = H.Price; D.Rarity = H.Rarity;
         HerbDatabase.Add(D);
     }
@@ -26,7 +26,7 @@ void UMedicalSystem::InitializeMedicine()
     // 初始化方剂
     FPrescription ColdFormula;
     ColdFormula.PrescriptionID = TEXT("ColdFormula");
-    ColdFormula.Name = NSLOCTEXT("Med","ColdFormula","桂枝汤");
+    ColdFormula.Name = FText::FromString(TEXT("桂枝汤"));
     ColdFormula.Herbs = {TEXT("Licorice"), TEXT("Ginger")};
     ColdFormula.Treats = EIllnessType::Cold;
     ColdFormula.Effectiveness = 70;

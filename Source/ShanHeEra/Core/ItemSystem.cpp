@@ -6,23 +6,23 @@ void UItemSystem::InitializeItems()
     // 初始化基础物品
     struct FItemDef { FName ID; const TCHAR* Name; EItemType Type; EItemRarity Rarity; int32 Price; bool Equip; };
     FItemDef Items[] = {
-        {TEXT("IronSword"), NSLOCTEXT("Item","IronSword","铁剑"), EItemType::Weapon, EItemRarity::Common, 100, true},
-        {TEXT("SteelSword"), NSLOCTEXT("Item","SteelSword","钢剑"), EItemType::Weapon, EItemRarity::Fine, 500, true},
-        {TEXT("LegendaryBlade"), NSLOCTEXT("Item","LegendaryBlade","屠龙刀"), EItemType::Weapon, EItemRarity::Legendary, 50000, true},
-        {TEXT("LeatherArmor"), NSLOCTEXT("Item","LeatherArmor","皮甲"), EItemType::Armor, EItemRarity::Common, 80, true},
-        {TEXT("IronArmor"), NSLOCTEXT("Item","IronArmor","铁甲"), EItemType::Armor, EItemRarity::Fine, 400, true},
-        {TEXT("HealthPotion"), NSLOCTEXT("Item","HealthPotion","金疮药"), EItemType::Consumable, EItemRarity::Common, 50, false},
-        {TEXT("Ginseng"), NSLOCTEXT("Item","Ginseng","百年人参"), EItemType::Consumable, EItemRarity::Rare, 2000, false},
-        {TEXT("IronOre"), NSLOCTEXT("Item","IronOre","铁矿石"), EItemType::Material, EItemRarity::Common, 10, false},
-        {TEXT("Steel"), NSLOCTEXT("Item","Steel","精钢"), EItemType::Material, EItemRarity::Fine, 100, false},
-        {TEXT("Jade"), NSLOCTEXT("Item","Jade","和田玉"), EItemType::Valuable, EItemRarity::Rare, 3000, false},
-        {TEXT("Analects"), NSLOCTEXT("Item","Analects","论语"), EItemType::Book, EItemRarity::Fine, 500, false},
-        {TEXT("SunTzu"), NSLOCTEXT("Item","SunTzu","孙子兵法"), EItemType::Book, EItemRarity::Epic, 5000, false},
+        {TEXT("IronSword"), TEXT("铁剑"), EItemType::Weapon, EItemRarity::Common, 100, true},
+        {TEXT("SteelSword"), TEXT("钢剑"), EItemType::Weapon, EItemRarity::Fine, 500, true},
+        {TEXT("LegendaryBlade"), TEXT("屠龙刀"), EItemType::Weapon, EItemRarity::Legendary, 50000, true},
+        {TEXT("LeatherArmor"), TEXT("皮甲"), EItemType::Armor, EItemRarity::Common, 80, true},
+        {TEXT("IronArmor"), TEXT("铁甲"), EItemType::Armor, EItemRarity::Fine, 400, true},
+        {TEXT("HealthPotion"), TEXT("金疮药"), EItemType::Consumable, EItemRarity::Common, 50, false},
+        {TEXT("Ginseng"), TEXT("百年人参"), EItemType::Consumable, EItemRarity::Rare, 2000, false},
+        {TEXT("IronOre"), TEXT("铁矿石"), EItemType::Material, EItemRarity::Common, 10, false},
+        {TEXT("Steel"), TEXT("精钢"), EItemType::Material, EItemRarity::Fine, 100, false},
+        {TEXT("Jade"), TEXT("和田玉"), EItemType::Valuable, EItemRarity::Rare, 3000, false},
+        {TEXT("Analects"), TEXT("论语"), EItemType::Book, EItemRarity::Fine, 500, false},
+        {TEXT("SunTzu"), TEXT("孙子兵法"), EItemType::Book, EItemRarity::Epic, 5000, false},
     };
     for (const auto& I : Items)
     {
         FItemData D;
-        D.ItemID = I.ID; D.ItemName = I.Name; D.Type = I.Type;
+        D.ItemID = I.ID; D.ItemName = FText::FromString(I.Name); D.Type = I.Type;
         D.Rarity = I.Rarity; D.BasePrice = I.Price; D.bIsEquippable = I.Equip;
         ItemDatabase.Add(I.ID, D);
     }

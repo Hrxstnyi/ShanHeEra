@@ -23,12 +23,15 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHourChanged, int32, NewHour);
  * 日出日落、月光、火把、Lumen全局光照、体积雾、星空
  */
 UCLASS()
-class SHANHEERA_API UDayNightSystem : public UWorldSubsystem
+class SHANHEERA_API UDayNightSystem : public UWorldSubsystem, public FTickableGameObject
 {
     GENERATED_BODY()
 public:
     virtual void Initialize(FSubsystemCollectionBase& Collection) override;
     virtual void Tick(float DeltaTime) override;
+    virtual bool IsTickable() const override { return true; }
+    virtual bool IsTickableInEditor() const override { return false; }
+    virtual TStatId GetStatId() const override { RETURN_QUICK_DECLARE_CYCLE_STAT(UDayNightSystem, STATGROUP_Tickables); }
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|昼夜")
     void SetTimeOfDay(float InHour); // 0-24

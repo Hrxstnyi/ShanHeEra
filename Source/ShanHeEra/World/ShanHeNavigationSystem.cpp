@@ -45,7 +45,7 @@ void UShanHeNavigationSystem::Simulate(int32 Days)
     CheckStorms();
 }
 
-FShipData UNavigationSystem::BuildShip(FName ShipType, FText ShipName)
+FShipData UShanHeNavigationSystem::BuildShip(FName ShipType, FText ShipName)
 {
     FShipData Ship;
     Ship.ShipID = FName(*FString::Printf(TEXT("Ship_%d"), FDateTime::Now().GetTicks()));
@@ -70,7 +70,7 @@ FShipData UNavigationSystem::BuildShip(FName ShipType, FText ShipName)
     return Ship;
 }
 
-bool UNavigationSystem::StartVoyage(FName ShipID, FName RouteID, int32 CargoValue)
+bool UShanHeNavigationSystem::StartVoyage(FName ShipID, FName RouteID, int32 CargoValue)
 {
     const FSeaRoute* Route = nullptr;
     for (const FSeaRoute& R : SeaRoutes)
@@ -103,7 +103,7 @@ void UShanHeNavigationSystem::DiscoverRoute(FName RouteID)
     }
 }
 
-TArray<FSeaRoute> UNavigationSystem::GetDiscoveredRoutes() const
+TArray<FSeaRoute> UShanHeNavigationSystem::GetDiscoveredRoutes() const
 {
     TArray<FSeaRoute> Result;
     for (const FSeaRoute& R : SeaRoutes)

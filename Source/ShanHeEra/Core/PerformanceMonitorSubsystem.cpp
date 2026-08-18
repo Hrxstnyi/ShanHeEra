@@ -19,8 +19,6 @@ void UPerformanceMonitorSubsystem::OnWorldBeginPlay(UWorld& InWorld)
 
 void UPerformanceMonitorSubsystem::Tick(float DeltaTime)
 {
-    Super::Tick(DeltaTime);
-
     UpdateFPS(DeltaTime);
 
     if (bAutoAdjust)
