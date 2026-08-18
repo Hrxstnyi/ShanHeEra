@@ -1,39 +1,88 @@
 #include "World/CityManager.h"
-#include "Core/ShanHeLog.h"
 
 void UCityManager::InitializeCities()
 {
     Cities.Empty();
-    struct FCityDef { FName ID; const TCHAR* Name; ECityLevel Lvl; FName Region; bool Cap; bool Port; int32 Pop; };
-    FCityDef Defs[] = {
-        {TEXT("Yingtian"), NSLOCTEXT("City","Yingtian","应天府"), ECityLevel::Capital, TEXT("Jiangnan"), true, false, 1200000},
-        {TEXT("Kaifeng"), NSLOCTEXT("City","Kaifeng","开封府"), ECityLevel::Prefecture, TEXT("Inland"), false, false, 800000},
-        {TEXT("Chang'an"), NSLOCTEXT("City","Chang'an","长安城"), ECityLevel::Prefecture, TEXT("Northwest"), false, false, 600000},
-        {TEXT("Luoyang"), NSLOCTEXT("City","Luoyang","洛阳城"), ECityLevel::Prefecture, TEXT("Inland"), false, false, 500000},
-        {TEXT("Yangzhou"), NSLOCTEXT("City","Yangzhou","扬州"), ECityLevel::Metropolis, TEXT("Jiangnan"), false, true, 900000},
-        {TEXT("Hangzhou"), NSLOCTEXT("City","Hangzhou","杭州"), ECityLevel::Metropolis, TEXT("Jiangnan"), false, true, 1000000},
-        {TEXT("Quanzhou"), NSLOCTEXT("City","Quanzhou","泉州"), ECityLevel::Prefecture, TEXT("Coast"), false, true, 500000},
-        {TEXT("Guangzhou"), NSLOCTEXT("City","Guangzhou","广州"), ECityLevel::Prefecture, TEXT("Coast"), false, true, 600000},
-        {TEXT("Chengdu"), NSLOCTEXT("City","Chengdu","成都"), ECityLevel::Prefecture, TEXT("Southwest"), false, false, 700000},
-        {TEXT("TaiwanFu"), NSLOCTEXT("City","TaiwanFu","台湾府"), ECityLevel::County, TEXT("Taiwan"), false, true, 200000},
-        {TEXT("Tamsui"), NSLOCTEXT("City","Tamsui","淡水港"), ECityLevel::Town, TEXT("Taiwan"), false, true, 50000},
-        {TEXT("Beijing"), NSLOCTEXT("City","Beijing","北平"), ECityLevel::Prefecture, TEXT("NorthPlain"), false, false, 800000},
-    };
-    for (const auto& D : Defs)
-    {
-        FCityData C;
-        C.CityID = D.ID;
-        C.CityName = D.Name;
-        C.Level = D.Lvl;
-        C.ParentRegion = D.Region;
-        C.bIsCapital = D.Cap;
-        C.bIsPort = D.Port;
-        C.Population = D.Pop;
-        C.Prosperity = 40.0f + FMath::RandRange(-10, 40);
-        C.Defense = 20.0f + (int32)D.Lvl * 10.0f;
-        Cities.Add(C);
-    }
-    UE_LOG(LogShanHe, Log, TEXT("城市系统初始化：%d 座城池，台湾府隶属华夏版图"), Cities.Num());
+
+    FCityData C1;
+    C1.CityID = TEXT("Yingtian");
+    C1.CityName = FText::FromString(TEXT("应天府"));
+    C1.Level = ECityLevel::Capital;
+    C1.ParentRegion = TEXT("Jiangnan");
+    C1.bIsCapital = true;
+    C1.bIsPort = false;
+    C1.Population = 1200000;
+    Cities.Add(C1.CityID, C1);
+
+    FCityData C2;
+    C2.CityID = TEXT("Kaifeng");
+    C2.CityName = FText::FromString(TEXT("开封府"));
+    C2.Level = ECityLevel::Prefecture;
+    C2.ParentRegion = TEXT("Inland");
+    C2.bIsCapital = false;
+    C2.bIsPort = false;
+    C2.Population = 800000;
+    Cities.Add(C2.CityID, C2);
+
+    FCityData C3;
+    C3.CityID = TEXT("Chang'an");
+    C3.CityName = FText::FromString(TEXT("长安城"));
+    C3.Level = ECityLevel::Prefecture;
+    C3.ParentRegion = TEXT("Northwest");
+    C3.bIsCapital = false;
+    C3.bIsPort = false;
+    C3.Population = 600000;
+    Cities.Add(C3.CityID, C3);
+
+    FCityData C4;
+    C4.CityID = TEXT("Yangzhou");
+    C4.CityName = FText::FromString(TEXT("扬州"));
+    C4.Level = ECityLevel::Metropolis;
+    C4.ParentRegion = TEXT("Jiangnan");
+    C4.bIsCapital = false;
+    C4.bIsPort = true;
+    C4.Population = 900000;
+    Cities.Add(C4.CityID, C4);
+
+    FCityData C5;
+    C5.CityID = TEXT("Hangzhou");
+    C5.CityName = FText::FromString(TEXT("杭州"));
+    C5.Level = ECityLevel::Metropolis;
+    C5.ParentRegion = TEXT("Jiangnan");
+    C5.bIsCapital = false;
+    C5.bIsPort = true;
+    C5.Population = 1000000;
+    Cities.Add(C5.CityID, C5);
+
+    FCityData C6;
+    C6.CityID = TEXT("Quanzhou");
+    C6.CityName = FText::FromString(TEXT("泉州"));
+    C6.Level = ECityLevel::Prefecture;
+    C6.ParentRegion = TEXT("Coast");
+    C6.bIsCapital = false;
+    C6.bIsPort = true;
+    C6.Population = 500000;
+    Cities.Add(C6.CityID, C6);
+
+    FCityData C7;
+    C7.CityID = TEXT("TaiwanFu");
+    C7.CityName = FText::FromString(TEXT("台湾府"));
+    C7.Level = ECityLevel::County;
+    C7.ParentRegion = TEXT("Taiwan");
+    C7.bIsCapital = false;
+    C7.bIsPort = true;
+    C7.Population = 200000;
+    Cities.Add(C7.CityID, C7);
+
+    FCityData C8;
+    C8.CityID = TEXT("Beijing");
+    C8.CityName = FText::FromString(TEXT("北平"));
+    C8.Level = ECityLevel::Prefecture;
+    C8.ParentRegion = TEXT("NorthPlain");
+    C8.bIsCapital = false;
+    C8.bIsPort = false;
+    C8.Population = 800000;
+    Cities.Add(C8.CityID, C8);
 }
 
 FCityData UCityManager::GetCity(FName CityID) const

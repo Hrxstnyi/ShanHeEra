@@ -50,36 +50,16 @@ void UCGManager::PlayCGWithCinematic(FName CGID)
 {
     if(!CGLibrary.Find(CGID)) return;
     PlayCG(CGID);
-    FCinematicSequence Cinematic = GetCinematicForCG(CGID);
-    if(Cinematic.SequenceID != ECinematicSequenceID::None)
+
+    if(UWorld* World = GetWorld())
     {
-        if(UWorld* World = GetWorld())
+        if(UCinematicDirector* Director = World->GetGameInstance()->GetSubsystem<UCinematicDirector>())
         {
-            if(UCinematicDirector* Director = World->GetGameInstance()->GetSubsystem<UCinematicDirector>())
-            {
-                Director->PlaySequence(Cinematic.SequenceID);
-            }
+            Director->PlaySequence(CGID);
         }
     }
 }
 void UCGManager::StopCG() { bIsPlaying=false; bSubtitleVisible=false; CurrentSubtitleIndex=-1; }
-void UCGManager::SkipCG() { StopCG(); }
-float UCGManager::GetPlaybackTime() const { return PlaybackTime; }
-FCinematicSequence UCGManager::GetCinematicForCG(FName CGID)
-{
-    FCinematicSequence Result;
-    if(FCGSequence* CG = CGLibrary.Find(CGID))
-    {
-        if(UWorld* World = GetWorld())
-        {
-            if(UCinematicDirector* Director = World->GetGameInstance()->GetSubsystem<UCinematicDirector>())
-            {
-                Result = Director->GetSequence(CG->CinematicSequenceID);
-            }
-        }
-    }
-    return Result;
-}
 void UCGManager::ShowSubtitle(const FSubtitleEntry& Subtitle)
 {
     CurrentSubtitle = Subtitle.Text; bSubtitleVisible = true;

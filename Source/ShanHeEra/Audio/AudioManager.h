@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include "Subsystems/GameInstanceSubsystem.h"
 #include "Core/CinematicDirector.h"
 #include "AudioManager.generated.h"
 
@@ -61,7 +61,7 @@ struct FStinger
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float Volume = 1.0f;
 };
 UCLASS()
-class SHANHEERA_API UAudioManager : public UObject
+class SHANHEERA_API UAudioManager : public UGameInstanceSubsystem
 {
     GENERATED_BODY()
 public:

@@ -144,7 +144,7 @@ void UCinematicDirector::ApplyShotAudio(const FShotContract& Shot)
         {
             if (!Shot.MusicTrack.IsNone())
             {
-                AudioMgr->PlayBackgroundMusic(Shot.MusicTrack);
+                AudioMgr->PlayMusic(Shot.MusicTrack);
             }
         }
     }

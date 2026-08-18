@@ -50,9 +50,7 @@ public:
     UFUNCTION(BlueprintCallable, Category="山河纪元|CG")
     bool IsPlaying() const { return bIsPlaying; }
     UFUNCTION(BlueprintCallable, Category="山河纪元|CG")
-    float GetPlaybackTime() const;
-    UFUNCTION(BlueprintCallable, Category="山河纪元|CG")
-    FCinematicSequence GetCinematicForCG(FName CGID);
+    float GetPlaybackTime() const { return PlaybackTime; }
     UFUNCTION(BlueprintCallable, Category="山河纪元|CG|字幕")
     void ShowSubtitle(const FSubtitleEntry& Subtitle);
     UFUNCTION(BlueprintCallable, Category="山河纪元|CG|字幕")
