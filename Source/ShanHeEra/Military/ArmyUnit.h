@@ -4,7 +4,7 @@
 #include "ArmyUnit.generated.h"
 
 UENUM(BlueprintType)
-enum class EUnitType : uint8
+enum class EShanHeUnitType : uint8
 {
     Infantry    UMETA(DisplayName="步兵"),
     Cavalry     UMETA(DisplayName="骑兵"),
@@ -25,7 +25,7 @@ struct FUnitData
     GENERATED_BODY()
     UPROPERTY(EditAnywhere, BlueprintReadWrite) FName UnitID;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) FText UnitName;
-    UPROPERTY(EditAnywhere, BlueprintReadWrite) EUnitType Type;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite) EShanHeUnitType Type;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Count = 100;       // 兵力
     UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 MaxCount = 100;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Attack = 30;

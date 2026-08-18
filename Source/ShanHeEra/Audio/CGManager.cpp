@@ -1,22 +1,45 @@
 #include "Audio/CGManager.h"
-#include "Core/ShanHeLog.h"
 #include "Core/CinematicDirector.h"
+
 UCGManager::UCGManager() {}
+
 void UCGManager::InitializeCG()
 {
-    struct FCGDef { FName ID; const TCHAR* Path; const TCHAR* Title; float Dur; bool Skip; ECinematicSequenceID SeqID; };
-    FCGDef CGs[] = {
-        {TEXT("CG_Founding"), TEXT("/Game/CG/Founding"), TEXT("开国大典"), 16.5f, true, ECinematicSequenceID::CINE_Founding},
-        {TEXT("CG_War"), TEXT("/Game/CG/War"), TEXT("烽火连天"), 15.0f, true, ECinematicSequenceID::CINE_War},
-        {TEXT("CG_Reunification"), TEXT("/Game/CG/Reunification"), TEXT("九州一统"), 15.5f, true, ECinematicSequenceID::CINE_Reunification},
-        {TEXT("CG_TaiwanReturn"), TEXT("/Game/CG/TaiwanReturn"), TEXT("宝岛归心"), 18.5f, true, ECinematicSequenceID::CINE_TaiwanReturn},
-    };
-    for(const auto& C : CGs)
-    {
-        FCGSequence Seq; Seq.CGID=C.ID; Seq.MediaPath=C.Path; Seq.Title=FText::FromString(C.Title);
-        Seq.Duration=C.Dur; Seq.bCanSkip=C.Skip; Seq.CinematicSequenceID=C.SeqID;
-        CGLibrary.Add(C.ID, Seq);
-    }
+    FCGSequence Seq1;
+    Seq1.CGID = TEXT("CG_Founding");
+    Seq1.MediaPath = TEXT("/Game/CG/Founding");
+    Seq1.Title = FText::FromString(TEXT("开国大典"));
+    Seq1.Duration = 16.5f;
+    Seq1.bCanSkip = true;
+    Seq1.CinematicSequenceID = ECinematicSequenceID::FoundingCeremony;
+    CGLibrary.Add(Seq1.CGID, Seq1);
+
+    FCGSequence Seq2;
+    Seq2.CGID = TEXT("CG_War");
+    Seq2.MediaPath = TEXT("/Game/CG/War");
+    Seq2.Title = FText::FromString(TEXT("烽火连天"));
+    Seq2.Duration = 15.0f;
+    Seq2.bCanSkip = true;
+    Seq2.CinematicSequenceID = ECinematicSequenceID::FlamesOfWar;
+    CGLibrary.Add(Seq2.CGID, Seq2);
+
+    FCGSequence Seq3;
+    Seq3.CGID = TEXT("CG_Reunification");
+    Seq3.MediaPath = TEXT("/Game/CG/Reunification");
+    Seq3.Title = FText::FromString(TEXT("九州一统"));
+    Seq3.Duration = 15.5f;
+    Seq3.bCanSkip = true;
+    Seq3.CinematicSequenceID = ECinematicSequenceID::Unification;
+    CGLibrary.Add(Seq3.CGID, Seq3);
+
+    FCGSequence Seq4;
+    Seq4.CGID = TEXT("CG_TaiwanReturn");
+    Seq4.MediaPath = TEXT("/Game/CG/TaiwanReturn");
+    Seq4.Title = FText::FromString(TEXT("宝岛归心"));
+    Seq4.Duration = 18.5f;
+    Seq4.bCanSkip = true;
+    Seq4.CinematicSequenceID = ECinematicSequenceID::IslandReturn;
+    CGLibrary.Add(Seq4.CGID, Seq4);
 }
 void UCGManager::PlayCG(FName CGID)
 {

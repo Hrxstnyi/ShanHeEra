@@ -97,10 +97,9 @@ void UAudioManager::StartDialogueDuck(float DuckAmt, float FadeTime) { bDialogue
 void UAudioManager::EndDialogueDuck(float FadeTime) { bDialogueDucking=false; }
 void UAudioManager::ExecuteShotAudio(const FShotContract& Shot)
 {
-    if(Shot.MusicMood!=EMusicMood::Peaceful || Shot.MusicMood!=CurrentMood) SetMusicMood(Shot.MusicMood, Shot.Duration*0.3f);
-    if(Shot.Stinger!=EStingerType::Impact) PlayStinger(Shot.Stinger);
-    if(Shot.bDialogueDuck) StartDialogueDuck(0.4f, 0.3f);
-    if(Shot.SlowMotionFactor<1.f) { TargetLayerVolumes[EMusicLayer::Percussion]=0.3f; }
+    if(!Shot.MusicTrack.IsNone()) PlayMusic(Shot.MusicTrack, Shot.Duration*0.3f);
+    if(!Shot.SFXID.IsNone()) PlaySFX(Shot.SFXID, FVector::ZeroVector);
+    if(Shot.bCameraShake) { /* 镜头震动音效 */ }
 }
 void UAudioManager::Tick(float DeltaTime) { UpdateMoodTransition(DeltaTime); UpdateLayerVolumes(DeltaTime); UpdateBeat(DeltaTime); UpdateDialogueDuck(DeltaTime); }
 void UAudioManager::UpdateMoodTransition(float DeltaTime)

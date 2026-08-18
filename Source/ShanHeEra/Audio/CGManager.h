@@ -8,6 +8,17 @@
 class UMediaPlayer;
 class UMediaTexture;
 class UAudioComponent;
+
+UENUM(BlueprintType)
+enum class ECinematicSequenceID : uint8
+{
+    None            UMETA(DisplayName="无"),
+    FoundingCeremony UMETA(DisplayName="开国大典"),
+    FlamesOfWar     UMETA(DisplayName="烽火连天"),
+    Unification     UMETA(DisplayName="九州一统"),
+    IslandReturn    UMETA(DisplayName="宝岛归心")
+};
+
 USTRUCT(BlueprintType)
 struct FCGSequence
 {

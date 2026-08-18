@@ -16,6 +16,21 @@ enum class EMusicLayer : uint8
     Percussion  UMETA(DisplayName="打击层")
 };
 UENUM(BlueprintType)
+enum class EMusicMood : uint8
+{
+    Peaceful    UMETA(DisplayName="宁静"),
+    Exploration UMETA(DisplayName="探索"),
+    Tension     UMETA(DisplayName="紧张"),
+    Battle      UMETA(DisplayName="战斗"),
+    Epic        UMETA(DisplayName="史诗"),
+    Sorrow      UMETA(DisplayName="悲壮"),
+    Ceremony    UMETA(DisplayName="典礼"),
+    Victory     UMETA(DisplayName="胜利"),
+    Joyful      UMETA(DisplayName="欢快"),
+    Mysterious  UMETA(DisplayName="神秘"),
+    Festival    UMETA(DisplayName="节庆")
+};
+UENUM(BlueprintType)
 enum class EStingerType : uint8
 {
     Impact      UMETA(DisplayName="冲击"),

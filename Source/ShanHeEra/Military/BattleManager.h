@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
 #include "Military/ArmyUnit.h"
+#include "Core/ShanHeEnums.h"
 #include "BattleManager.generated.h"
 
 UENUM(BlueprintType)

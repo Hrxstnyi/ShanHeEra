@@ -202,7 +202,7 @@ void UCinematicDirector::RegisterPresetSequences()
         Shot1.Support = ECameraSupport::Crane;
         Shot1.Movement = ECameraMovement::PullBack;
         Shot1.Ending = EEndingProfile::ExtensionAnchor;
-        Shot1.TransitionOut = ETransitionType::Dissolve;
+        Shot1.TransitionOut = EShanHeTransitionType::Dissolve;
         Shot1.FocalLength = 24.0f;
         Shot1.Aperture = 8.0f;
         Shot1.MovementSpeed = 0.5f;
@@ -221,7 +221,7 @@ void UCinematicDirector::RegisterPresetSequences()
         Shot2.Support = ECameraSupport::Dolly;
         Shot2.Movement = ECameraMovement::PushIn;
         Shot2.Ending = EEndingProfile::ExtensionAnchor;
-        Shot2.TransitionOut = ETransitionType::HardCut;
+        Shot2.TransitionOut = EShanHeTransitionType::HardCut;
         Shot2.FocalLength = 35.0f;
         Shot2.Aperture = 4.0f;
         Shot2.LightQuality = ELightQuality::Rembrandt;
@@ -235,7 +235,7 @@ void UCinematicDirector::RegisterPresetSequences()
         Shot3.Support = ECameraSupport::LockedOff;
         Shot3.Movement = ECameraMovement::Breathing;
         Shot3.Ending = EEndingProfile::HeroHold;
-        Shot3.TransitionOut = ETransitionType::Dissolve;
+        Shot3.TransitionOut = EShanHeTransitionType::Dissolve;
         Shot3.FocalLength = 100.0f;
         Shot3.Aperture = 2.8f;
         Shot3.LightQuality = ELightQuality::CandleLight;
@@ -253,7 +253,7 @@ void UCinematicDirector::RegisterPresetSequences()
         Shot4.Support = ECameraSupport::LockedOff;
         Shot4.Movement = ECameraMovement::PushIn;
         Shot4.Ending = EEndingProfile::Resolve;
-        Shot4.TransitionOut = ETransitionType::FadeBlack;
+        Shot4.TransitionOut = EShanHeTransitionType::FadeBlack;
         Shot4.FocalLength = 50.0f;
         Shot4.Aperture = 2.0f;
         Shot4.MovementSpeed = 0.3f;
@@ -290,7 +290,7 @@ void UCinematicDirector::RegisterPresetSequences()
         WShot1.Support = ECameraSupport::Drone;
         WShot1.Movement = ECameraMovement::Crane;
         WShot1.Ending = EEndingProfile::ExtensionAnchor;
-        WShot1.TransitionOut = ETransitionType::WhipPan;
+        WShot1.TransitionOut = EShanHeTransitionType::WhipPan;
         WShot1.FocalLength = 24.0f;
         WShot1.Aperture = 8.0f;
         WShot1.LightQuality = ELightQuality::HardLight;
@@ -307,7 +307,7 @@ void UCinematicDirector::RegisterPresetSequences()
         WShot2.Support = ECameraSupport::Handheld;
         WShot2.Movement = ECameraMovement::LateralTrack;
         WShot2.Ending = EEndingProfile::ExtensionAnchor;
-        WShot2.TransitionOut = ETransitionType::HardCut;
+        WShot2.TransitionOut = EShanHeTransitionType::HardCut;
         WShot2.FocalLength = 35.0f;
         WShot2.Aperture = 4.0f;
         WShot2.MovementSpeed = 2.0f;
@@ -324,7 +324,7 @@ void UCinematicDirector::RegisterPresetSequences()
         WShot3.Support = ECameraSupport::LockedOff;
         WShot3.Movement = ECameraMovement::Breathing;
         WShot3.Ending = EEndingProfile::HeroHold;
-        WShot3.TransitionOut = ETransitionType::Dissolve;
+        WShot3.TransitionOut = EShanHeTransitionType::Dissolve;
         WShot3.FocalLength = 85.0f;
         WShot3.Aperture = 1.8f;
         WShot3.LightQuality = ELightQuality::SoftLight;
@@ -340,7 +340,7 @@ void UCinematicDirector::RegisterPresetSequences()
         WShot4.Support = ECameraSupport::Crane;
         WShot4.Movement = ECameraMovement::PullBack;
         WShot4.Ending = EEndingProfile::Resolve;
-        WShot4.TransitionOut = ETransitionType::FadeBlack;
+        WShot4.TransitionOut = EShanHeTransitionType::FadeBlack;
         WShot4.FocalLength = 35.0f;
         WShot4.Aperture = 5.6f;
         WShot4.MovementSpeed = 0.6f;
@@ -376,7 +376,7 @@ void UCinematicDirector::RegisterPresetSequences()
         UShot1.Support = ECameraSupport::LockedOff;
         UShot1.Movement = ECameraMovement::LockedOff;
         UShot1.Ending = EEndingProfile::ExtensionAnchor;
-        UShot1.TransitionOut = ETransitionType::HardCut;
+        UShot1.TransitionOut = EShanHeTransitionType::HardCut;
         UShot1.FocalLength = 35.0f;
         UShot1.Aperture = 5.6f;
         UShot1.LightQuality = ELightQuality::SoftLight;
@@ -391,7 +391,7 @@ void UCinematicDirector::RegisterPresetSequences()
         UShot2.Support = ECameraSupport::Dolly;
         UShot2.Movement = ECameraMovement::PushIn;
         UShot2.Ending = EEndingProfile::ExtensionAnchor;
-        UShot2.TransitionOut = ETransitionType::MatchCut;
+        UShot2.TransitionOut = EShanHeTransitionType::MatchCut;
         UShot2.FocalLength = 50.0f;
         UShot2.Aperture = 2.8f;
         UShot2.MovementSpeed = 0.8f;
@@ -408,7 +408,7 @@ void UCinematicDirector::RegisterPresetSequences()
         UShot3.Support = ECameraSupport::LockedOff;
         UShot3.Movement = ECameraMovement::Breathing;
         UShot3.Ending = EEndingProfile::HeroHold;
-        UShot3.TransitionOut = ETransitionType::Dissolve;
+        UShot3.TransitionOut = EShanHeTransitionType::Dissolve;
         UShot3.FocalLength = 85.0f;
         UShot3.Aperture = 2.0f;
         UShot3.LightQuality = ELightQuality::RimLight;
@@ -422,7 +422,7 @@ void UCinematicDirector::RegisterPresetSequences()
         UShot4.Support = ECameraSupport::Crane;
         UShot4.Movement = ECameraMovement::Pedestal;
         UShot4.Ending = EEndingProfile::Resolve;
-        UShot4.TransitionOut = ETransitionType::FadeBlack;
+        UShot4.TransitionOut = EShanHeTransitionType::FadeBlack;
         UShot4.FocalLength = 24.0f;
         UShot4.Aperture = 8.0f;
         UShot4.MovementSpeed = 0.4f;
@@ -459,7 +459,7 @@ void UCinematicDirector::RegisterPresetSequences()
         TShot1.Support = ECameraSupport::Drone;
         TShot1.Movement = ECameraMovement::LateralTrack;
         TShot1.Ending = EEndingProfile::ExtensionAnchor;
-        TShot1.TransitionOut = ETransitionType::Dissolve;
+        TShot1.TransitionOut = EShanHeTransitionType::Dissolve;
         TShot1.FocalLength = 24.0f;
         TShot1.Aperture = 8.0f;
         TShot1.MovementSpeed = 0.5f;
@@ -477,7 +477,7 @@ void UCinematicDirector::RegisterPresetSequences()
         TShot2.Support = ECameraSupport::Slider;
         TShot2.Movement = ECameraMovement::PushIn;
         TShot2.Ending = EEndingProfile::HeroHold;
-        TShot2.TransitionOut = ETransitionType::MatchCut;
+        TShot2.TransitionOut = EShanHeTransitionType::MatchCut;
         TShot2.FocalLength = 100.0f;
         TShot2.Aperture = 2.8f;
         TShot2.MovementSpeed = 0.3f;
@@ -493,7 +493,7 @@ void UCinematicDirector::RegisterPresetSequences()
         TShot3.Support = ECameraSupport::LockedOff;
         TShot3.Movement = ECameraMovement::Breathing;
         TShot3.Ending = EEndingProfile::ExtensionAnchor;
-        TShot3.TransitionOut = ETransitionType::Dissolve;
+        TShot3.TransitionOut = EShanHeTransitionType::Dissolve;
         TShot3.FocalLength = 50.0f;
         TShot3.Aperture = 2.0f;
         TShot3.LightQuality = ELightQuality::Rembrandt;
@@ -507,7 +507,7 @@ void UCinematicDirector::RegisterPresetSequences()
         TShot4.Support = ECameraSupport::Dolly;
         TShot4.Movement = ECameraMovement::PullBack;
         TShot4.Ending = EEndingProfile::Resolve;
-        TShot4.TransitionOut = ETransitionType::FadeBlack;
+        TShot4.TransitionOut = EShanHeTransitionType::FadeBlack;
         TShot4.FocalLength = 35.0f;
         TShot4.Aperture = 4.0f;
         TShot4.MovementSpeed = 0.5f;

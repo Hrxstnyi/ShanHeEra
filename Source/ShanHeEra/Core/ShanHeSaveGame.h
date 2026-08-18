@@ -30,7 +30,7 @@ struct FPlayerSaveData
 };
 
 USTRUCT(BlueprintType)
-struct FWorldSaveData
+struct FShanHeWorldSaveData
 {
     GENERATED_BODY()
 
@@ -86,7 +86,7 @@ public:
     // === 游戏状态 ===
 
     UPROPERTY(BlueprintReadWrite) FPlayerSaveData PlayerData;
-    UPROPERTY(BlueprintReadWrite) FWorldSaveData WorldData;
+    UPROPERTY(BlueprintReadWrite) FShanHeWorldSaveData WorldData;
     UPROPERTY(BlueprintReadWrite) TArray<FFamilySaveData> Families;
 
     // === 扩展数据（Mod支持） ===

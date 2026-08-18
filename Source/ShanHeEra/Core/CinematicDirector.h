@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
-#include "ShanHeCinematicDirector.generated.h"
+#include "CinematicDirector.generated.h"
 class UCameraComponent;
 class UAudioComponent;
 class UMaterialInstanceDynamic;
@@ -70,7 +70,7 @@ enum class EEndingProfile : uint8
     RevealOrPunch   UMETA(DisplayName="揭示/冲击")
 };
 UENUM(BlueprintType)
-enum class ETransitionType : uint8
+enum class EShanHeTransitionType : uint8
 {
     HardCut     UMETA(DisplayName="硬切"),
     Dissolve    UMETA(DisplayName="叠化"),
@@ -117,7 +117,7 @@ struct FShotContract
     UPROPERTY(EditAnywhere, BlueprintReadWrite) ECameraSupport Support = ECameraSupport::Gimbal;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) ECameraMovement Movement = ECameraMovement::LockedOff;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) EEndingProfile Ending = EEndingProfile::Resolve;
-    UPROPERTY(EditAnywhere, BlueprintReadWrite) ETransitionType TransitionOut = ETransitionType::HardCut;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite) EShanHeTransitionType TransitionOut = EShanHeTransitionType::HardCut;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float FocalLength = 35.0f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float Aperture = 2.8f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float MovementSpeed = 1.0f;

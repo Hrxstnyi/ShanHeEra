@@ -20,7 +20,7 @@ void UBattleManager::StartBattle(TArray<UArmyUnit*> Attackers, TArray<UArmyUnit*
     if (UGameInstance* GI = GetWorld()->GetGameInstance())
     {
         if (UAudioManager* AM = GI->GetSubsystem<UAudioManager>())
-            AM->SetMusicMood(EMusicMood::War);
+            AM->SetMusicMood(EMusicMood::Battle);
     }
 
     UE_LOG(LogShanHe, Warning, TEXT("战斗开始！地点: %s，攻击方 %d 部，防守方 %d 部"),
@@ -125,7 +125,7 @@ void UBattleManager::EndBattle()
     if (UGameInstance* GI = GetWorld()->GetGameInstance())
     {
         if (UAudioManager* AM = GI->GetSubsystem<UAudioManager>())
-            AM->SetMusicMood(Result.Result == EWarResult::Victory ? EMusicMood::Triumphant : EMusicMood::Sorrowful);
+            AM->SetMusicMood(Result.Result == EWarResult::Victory ? EMusicMood::Victory : EMusicMood::Sorrow);
     }
 
     UE_LOG(LogShanHe, Log, TEXT("战斗结束！结果: %d，攻击方损失 %d，防守方损失 %d"),
