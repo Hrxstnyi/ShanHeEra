@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeJianghuSystem.generated.h"
+#include "JianghuSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EJianghuFactionType : uint8
@@ -117,10 +117,9 @@ public:
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|江湖")
     TMap<FName, int32> PersonReputations;
 
-    UPROPERTY(BlueprintReadOnly, Category="山河纪元|江湖")
+    // 注意：以下复杂数据结构不暴露给蓝图，仅C++内部使用
     TMap<FName, TArray<FMartialArt>> PersonMartialArts;
 
-    UPROPERTY(BlueprintReadOnly, Category="山河纪元|江湖")
     TMap<FName, TMap<FName, int32>> PersonRelations; // A -> (B -> 关系值)
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|江湖")

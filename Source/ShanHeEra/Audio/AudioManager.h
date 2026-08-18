@@ -2,7 +2,8 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/CinematicDirector.h"
-#include "ShanHeAudioManager.generated.h"
+#include "AudioManager.generated.h"
+
 class USoundBase;
 class UAudioComponent;
 UENUM(BlueprintType)

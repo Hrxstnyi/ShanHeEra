@@ -13,9 +13,9 @@ void UEquipmentWidget::RefreshEquipment()
     UE_LOG(LogShanHe, Log, TEXT("装备界面刷新 - 10个装备槽"));
 }
 
-void UEquipmentWidget::SelectEquipSlot(EEquipSlot Slot)
+void UEquipmentWidget::SelectEquipSlot(EEquipSlot InSlot)
 {
-    SelectedSlot = Slot;
+    SelectedSlot = InSlot;
     UE_LOG(LogShanHe, Log, TEXT("选中装备槽：%d"), (int32)Slot);
 }
 

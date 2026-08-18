@@ -2,10 +2,26 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/CinematicDirector.h"
-#include "ShanHeCameraSystem.generated.h"
+#include "CameraSystem.generated.h"
+
 class UCameraComponent;
 class USpringArmComponent;
 class AActor;
+
+UENUM(BlueprintType)
+enum class ECameraMode : uint8
+{
+    ThirdPerson  UMETA(DisplayName="第三人称"),   // 人生模式
+    Strategy     UMETA(DisplayName="战略俯瞰"),   // 大地图模式
+    Battle       UMETA(DisplayName="战斗动作"),   // 战斗模式
+    Cinematic    UMETA(DisplayName="过场动画"),   // CG模式
+    Free         UMETA(DisplayName="自由相机")    // 调试/观察
+};
+
+/**
+ * 相机系统 - 三层模式无缝切换
+ * 战略层俯瞰/人生层第三人称/战斗层动作相机
+ */
 UCLASS()
 class SHANHEERA_API UCameraSystem : public UObject
 {

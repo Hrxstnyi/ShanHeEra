@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "AIController.h"
-#include "ShanHeNPCAIController.generated.h"
+#include "NPCAIController.generated.h"
 
 UCLASS()
 class SHANHEERA_API ANPCAIController : public AAIController

@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Family/FamilyTree.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeInheritanceSystem.generated.h"
+#include "InheritanceSystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FHeritageDistribution

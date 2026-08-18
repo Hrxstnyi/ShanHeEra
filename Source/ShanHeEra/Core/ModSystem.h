@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeModSystem.generated.h"
+#include "ModSystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FModInfo

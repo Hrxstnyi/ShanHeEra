@@ -18,7 +18,7 @@ void USpatialAudioSystem::InitializeAudio()
 
     for (const auto& A : Ambs)
     {
-        FAmbientSound S;
+        FShanHeAmbientSound S;
         S.Type = A.Type; S.SoundCuePath = A.Path; S.BaseVolume = A.Vol;
         AmbientDatabase.Add(A.Type, S);
     }
@@ -28,7 +28,7 @@ void USpatialAudioSystem::InitializeAudio()
 
 void USpatialAudioSystem::PlayAmbient(EAmbientType Type)
 {
-    if (const FAmbientSound* S = AmbientDatabase.Find(Type))
+    if (const FShanHeAmbientSound* S = AmbientDatabase.Find(Type))
     {
         CurrentAmbient = Type;
         bIsAmbientPlaying = true;

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeTechnologySystem.generated.h"
+#include "TechnologySystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ETechCategory : uint8

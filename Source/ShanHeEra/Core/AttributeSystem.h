@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeAttributeSystem.generated.h"
+#include "AttributeSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EAttributeType : uint8

@@ -3,7 +3,8 @@
 #include "UObject/NoExportTypes.h"
 #include "Core/CinematicDirector.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeCGManager.generated.h"
+#include "CGManager.generated.h"
+
 class UMediaPlayer;
 class UMediaTexture;
 class UAudioComponent;

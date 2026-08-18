@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeWarSystem.generated.h"
+#include "WarSystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FArmyData

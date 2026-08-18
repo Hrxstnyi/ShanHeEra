@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
-#include "ShanHePerformanceSystem.generated.h"
+#include "PerformanceSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ELODLevel : uint8

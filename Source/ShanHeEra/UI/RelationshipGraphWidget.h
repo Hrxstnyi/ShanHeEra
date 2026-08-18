@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeRelationshipGraphWidget.generated.h"
+#include "RelationshipGraphWidget.generated.h"
 
 class UCanvasPanel;
 class UImage;

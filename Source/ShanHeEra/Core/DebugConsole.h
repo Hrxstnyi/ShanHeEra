@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeDebugConsole.generated.h"
+#include "DebugConsole.generated.h"
 
 USTRUCT(BlueprintType)
 struct FDebugCommand

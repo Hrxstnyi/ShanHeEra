@@ -6,8 +6,8 @@ public class ShanHeEraTarget : TargetRules
     public ShanHeEraTarget(TargetInfo Target) : base(Target)
     {
         Type = TargetType.Game;
-        DefaultBuildSettings = BuildSettingsVersion.V3;
-        IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_3;
+        DefaultBuildSettings = BuildSettingsVersion.Latest;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
         ExtraModuleNames.AddRange(new string[] { "ShanHeEra" });
     }
 }

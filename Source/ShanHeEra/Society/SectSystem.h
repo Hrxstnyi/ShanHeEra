@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeSectSystem.generated.h"
+#include "SectSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ESectRank : uint8

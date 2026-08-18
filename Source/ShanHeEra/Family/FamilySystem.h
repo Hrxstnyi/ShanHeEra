@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeFamilySystem.generated.h"
+#include "FamilySystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FFamilyData

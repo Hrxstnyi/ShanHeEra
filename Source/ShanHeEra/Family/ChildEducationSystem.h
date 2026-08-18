@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeChildEducationSystem.generated.h"
+#include "ChildEducationSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class TEducationType : uint8

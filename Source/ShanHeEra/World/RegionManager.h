@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeEnums.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeRegionManager.generated.h"
+#include "RegionManager.generated.h"
 
 USTRUCT(BlueprintType)
 struct FRegionData

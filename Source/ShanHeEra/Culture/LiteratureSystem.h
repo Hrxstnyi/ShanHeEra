@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeLiteratureSystem.generated.h"
+#include "LiteratureSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EArtType : uint8

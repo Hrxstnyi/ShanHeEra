@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeHUDWidget.generated.h"
+#include "HUDWidget.generated.h"
 
 class UTextBlock;
 class UProgressBar;

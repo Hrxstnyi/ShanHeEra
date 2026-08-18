@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeCodexSystem.generated.h"
+#include "CodexSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ECodexCategory : uint8

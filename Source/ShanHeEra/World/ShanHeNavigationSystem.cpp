@@ -1,7 +1,7 @@
-#include "World/NavigationSystem.h"
+#include "World/ShanHeNavigationSystem.h"
 #include "Core/ShanHeLog.h"
 
-void UNavigationSystem::InitializeNavigation()
+void UShanHeNavigationSystem::InitializeNavigation()
 {
     // 初始化航线
     FSeaRoute TaiwanRoute;
@@ -38,7 +38,7 @@ void UNavigationSystem::InitializeNavigation()
     UE_LOG(LogShanHe, Log, TEXT("航海系统初始化 - %d 条航线，关联郑和下西洋彩蛋"), SeaRoutes.Num());
 }
 
-void UNavigationSystem::Simulate(int32 Days)
+void UShanHeNavigationSystem::Simulate(int32 Days)
 {
     UpdateVoyages(Days);
     CheckPirateAttacks();
@@ -90,7 +90,7 @@ bool UNavigationSystem::StartVoyage(FName ShipID, FName RouteID, int32 CargoValu
     return true;
 }
 
-void UNavigationSystem::DiscoverRoute(FName RouteID)
+void UShanHeNavigationSystem::DiscoverRoute(FName RouteID)
 {
     for (FSeaRoute& R : SeaRoutes)
     {
@@ -111,7 +111,7 @@ TArray<FSeaRoute> UNavigationSystem::GetDiscoveredRoutes() const
     return Result;
 }
 
-void UNavigationSystem::UpdateVoyages(int32 Days)
+void UShanHeNavigationSystem::UpdateVoyages(int32 Days)
 {
     for (int32 i = ActiveVoyages.Num() - 1; i >= 0; i--)
     {
@@ -125,7 +125,7 @@ void UNavigationSystem::UpdateVoyages(int32 Days)
     }
 }
 
-void UNavigationSystem::CheckPirateAttacks()
+void UShanHeNavigationSystem::CheckPirateAttacks()
 {
     for (FVoyage& V : ActiveVoyages)
     {
@@ -137,7 +137,7 @@ void UNavigationSystem::CheckPirateAttacks()
     }
 }
 
-void UNavigationSystem::CheckStorms()
+void UShanHeNavigationSystem::CheckStorms()
 {
     for (FVoyage& V : ActiveVoyages)
     {

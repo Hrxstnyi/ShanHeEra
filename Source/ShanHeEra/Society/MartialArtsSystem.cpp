@@ -3,19 +3,19 @@
 
 void UMartialArtsSystem::InitializeSkills()
 {
-    struct FSkillDef { FName ID; const TCHAR* Name; ESkillType Type; ESkillGrade Grade; float Dmg; float Sta; };
+    struct FSkillDef { FName ID; const TCHAR* Name; EMartialSkillType Type; ESkillGrade Grade; float Dmg; float Sta; };
     FSkillDef Skills[] = {
-        {TEXT("iron_palm"), TEXT("铁砂掌"), ESkillType::External, ESkillGrade::Common, 15.0f, 8.0f},
-        {TEXT("taiji_fist"), TEXT("太极拳"), ESkillType::External, ESkillGrade::Master, 25.0f, 5.0f},
-        {TEXT("eight_trigram"), TEXT("八卦掌"), ESkillType::External, ESkillGrade::Excellent, 22.0f, 10.0f},
-        {TEXT("shaolin_fist"), TEXT("少林拳"), ESkillType::External, ESkillGrade::Fine, 18.0f, 8.0f},
-        {TEXT("sunflower"), TEXT("葵花宝典"), ESkillType::Internal, ESkillGrade::Legendary, 50.0f, 20.0f},
-        {TEXT("nine_yang"), TEXT("九阳神功"), ESkillType::Internal, ESkillGrade::Legendary, 40.0f, 0.0f},
-        {TEXT("small_zhou"), TEXT("小周天功"), ESkillType::Internal, ESkillGrade::Common, 10.0f, 0.0f},
-        {TEXT("lightness_cloud"), TEXT("踏雪无痕"), ESkillType::Lightness, ESkillGrade::Excellent, 0.0f, 15.0f},
-        {TEXT("lightness_wind"), TEXT("御风而行"), ESkillType::Lightness, ESkillGrade::Master, 0.0f, 20.0f},
-        {TEXT("hidden_throwing"), TEXT("弹指神通"), ESkillType::Hidden, ESkillGrade::Master, 30.0f, 5.0f},
-        {TEXT("hidden_needle"), TEXT("暴雨梨花针"), ESkillType::Hidden, ESkillGrade::Legendary, 45.0f, 10.0f},
+        {TEXT("iron_palm"), TEXT("铁砂掌"), EMartialSkillType::External, ESkillGrade::Common, 15.0f, 8.0f},
+        {TEXT("taiji_fist"), TEXT("太极拳"), EMartialSkillType::External, ESkillGrade::Master, 25.0f, 5.0f},
+        {TEXT("eight_trigram"), TEXT("八卦掌"), EMartialSkillType::External, ESkillGrade::Excellent, 22.0f, 10.0f},
+        {TEXT("shaolin_fist"), TEXT("少林拳"), EMartialSkillType::External, ESkillGrade::Fine, 18.0f, 8.0f},
+        {TEXT("sunflower"), TEXT("葵花宝典"), EMartialSkillType::Internal, ESkillGrade::Legendary, 50.0f, 20.0f},
+        {TEXT("nine_yang"), TEXT("九阳神功"), EMartialSkillType::Internal, ESkillGrade::Legendary, 40.0f, 0.0f},
+        {TEXT("small_zhou"), TEXT("小周天功"), EMartialSkillType::Internal, ESkillGrade::Common, 10.0f, 0.0f},
+        {TEXT("lightness_cloud"), TEXT("踏雪无痕"), EMartialSkillType::Lightness, ESkillGrade::Excellent, 0.0f, 15.0f},
+        {TEXT("lightness_wind"), TEXT("御风而行"), EMartialSkillType::Lightness, ESkillGrade::Master, 0.0f, 20.0f},
+        {TEXT("hidden_throwing"), TEXT("弹指神通"), EMartialSkillType::Hidden, ESkillGrade::Master, 30.0f, 5.0f},
+        {TEXT("hidden_needle"), TEXT("暴雨梨花针"), EMartialSkillType::Hidden, ESkillGrade::Legendary, 45.0f, 10.0f},
     };
 
     for (const auto& S : Skills)
@@ -91,10 +91,10 @@ bool UMartialArtsSystem::CanLearnSkill(FName SkillID, int32 Strength, int32 Inte
         // 不同类型有不同属性要求
         switch (Sk->Type)
         {
-            case ESkillType::External: return Strength >= 8;
-            case ESkillType::Internal: return Intelligence >= 8;
-            case ESkillType::Lightness: return Agility >= 10;
-            case ESkillType::Hidden: return Agility >= 8 && Intelligence >= 6;
+            case EMartialSkillType::External: return Strength >= 8;
+            case EMartialSkillType::Internal: return Intelligence >= 8;
+            case EMartialSkillType::Lightness: return Agility >= 10;
+            case EMartialSkillType::Hidden: return Agility >= 8 && Intelligence >= 6;
         }
     }
     return false;

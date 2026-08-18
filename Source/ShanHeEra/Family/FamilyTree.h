@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeFamilyTree.generated.h"
+#include "FamilyTree.generated.h"
 
 UENUM(BlueprintType)
 enum class EInheritanceType : uint8

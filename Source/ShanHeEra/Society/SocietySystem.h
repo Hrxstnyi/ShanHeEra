@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeSocietySystem.generated.h"
+#include "SocietySystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FOrganizationData

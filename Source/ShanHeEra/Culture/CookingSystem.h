@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeCookingSystem.generated.h"
+#include "CookingSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ECuisineType : uint8

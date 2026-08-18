@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeEconomySystem.generated.h"
+#include "EconomySystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FPriceData

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeCultureSystem.generated.h"
+#include "CultureSystem.generated.h"
 
 USTRUCT(BlueprintType)
-struct FFestivalData
+struct FCultureFestivalData
 {
     GENERATED_BODY()
     UPROPERTY(EditAnywhere, BlueprintReadWrite) FName FestivalID;
@@ -24,5 +24,5 @@ public:
     void InitializeCulture();
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|文化")
-    TArray<FFestivalData> Festivals;
+    TArray<FCultureFestivalData> Festivals;
 };

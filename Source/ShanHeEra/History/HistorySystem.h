@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeHistorySystem.generated.h"
+#include "HistorySystem.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHistoricalEvent, FHistoricalEvent, Event);
 

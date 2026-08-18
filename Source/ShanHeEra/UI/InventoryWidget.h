@@ -1,13 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeInventoryWidget.generated.h"
+#include "InventoryWidget.generated.h"
 
 class UUniformGridPanel;
 class UTextBlock;
 class UImage;
 class UButton;
-class UInventorySlotWidget;
 
 UCLASS()
 class SHANHEERA_API UInventoryWidget : public UUserWidget
@@ -23,7 +22,7 @@ public:
     UPROPERTY(meta = (BindWidget)) UButton* DropButton;
     UPROPERTY(meta = (BindWidget)) UButton* SortButton;
 
-    UPROPERTY(EditAnywhere) TSubclassOf<UInventorySlotWidget> SlotWidgetClass;
+    UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> SlotWidgetClass;
     UPROPERTY(EditAnywhere) int32 Columns = 8;
     UPROPERTY(EditAnywhere) int32 Rows = 6;
 

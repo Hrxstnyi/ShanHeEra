@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeSaveSystem.generated.h"
+#include "SaveSystem.generated.h"
 
 class FArchive;
 

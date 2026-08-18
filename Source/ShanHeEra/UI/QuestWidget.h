@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeQuestWidget.generated.h"
+#include "QuestWidget.generated.h"
 
 class UVerticalBox;
 class UTextBlock;

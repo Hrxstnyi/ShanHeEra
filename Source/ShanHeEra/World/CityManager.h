@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeCityManager.generated.h"
+#include "CityManager.generated.h"
 
 UENUM(BlueprintType)
 enum class ECityLevel : uint8

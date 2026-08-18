@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeTravelEventSystem.generated.h"
+#include "TravelEventSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ETravelEventType : uint8

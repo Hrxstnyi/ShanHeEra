@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "ShanHeWeaponComponent.generated.h"
+#include "WeaponComponent.generated.h"
 
 UENUM(BlueprintType)
 enum class EWeaponType : uint8

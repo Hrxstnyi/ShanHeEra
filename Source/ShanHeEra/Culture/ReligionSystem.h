@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeReligionSystem.generated.h"
+#include "ReligionSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EReligionType : uint8

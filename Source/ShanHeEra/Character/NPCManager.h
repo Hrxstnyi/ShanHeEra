@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeNPCManager.generated.h"
+#include "NPCManager.generated.h"
 
 USTRUCT(BlueprintType)
 struct FNPData

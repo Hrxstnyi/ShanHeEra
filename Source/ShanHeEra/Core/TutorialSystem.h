@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeTutorialSystem.generated.h"
+#include "TutorialSystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FTutorialStep

@@ -47,7 +47,7 @@ struct FVoyage
  * 关联郑和下西洋彩蛋和台湾暗喻线
  */
 UCLASS()
-class SHANHEERA_API UNavigationSystem : public UObject
+class SHANHEERA_API UShanHeNavigationSystem : public UObject
 {
     GENERATED_BODY()
 public:

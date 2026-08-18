@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeMedicalSystem.generated.h"
+#include "MedicalSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EIllnessType : uint8

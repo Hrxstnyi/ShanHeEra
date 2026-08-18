@@ -2,7 +2,8 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/CinematicDirector.h"
-#include "ShanHeEffectSystem.generated.h"
+#include "EffectSystem.generated.h"
+
 class UNiagaraSystem;
 class UNiagaraComponent;
 class UMaterialInstanceDynamic;

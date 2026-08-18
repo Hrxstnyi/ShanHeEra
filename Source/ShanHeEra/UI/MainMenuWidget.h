@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeMainMenuWidget.generated.h"
+#include "MainMenuWidget.generated.h"
 
 class UButton;
 class UTextBlock;

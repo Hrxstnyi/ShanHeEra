@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeDisasterSystem.generated.h"
+#include "DisasterSystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FDisasterEvent

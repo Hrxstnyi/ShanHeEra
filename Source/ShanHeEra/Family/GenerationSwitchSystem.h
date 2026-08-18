@@ -3,7 +3,7 @@
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "Family/FamilyTree.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeGenerationSwitchSystem.generated.h"
+#include "GenerationSwitchSystem.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnGenerationSwitch, FGuid, OldCharacterID, FGuid, NewCharacterID);
 

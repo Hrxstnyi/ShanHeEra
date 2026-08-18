@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeSiegeSystem.generated.h"
+#include "SiegeSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ESiegePhase : uint8

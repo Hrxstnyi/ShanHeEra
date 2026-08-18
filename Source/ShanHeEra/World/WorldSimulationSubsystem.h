@@ -9,7 +9,7 @@
 #include "Military/WarSystem.h"
 #include "History/HistorySystem.h"
 #include "Society/SocietySystem.h"
-#include "ShanHeWorldSimulationSubsystem.generated.h"
+#include "WorldSimulationSubsystem.generated.h"
 
 UCLASS()
 class SHANHEERA_API UWorldSimulationSubsystem : public UGameInstanceSubsystem

@@ -3,7 +3,7 @@
 #include "MassEntityTypes.h"
 #include "Core/ShanHeEnums.h"
 #include "Core/ShanHeStructs.h"
-#include "ShanHeNPCFragment.generated.h"
+#include "NPCFragment.generated.h"
 
 /**
  * MassEntity 片段 - 用于数千NPC同存的纯数据结构
@@ -92,13 +92,10 @@ class SHANHEERA_API UNPCMassProcessor : public UObject
 {
     GENERATED_BODY()
 public:
-    UFUNCTION(BlueprintCallable, Category="山河纪元|MassNPC")
     void ProcessNeeds(float DeltaTime, TArray<FNPCNeedFragment>& Needs);
 
-    UFUNCTION(BlueprintCallable, Category="山河纪元|MassNPC")
     void ProcessSchedule(int32 CurrentHour, TArray<FNPCScheduleFragment>& Schedules,
                          TArray<FNPCLocationFragment>& Locations);
 
-    UFUNCTION(BlueprintCallable, Category="山河纪元|MassNPC")
     void ProcessRelations(TArray<FNPCRelationFragment>& Relations);
 };

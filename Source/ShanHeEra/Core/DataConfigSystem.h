@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Engine/DataTable.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeDataConfigSystem.generated.h"
+#include "DataConfigSystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FItemConfigRow : public FTableRowBase

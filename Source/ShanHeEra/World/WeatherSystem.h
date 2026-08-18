@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
-#include "ShanHeWeatherSystem.generated.h"
+#include "WeatherSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ESolarTerm : uint8

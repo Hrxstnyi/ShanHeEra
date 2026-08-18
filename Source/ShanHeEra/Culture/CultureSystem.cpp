@@ -3,7 +3,7 @@
 
 void UCultureSystem::InitializeCulture()
 {
-    FFestivalData Spring;
+    FCultureFestivalData Spring;
     Spring.FestivalID = TEXT("SpringFestival");
     Spring.Name = NSLOCTEXT("Festival","Spring","春节");
     Spring.Month = 1; Spring.Day = 1;
@@ -11,7 +11,7 @@ void UCultureSystem::InitializeCulture()
     Spring.Customs = NSLOCTEXT("Festival","SpringCust","贴春联、放爆竹、拜年、发压岁钱、吃团圆饭");
     Festivals.Add(Spring);
 
-    FFestivalData DragonBoat;
+    FCultureFestivalData DragonBoat;
     DragonBoat.FestivalID = TEXT("DragonBoat");
     DragonBoat.Name = NSLOCTEXT("Festival","DragonBoat","端午节");
     DragonBoat.Month = 5; DragonBoat.Day = 5;
@@ -19,7 +19,7 @@ void UCultureSystem::InitializeCulture()
     DragonBoat.Customs = NSLOCTEXT("Festival","DragonBoatCust","赛龙舟、吃粽子、挂艾草、佩香囊");
     Festivals.Add(DragonBoat);
 
-    FFestivalData MidAutumn;
+    FCultureFestivalData MidAutumn;
     MidAutumn.FestivalID = TEXT("MidAutumn");
     MidAutumn.Name = NSLOCTEXT("Festival","MidAutumn","中秋节");
     MidAutumn.Month = 8; MidAutumn.Day = 15;

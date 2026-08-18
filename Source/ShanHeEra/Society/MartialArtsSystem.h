@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeMartialArtsSystem.generated.h"
+#include "MartialArtsSystem.generated.h"
 
 UENUM(BlueprintType)
-enum class ESkillType : uint8
+enum class EMartialSkillType : uint8
 {
     Internal    UMETA(DisplayName="内功"),
     External    UMETA(DisplayName="外功"),
@@ -28,7 +28,7 @@ struct FMartialSkill
     GENERATED_BODY()
     UPROPERTY(EditAnywhere, BlueprintReadWrite) FName SkillID;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) FText SkillName;
-    UPROPERTY(EditAnywhere, BlueprintReadWrite) ESkillType Type;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite) EMartialSkillType Type;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) ESkillGrade Grade;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Level = 0; // 0-100
     UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 MaxLevel = 100;

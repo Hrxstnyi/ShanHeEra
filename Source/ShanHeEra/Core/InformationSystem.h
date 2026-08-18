@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
-#include "ShanHeInformationSystem.generated.h"
+#include "InformationSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EInfoAccuracy : uint8
@@ -9,7 +9,7 @@ enum class EInfoAccuracy : uint8
     Fact        UMETA(DisplayName="事实"),
     Exaggerated UMETA(DisplayName="夸大"),
     Rumor       UMETA(DisplayName="谣言"),
-    False       UMETA(DisplayName="虚假")
+    FalseInfo   UMETA(DisplayName="虚假")
 };
 
 USTRUCT(BlueprintType)

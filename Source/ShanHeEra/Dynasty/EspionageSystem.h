@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeEspionageSystem.generated.h"
+#include "EspionageSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ESpyAction : uint8

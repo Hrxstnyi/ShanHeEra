@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeScenarioSystem.generated.h"
+#include "ScenarioSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EScenarioID : uint8

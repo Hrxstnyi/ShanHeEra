@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeEconomyBalanceManager.generated.h"
+#include "EconomyBalanceManager.generated.h"
 
 UENUM(BlueprintType)
 enum class ECurrencyType : uint8
@@ -25,7 +25,7 @@ struct FResourcePrice
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float Volatility = 0.1f;     // 波动率(0-1)
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float Supply = 100.0f;       // 供给量
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float Demand = 100.0f;       // 需求量
-    UPROPERTY(EditAnywhere, BlueprintReadWrite) float PriceHistory[12];      // 近12月价格
+    UPROPERTY(EditAnywhere, BlueprintReadWrite) TArray<float> PriceHistory;      // 近12月价格
 };
 
 USTRUCT(BlueprintType)

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeEquipmentWidget.generated.h"
+#include "EquipmentWidget.generated.h"
 
 class UImage;
 class UTextBlock;
@@ -37,7 +37,7 @@ public:
     void RefreshEquipment();
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|UI")
-    void SelectEquipSlot(EEquipSlot Slot);
+    void SelectEquipSlot(EEquipSlot InSlot);
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|UI")
     void UnequipSelected();

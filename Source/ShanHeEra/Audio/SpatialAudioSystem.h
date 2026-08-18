@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeSpatialAudioSystem.generated.h"
+#include "SpatialAudioSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EAmbientType : uint8
@@ -18,7 +18,7 @@ enum class EAmbientType : uint8
 };
 
 USTRUCT(BlueprintType)
-struct FAmbientSound
+struct FShanHeAmbientSound
 {
     GENERATED_BODY()
     UPROPERTY(EditAnywhere, BlueprintReadWrite) EAmbientType Type;
@@ -54,7 +54,7 @@ public:
     void SetReverbPreset(FName Preset); // 洞穴/大厅/户外
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|音效")
-    TMap<EAmbientType, FAmbientSound> AmbientDatabase;
+    TMap<EAmbientType, FShanHeAmbientSound> AmbientDatabase;
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|音效")
     EAmbientType CurrentAmbient = EAmbientType::Village;

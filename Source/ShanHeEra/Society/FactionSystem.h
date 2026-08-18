@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeFactionSystem.generated.h"
+#include "FactionSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EFactionType : uint8

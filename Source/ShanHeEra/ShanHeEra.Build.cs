@@ -12,7 +12,7 @@ public class ShanHeEra : ModuleRules
             "Core", "CoreUObject", "Engine", "InputCore",
             "EnhancedInput", "UMG", "Slate", "SlateCore",
             "AIModule", "NavigationSystem", "GameplayTasks",
-            "Niagara", "MediaAssets", "MediaUtils",
+            "Niagara",
             "Json", "JsonUtilities", "HTTP", "DeveloperSettings"
         });
 

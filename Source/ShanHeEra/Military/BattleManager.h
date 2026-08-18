@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
 #include "Military/ArmyUnit.h"
-#include "ShanHeBattleManager.generated.h"
+#include "BattleManager.generated.h"
 
 UENUM(BlueprintType)
 enum class EBattlePhase : uint8

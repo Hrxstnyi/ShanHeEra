@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeMapSystem.generated.h"
+#include "MapSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EMapMode : uint8
@@ -42,7 +42,7 @@ struct FMapMarker
 };
 
 USTRUCT(BlueprintType)
-struct FNavigationPath
+struct FShanHeMapPath
 {
     GENERATED_BODY()
     UPROPERTY(EditAnywhere, BlueprintReadWrite) FName PathID;
@@ -78,7 +78,7 @@ public:
     void DiscoverLocation(FName LocationID);
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|地图")
-    FNavigationPath CalculatePath(FVector2D From, FVector2D To);
+    FShanHeMapPath CalculatePath(FVector2D From, FVector2D To);
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|地图")
     void SetNavigationTarget(FName MarkerID);
@@ -99,7 +99,7 @@ public:
     TArray<FMapMarker> AllMarkers;
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|地图")
-    FNavigationPath CurrentPath;
+    FShanHeMapPath CurrentPath;
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|地图")
     TSet<FName> DiscoveredLocations;

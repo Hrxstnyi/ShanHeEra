@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeCourtSystem.generated.h"
+#include "CourtSystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FOfficialData

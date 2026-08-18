@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
-#include "ShanHeGameLayerManager.generated.h"
+#include "GameLayerManager.generated.h"
 
 UENUM(BlueprintType)
 enum class EGameLayer : uint8

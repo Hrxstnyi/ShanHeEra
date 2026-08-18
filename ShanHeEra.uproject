@@ -1,6 +1,6 @@
 {
     "FileVersion": 3,
-    "EngineAssociation": "5.3",
+    "EngineAssociation": "5.8",
     "Category": "",
     "Description": "山河纪元 - 华夏古代历史文明沙盘 RPG",
     "Modules": [
@@ -16,19 +16,7 @@
             "Enabled": true
         },
         {
-            "Name": "PCG",
-            "Enabled": true
-        },
-        {
             "Name": "Niagara",
-            "Enabled": true
-        },
-        {
-            "Name": "MetaSounds",
-            "Enabled": true
-        },
-        {
-            "Name": "MediaAssets",
             "Enabled": true
         }
     ]

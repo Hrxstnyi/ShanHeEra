@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHePhotoAlbumSystem.generated.h"
+#include "PhotoAlbumSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EPhotoFilter : uint8

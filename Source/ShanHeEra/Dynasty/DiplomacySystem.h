@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeDiplomacySystem.generated.h"
+#include "DiplomacySystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EDiplomacyRelation : uint8

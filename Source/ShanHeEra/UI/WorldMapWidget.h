@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeWorldMapWidget.generated.h"
+#include "WorldMapWidget.generated.h"
 
 class UImage;
 class UTextBlock;

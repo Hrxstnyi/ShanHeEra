@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeRelationshipSystem.generated.h"
+#include "RelationshipSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ERelationType : uint8

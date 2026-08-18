@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeFestivalSystem.generated.h"
+#include "FestivalSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EFestivalType : uint8

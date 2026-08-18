@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Core/ShanHeStructs.h"
 #include "Core/ShanHeEnums.h"
-#include "ShanHeStoryManager.generated.h"
+#include "StoryManager.generated.h"
 
 USTRUCT(BlueprintType)
 struct FSpecialCharacter

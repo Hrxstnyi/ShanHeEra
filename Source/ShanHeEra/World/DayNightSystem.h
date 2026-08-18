@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
-#include "ShanHeDayNightSystem.generated.h"
+#include "DayNightSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ETimeOfDay : uint8

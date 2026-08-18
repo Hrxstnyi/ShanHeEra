@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeFamilyTreeWidget.generated.h"
+#include "FamilyTreeWidget.generated.h"
 
 class UCanvasPanel;
 class UImage;

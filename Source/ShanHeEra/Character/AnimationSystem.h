@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeAnimationSystem.generated.h"
+#include "AnimationSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class ECharacterAction : uint8
@@ -21,7 +21,7 @@ enum class ECharacterAction : uint8
 };
 
 USTRUCT(BlueprintType)
-struct FAnimationState
+struct FShanHeAnimationState
 {
     GENERATED_BODY()
     UPROPERTY(EditAnywhere, BlueprintReadWrite) ECharacterAction CurrentAction = ECharacterAction::Idle;
@@ -61,10 +61,10 @@ public:
     void SetFacialExpression(FName Expression); // 喜/怒/哀/惧/惊/思
 
     UFUNCTION(BlueprintCallable, Category="山河纪元|动画")
-    FAnimationState GetState() const { return State; }
+    FShanHeAnimationState GetState() const { return State; }
 
     UPROPERTY(BlueprintReadOnly, Category="山河纪元|动画")
-    FAnimationState State;
+    FShanHeAnimationState State;
 
     UPROPERTY(EditAnywhere, Category="山河纪元|动画")
     TMap<FName, float> FacialBlendshapes; // 面部混合形变

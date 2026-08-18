@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeCodexWidget.generated.h"
+#include "CodexWidget.generated.h"
 
 class UVerticalBox;
 class UGridPanel;

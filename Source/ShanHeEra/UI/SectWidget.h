@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "ShanHeSectWidget.generated.h"
+#include "SectWidget.generated.h"
 
 class UVerticalBox;
 class UTextBlock;

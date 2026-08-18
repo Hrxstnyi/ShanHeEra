@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeSettingsSystem.generated.h"
+#include "SettingsSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EGraphicsQuality : uint8

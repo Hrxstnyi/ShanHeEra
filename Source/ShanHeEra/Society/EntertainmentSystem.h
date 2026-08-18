@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeEntertainmentSystem.generated.h"
+#include "EntertainmentSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EGameType : uint8

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "ShanHeExaminationSystem.generated.h"
+#include "ExaminationSystem.generated.h"
 
 UENUM(BlueprintType)
 enum class EExamLevel : uint8
