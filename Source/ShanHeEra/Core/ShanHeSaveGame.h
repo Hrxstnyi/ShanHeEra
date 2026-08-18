@@ -69,7 +69,7 @@ public:
     UPROPERTY(BlueprintReadOnly) int32 SaveVersion = 2;
 
     /** 游戏版本 */
-    UPROPERTY(BlueprintReadOnly) FString GameVersion = TEXT("2.5.0");
+    UPROPERTY(BlueprintReadOnly) FString GameVersion = TEXT("2.5.8");
 
     /** 存档创建时间 */
     UPROPERTY(BlueprintReadOnly) FString CreateTime;
