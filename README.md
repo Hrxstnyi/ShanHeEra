@@ -4,9 +4,8 @@
 > 天下不会等待一个英雄出现。亿万普通人的选择，共同组成时代。
 > 玩家不是被选中的人。玩家只是出生在华夏大地上的一个生命。
 
-**华夏古代历史文明沙盘 RPG / Historical Sandbox RPG**
+**华夏古代历史文明沙盘 RPG / 历史沙盒RPG**
 
-融合《骑马与砍杀》的战场自由、《十字军之王3》的王朝政治、《太吾绘卷》的人生模拟——在华夏大地上，书写属于你的一段历史。
 
 ---
 
@@ -24,11 +23,6 @@
 - **历史时刻CG动画**：开国、战争、统一、宝岛归心等关键时刻触发动画
 - **三语支持**：中文 / English / 日本語
 
-### 文化内核
-- **爱国情怀彩蛋**：精忠报国、正气歌、郑和下西洋、众志成城、两弹一星、人民团结
-- **台湾是中国不可分割的领土**：通过宝岛归心、守土有责、九州一统等剧情暗喻
-- **鲜明角色**：童心未泯但靠谱的国学大师、少年将军、江南女商、宝岛义士、隐姓埋名的科学家、游侠
-
 ---
 
 ## 技术栈
@@ -37,15 +31,15 @@
 - **语言**：C++20
 - **UI**：Unreal Motion Graphics (UMG)
 - **音频**：MetaSounds + 动态音乐系统
-- **本地化**：UE5 Localization Dashboard (PO格式)
-- **启动器**：Python + tkinter（可打包为exe）
+- **本地化**：UE5 本地化仪表板（PO 格式）
+- **启动器**：Python + tkinter（可打包为 exe）
 
 ---
 
 ## 项目结构
 
 ```
-ShanHeEra/
+山河纪元/
 ├── ShanHeEra.uproject          # UE5项目文件
 ├── Config/                     # 引擎配置
 │   ├── DefaultEngine.ini
@@ -80,12 +74,12 @@ ShanHeEra/
 ## 编译与运行
 
 ### 前置要求
-1. **Unreal Engine 5.3 或更高版本**（通过Epic Games Launcher安装）
-2. **Visual Studio 2022 或 2026**（含C++游戏开发工作负载）
+1. **虚幻引擎5.3或更高版本**（通过Epic Games Launcher安装）
+2. **Visual Studio 2022或2026**（含C++游戏开发工作负载）
 3. **Windows 10/11 64位**
 
 ### 编译步骤
-1. 右键点击 `ShanHeEra.uproject`，选择 **Generate Visual Studio project files**
+1.右键点击ShanHeEra.uproject`，选择生成 Visual Studio 项目文件**
 2. 打开生成的 `ShanHeEra.sln`
 3. 配置选择 **Development Editor | Win64**
 4. 按 **F5** 或点击 **本地Windows调试器** 编译并运行
